@@ -1,0 +1,74 @@
+{
+  "Amexio Input": {
+    "prefix": "Amexio-ts-Input",
+    "description": "Amexio Input",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() { }$0",
+      "}"
+    ]
+  },
+  "Amexio Email Input": {
+    "prefix": "Amexio-ts-Email-Input",
+    "description": "Amexio Email Input",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${2:selector-name}',",
+      "\ttemplateUrl: '${3:name}.component.html'",
+      "})",
+      "",
+      "export class ${4:Name}Component implements OnInit {",
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() { $0",
+      "\t}",
+      "\tngAfterViewInit { $1",
+      "\t}",
+      "}"
+    ]
+  },
+  "Amexio Checkbox": {
+    "prefix": "Amexio-ts-Checkbox",
+    "description": "Amexio Checkbox",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "\tcheckBoxGroupData: any;",
+      "\tconstructor() { ",
+      "\t\tthis.checkBoxGroupData = {",
+      "\t\t\tresponse: {",
+      "\t\t\tdata: [{",
+      "\t\t\tfieldLabel='$4'",
+      "\t\t\tfieldId='$5'",
+      "\t\t\t}, {",
+      "\t\t\tfieldLabel='$6'",
+      "\t\t\tfieldId='$7'",
+      "\t\t\t}, {",
+      "\t\t\tfieldLabel='$8'",
+      "\t\t\tfieldId='$9'",
+      "\t\t\t}",
+      "\t\t]}}",
+      "\t}",
+      "",
+      "\tngOnInit() { }$0",
+      "}"
+    ]
+  }
+}

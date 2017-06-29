@@ -1,0 +1,96 @@
+{
+  "amexio-text": {
+    "prefix": "amexio-text-input",
+    "body": [
+	"<amexio-text-input [fieldLabel]=\"${1:label}\" name =\"${2:name}\"",
+		"\t [placeholder]=\"${3:placeHolder}\" [iconFeedBack]=\"true\">",
+		"\t</amexio-text-input>"
+
+    ],
+    "description": "Amexio Simple Text Input\n<amexio-text-input [fieldLabel]=\"'Name'\" name =\"name\"\n [placeholder]=\"'Enter name'\"\n [iconFeedBack]=\"true\"\n </amexio-text-input>\n"
+  },
+  "amexio-email": {
+    "prefix": "amexio-email-input",
+    "body": [
+    ],
+    "description": "Amexio Email Input"
+  },
+  "amexio-password": {
+    "prefix": "amexio-password-input",
+    "body": [
+    ],
+    "description": "Amexio Password Input"
+  },
+  "amexio-number": {
+    "prefix": "amexio-number-input",
+    "body": [
+    ],
+    "description": "Amexio Number Input"
+  },
+  "amexio-textarea": {
+    "prefix": "amexio-textarea-input",
+    "body": [
+    ],
+    "description": "Amexio TextArea Input"
+  },
+  "amexio-radio": {
+    "prefix": "amexio-radio-group",
+    "body": [
+    ],
+    "description": "Amexio Radio Group"
+  },
+  "amexio-button": {
+    "prefix": "amexio-button",
+    "body": [
+    ],
+    "description": "Amexio Button"
+  },
+  "amexion-button-group": {
+    "prefix": "amexio-button-group",
+    "body": [
+    ],
+    "description": "Amexio Button Group"
+  },
+  "amexio-button-dropdown": {
+    "prefix": "amexio-button-dropdown",
+    "body": [
+    ],
+    "description": "Amexio Dropdown Button"
+  },
+  "amexio-dropdown-basic": {
+    "prefix": "amexio-dropdown-basic",
+    "body": [
+    ],
+    "description": "Amexio Dropdown"
+  },
+  "amexio-dropdown-filter": {
+    "prefix": "amexio-dropdown-filter",
+    "body": [
+    ],
+    "description": "Amexio Dropdown with Filter"
+  },
+  "amexio-dropdown-m": {
+    "prefix": "amexio-dropdown-multiselect",
+    "body": [
+    ],
+    "description": "Amexio Dropdown with Multi Select"
+  },
+  "amexio-progress-bar": {
+    "prefix": "amexio-progress-bar",
+    "body": [
+    ],
+    "description": "Amexio Progress Bar"
+  },
+  "amexio-item-selector": {
+    "prefix": "amexio-item-selector",
+    "body": [
+    ],
+    "description": "Amexio Item Selector"
+  },
+  "amexio-rating": {
+    "prefix": "amexio-rating",
+    "body": [
+    ],
+    "description": "Amexio Rating"
+  }
+}
