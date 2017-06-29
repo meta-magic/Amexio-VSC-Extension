@@ -1,0 +1,51 @@
+{
+    "name": "amexio",
+    "displayName": "Amexio Angular Extensions",
+    "description": "Amexio Code Snippets for HTML Markups and Angular TypeScripts",
+    "version": "1.0.0",
+    "publisher": "MetaMagic",
+    "icon": "images/angular-shield.png",
+     "galleryBanner": {
+        "color": "#0273D4",
+        "theme": "dark"
+    },
+    "engines": {
+        "vscode": "^1.13.0"
+    },
+     "license": "SEE LICENSE IN LICENSE",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/meta-magic/Amexio-VSC-Extension.git"
+    },
+    "keywords": [
+        "Amexio Angular Extensions",
+        "Angular 4",
+        "TypeScript",
+        "HTML"
+    ],
+    "categories": [
+        "Snippets",
+        "Other"
+    ],
+    "devDependencies": {
+        "vscode": "^1.0.0"
+    },
+    "contributes": {
+        "jsonValidation": [
+            {
+                "fileMatch": "manifest.json",
+                "url": "http://json.schemastore.org/web-manifest"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "typescript",
+                "path": "./snippets/typescript.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/html.json"
+            }
+        ]
+    }
+}
