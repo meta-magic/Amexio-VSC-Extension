@@ -38,6 +38,64 @@
       "}"
     ]
   },
+"Amexio Password Input": {
+    "prefix": "Amexio-ts-Password-Input",
+    "description": "Amexio Password Input",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${2:selector-name}',",
+      "\ttemplateUrl: '${3:name}.component.html'",
+      "})",
+      "",
+      "export class ${4:Name}Component implements OnInit {",
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() { $0",
+      "\t}",
+      "}"
+    ]
+  },
+"Amexio Number Input": {
+    "prefix": "Amexio-ts-Number-Input",
+    "description": "Amexio Number Input",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${2:selector-name}',",
+      "\ttemplateUrl: '${3:name}.component.html'",
+      "})",
+      "",
+      "export class ${4:Name}Component implements OnInit {",
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() { $0",
+      "\t}",
+      "}"
+    ]
+  },
+"Amexio TextArea Input": {
+    "prefix": "Amexio-ts-TextArea-Input",
+    "description": "Amexio TextArea Input",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${2:selector-name}',",
+      "\ttemplateUrl: '${3:name}.component.html'",
+      "})",
+      "",
+      "export class ${4:Name}Component implements OnInit {",
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() { $0",
+      "\t}",
+      "}"
+    ]
+  },
+//Checkbox
   "Amexio Checkbox": {
     "prefix": "Amexio-ts-Checkbox",
     "description": "Amexio Checkbox",
@@ -69,6 +127,360 @@
       "",
       "\tngOnInit() { }$0",
       "}"
+    ]
+  },
+  //RadioGroup
+    "Amexio RadioGroup": {
+    "prefix": "Amexio-ts-RadioGroup",
+    "description": "Amexio RadioGroup",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "\t${4:radioGroupData}: any;",
+      "\tconstructor() {",
+      "\t\tthis.${4:radioGroupData}={",
+      "\t\tresponse:{",
+      "\t\tdata:[{",
+      "\t\t\tfieldLabel='$4'",
+      "\t\t\tfieldId='$5'",
+      "\t\t\t}, {",
+      "\t\t\tfieldLabel='$6'",
+      "\t\t\tfieldId='$7'",
+      "\t\t\t}",
+      "\t\t]}}",
+      "\t}",
+      "",
+      "\tngOnInit() { }$0",
+      "}"
+    ]
+  },
+
+  //Buttons
+  "Amexio Buttons": {
+    "prefix": "Amexio-ts-Buttons",
+    "description": "Amexio Buttons",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() { }$0",
+      "}"
+    ]
+  },
+ 
+  "Amexio Async Button": {
+    "prefix": "Amexio-ts-Async-Button",
+    "description": "Amexio Async Button",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "${4:asyncFlag} : boolean;",
+      "\tconstructor() { }",
+      "",
+      "\tswitchasyncFlag(){",
+      "\t\tthis.${4:asyncFlag} = true;",
+      "\t\tsetTimeout(() => {",
+      "\t\t\tthis.${4:asyncFlag} = false",
+      "\t\t}, 3000);",
+      "\t}",
+      "",
+      "\tngOnInit() { }$0",
+      "}"
+    ]
+  }, 
+
+  //Group Button
+  "Amexio Group Buttons": {
+    "prefix": "Amexio-ts-Group-Buttons",
+    "description": "Amexio Group Buttons",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() { }$0",
+      "}"
+    ]
+  },
+
+//Dropdwon Button
+  "Amexio Dropdown Buttons": {
+    "prefix": "Amexio-ts-Dropdown-Buttons",
+    "description": "Amexio Dropdown Buttons",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() { }$0",
+      "}"
+    ]
+  },
+
+//Progress Bar
+"Amexio Progress Bar": {
+    "prefix": "Amexio-ts-Progress-Bar",
+    "description": "Amexio Progress Bar",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "\t${4:buttonLabel} : string = 'Stop';",
+      "\t${5:progressStat} : boolean = true;",
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() { }$0",
+      "",
+      "\tbuttonClick(event : any){",
+      "\tif(this.${5:progressStat}){",
+      "\t\tthis.${5:progressStat} = !this.${5:progressStat};",
+      "\t\tthis.${4:buttonLabel} = 'Start';",
+      "\t}",
+      "\telse{",
+      "\t\tthis.${5:progressStat} = !this.${5:progressStat};",
+      "\t\tthis.${4:buttonLabel} = 'Stop';",
+      "\t}",
+      "}",
+    "}"
+    ]
+  },
+
+//item selector
+"Amexio Item Selector": {
+    "prefix": "Amexio-ts-Item-Selector",
+    "description": "Amexio Item Selector",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "${4:data} : any;",
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() { }$0",
+      "",
+      "\tgetSelectedData(${5:getData} : any){",
+      "\t\tthis.${4:data} = ${5:getData};",
+      "}",
+    "}"
+    ]
+  },
+
+//rating
+"Amexio Rating": {
+    "prefix": "Amexio-ts-Rating",
+    "description": "Amexio Rating",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "public max:number = ${4:maxRating};",
+      "public rate:number = ${5:rating};",
+      "public isReadonly:boolean = false;",
+      "public isPercent:boolean = true;",
+  
+      "constructor() {}",
+      "ngOnInit() {}",
+      "}",
+    "}"
+    ]
+  },
+
+//date-time picker
+"Amexio DateTime": {
+    "prefix": "Amexio-ts-Date-Time",
+    "description": "Amexio Date-Time Picker",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "${4:currentDate} : Date = new Date(2016, 5, 10);",
+      "${5:time} : Date = new Date();",
+      "constructor(){};",
+      "ngOnInit(){};",
+      "onChangeTime(${6:event} : any){",
+      "this.${5:time} = new Date(${6:event});",
+      "}",
+    "}"
+    ]
+  },
+
+//rating
+"Amexio Tab Pane": {
+    "prefix": "Amexio-ts-tab-pane",
+    "description": "Amexio Tab Pane",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "ngAfterViewInit(){",
+      "$('.nav-tabs').scrollingTabs();",
+      "}",
+      "constructor() {}",
+      "ngOnInit() {}",
+      "}",
+    "}"
+    ]
+  },
+  
+  //Data Grid
+  "Amexio Data Grid": {
+    "prefix": "Amexio-ts-Data-Grid",
+    "description": "Amexio Data Grid",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() { }$0",
+      "}"
+    ]
+  },
+  "Amexio Data Grid With Templates": {
+    "prefix": "Amexio-ts-Data-Grid-with-Templates",
+    "description": "Amexio Data Grid with Templates",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() { }$0",
+      "}"
+    ]
+  },
+"Amexio Tree Grid": {
+  "prefix": "Amexio-ts-Tree-Grid",
+  "description": "Amexio Tree Grid",
+  "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tmoduleId: module.id,",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() { }$0",
+      "}"
+    ]
+  },
+  "Amexio Tree": {
+  "prefix": "Amexio-ts-Tree",
+  "description": "Amexio Tree",
+  "body": [
+    "import {Component, OnInit} from '@angular/core';",
+    "@Component({",
+    "\tselector: '${1:selector-name}',",
+    "\ttemplateUrl: '${2:name}.component.html'",
+    "})",
+    "",
+    "export class ${3:Name}Component implements OnInit {",
+    "constructor(){}",
+    "ngOnInit(){}",
+    "}"
+    ]
+  },
+  
+  "Amexio Notification": {
+  "prefix": "Amexio-ts-Notification",
+  "description": "Amexio Notification",
+  "body": [
+    "import {Component, OnInit} from '@angular/core';",
+    "@Component({",
+    "\tselector: '${1:selector-name}',",
+    "\ttemplateUrl: '${2:name}.component.html'",
+    "})",
+    "",
+    "export class ${3:Name}Component implements OnInit {",
+    "constructor(private widgetService : WidgetService) {}",
+    "ngOnInit(){}",
+    "}"
+    ]
+  },
+"Amexio Carousel View": {
+  "prefix": "Amexio-ts-Carousel",
+  "description": "Amexio Carousel",
+  "body": [
+    "import {Component, OnInit} from '@angular/core';",
+    "@Component({",
+    "\tselector: '${1:selector-name}',",
+    "\ttemplateUrl: '${2:name}.component.html'",
+    "})",
+    "",
+    "export class ${3:Name}Component implements OnInit {",
+    "constructor(private widgetService : WidgetService) {}",
+    "ngOnInit(){}",
+    "}"
     ]
   }
 }
