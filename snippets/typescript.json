@@ -1,4 +1,5 @@
 {
+  //All Text inputs
   "Amexio Inputs": {
     "prefix": "Amexio-ts-Input",
     "description": "Amexio Input",
@@ -17,6 +18,8 @@
       "}"
     ]
   },
+
+  //Email input
   "Amexio Email Input": {
     "prefix": "Amexio-ts-Email-Input",
     "description": "Amexio Email Input",
@@ -38,6 +41,8 @@
       "}"
     ]
   },
+
+//Password
 "Amexio Password Input": {
     "prefix": "Amexio-ts-Password-Input",
     "description": "Amexio Password Input",
@@ -57,6 +62,8 @@
       "}"
     ]
   },
+
+//Number input
 "Amexio Number Input": {
     "prefix": "Amexio-ts-Number-Input",
     "description": "Amexio Number Input",
@@ -76,6 +83,8 @@
       "}"
     ]
   },
+
+//TextArea
 "Amexio TextArea Input": {
     "prefix": "Amexio-ts-TextArea-Input",
     "description": "Amexio TextArea Input",
@@ -95,6 +104,7 @@
       "}"
     ]
   },
+
 //Checkbox
   "Amexio Checkbox": {
     "prefix": "Amexio-ts-Checkbox",
@@ -108,27 +118,28 @@
       "})",
       "",
       "export class ${3:Name}Component implements OnInit {",
-      "\tcheckBoxGroupData: any;",
+      "\tcheckboxGroupdata: any;",
       "\tconstructor() { ",
-      "\t\tthis.checkBoxGroupData = {",
+      "\t\tthis.checkboxGroupdata = {",
       "\t\t\tresponse: {",
       "\t\t\tdata: [{",
-      "\t\t\tfieldLabel='$4'",
-      "\t\t\tfieldId='$5'",
+      "\t\t\tfieldLabel:'$4',",
+      "\t\t\tfieldId:'$5'",
       "\t\t\t}, {",
-      "\t\t\tfieldLabel='$6'",
-      "\t\t\tfieldId='$7'",
+      "\t\t\tfieldLabel:'$6',",
+      "\t\t\tfieldId:'$7'",
       "\t\t\t}, {",
-      "\t\t\tfieldLabel='$8'",
-      "\t\t\tfieldId='$9'",
+      "\t\t\tfieldLabel:'$8',",
+      "\t\t\tfieldId:'$9'",
       "\t\t\t}",
-      "\t\t]}}",
+      "\t\t]}};",
       "\t}",
       "",
       "\tngOnInit() { }$0",
       "}"
     ]
   },
+  
   //RadioGroup
     "Amexio RadioGroup": {
     "prefix": "Amexio-ts-RadioGroup",
@@ -136,7 +147,9 @@
     "body": [
       "import { Component, OnInit } from '@angular/core';",
       "",
+      "declare var $;",
       "@Component({",
+      "\tmoduleId: module.id,",
       "\tselector: '${1:selector-name}',",
       "\ttemplateUrl: '${2:name}.component.html'",
       "})",
@@ -147,14 +160,37 @@
       "\t\tthis.${4:radioGroupData}={",
       "\t\tresponse:{",
       "\t\tdata:[{",
-      "\t\t\tfieldLabel='$4'",
-      "\t\t\tfieldId='$5'",
+      "\t\t\tfieldLabel:'$4',",
+      "\t\t\tfieldId:'$5'",
       "\t\t\t}, {",
-      "\t\t\tfieldLabel='$6'",
-      "\t\t\tfieldId='$7'",
+      "\t\t\tfieldLabel:'$6',",
+      "\t\t\tfieldId:'$7'",
       "\t\t\t}",
-      "\t\t]}}",
+      "\t\t]}};",
       "\t}",
+      "",
+      "\tngOnInit() { }$0",
+      "}"
+    ]
+  },
+
+  //Type Ahead
+  "Amexio Text Type Ahead": {
+    "prefix": "Amexio-ts-Text-Type-Ahead",
+    "description": "Amexio Text Type Ahead",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "declare var $;",
+      "",
+      "@Component({",
+      "\tmoduleId: module.id,",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "\tconstructor() { }",
       "",
       "\tngOnInit() { }$0",
       "}"
@@ -174,7 +210,7 @@
       "})",
       "",
       "export class ${3:Name}Component implements OnInit {",
-      "\tconstructor() { }",
+      "\tconstructor() { }$1",
       "",
       "\tngOnInit() { }$0",
       "}"
@@ -228,7 +264,7 @@
     ]
   },
 
-//Dropdwon Button
+  //Dropdwon Button
   "Amexio Dropdown Buttons": {
     "prefix": "Amexio-ts-Dropdown-Buttons",
     "description": "Amexio Dropdown Buttons",
@@ -248,6 +284,65 @@
     ]
   },
 
+  //Dropdown 
+  "Amexio Dropdown": {
+    "prefix": "Amexio-ts-Dropdown",
+    "description": "Amexio Dropdown",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "${4:fieldName} : string;",
+      "${5:fieldObj} : any;",
+      
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() { }$0",
+      "getSingleVal(value : any){",
+      "this.${5:fieldObj} = value.data;",
+      "}",
+      "}"
+    ]
+  },
+
+  //Dropdwon Multiselect
+  "Amexio Dropdown Multiselect": {
+    "prefix": "Amexio-ts-Dropdown-Multiselect",
+    "description": "Amexio Dropdown Multiselect",
+    "body": [
+      "import {ChangeDetectorRef, Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "\t${4:fieldName} : any;",
+      "\t${5:fieldName2} : any;",
+      "",      
+      "constructor(private ref: ChangeDetectorRef) {",
+      "\t}",
+      "",
+      "\tngOnInit() { }$0",
+      "\tsetMultiVal(val : any){",
+      "\t\tconsole.log(val);",
+      "\t\tthis.${4:fieldName} = val.data;",
+      "\t\tthis.ref.detectChanges();",
+      "\t}",
+      "\tsetMultiVal2(val : any){",
+      "\t\tthis.${5:fieldName2} = val.data;",
+      "\t\tthis.ref.detectChanges();",
+      "\t}",
+      "}"
+    ]
+  },  
+  
 //Progress Bar
 "Amexio Progress Bar": {
     "prefix": "Amexio-ts-Progress-Bar",
@@ -346,6 +441,15 @@
       "export class ${3:Name}Component implements OnInit {",
       "${4:currentDate} : Date = new Date(2016, 5, 10);",
       "${5:time} : Date = new Date();",
+      "datepickerOpts = {",
+      "startDate: new Date(2016, 5, 10),",
+      "autoclose: true,",
+      "todayBtn: 'linked',",
+      "todayHighlight: true,",
+      "assumeNearbyYear: true,",
+      "format: 'D, d MM yyyy'",
+      "};",
+      "",
       "constructor(){};",
       "ngOnInit(){};",
       "onChangeTime(${6:event} : any){",
@@ -355,7 +459,7 @@
     ]
   },
 
-//rating
+//Tab Pane
 "Amexio Tab Pane": {
     "prefix": "Amexio-ts-tab-pane",
     "description": "Amexio Tab Pane",
@@ -397,7 +501,8 @@
       "}"
     ]
   },
-  "Amexio Data Grid With Templates": {
+
+    "Amexio Data Grid With Templates": {
     "prefix": "Amexio-ts-Data-Grid-with-Templates",
     "description": "Amexio Data Grid with Templates",
     "body": [
@@ -412,10 +517,19 @@
       "\tconstructor() { }",
       "",
       "\tngOnInit() { }$0",
-      "}"
+      "",
+      "onRowSelect(data : any){",
+      "\tthis.data = data;",
+      "}",
+      "",
+      "onRowClick(data : any){",
+      "\tthis.clickedRowData = data;",
+      "}",
+    "}"
     ]
   },
-"Amexio Tree Grid": {
+
+  "Amexio Tree Grid": {
   "prefix": "Amexio-ts-Tree-Grid",
   "description": "Amexio Tree Grid",
   "body": [
@@ -434,6 +548,7 @@
       "}"
     ]
   },
+
   "Amexio Tree": {
   "prefix": "Amexio-ts-Tree",
   "description": "Amexio Tree",
@@ -451,6 +566,40 @@
     ]
   },
   
+  "Amexio Menu Bar": {
+  "prefix": "Amexio-ts-Menu-Bar",
+  "description": "Amexio-ts-Menu-Bar",
+  "body": [
+    "import {Component, OnInit} from '@angular/core';",
+    "@Component({",
+    "\tselector: '${1:selector-name}',",
+    "\ttemplateUrl: '${2:name}.component.html'",
+    "})",
+    "",
+    "export class ${3:Name}Component implements OnInit {",
+    "constructor(){}",
+    "ngOnInit(){}",
+    "}"
+    ]
+  },
+
+  "Amexio Side-Menu Bar": {
+  "prefix": "Amexio-ts-Side-Menu-Bar",
+  "description": "Amexio-ts-Side-Menu-Bar",
+  "body": [
+    "import {Component, OnInit} from '@angular/core';",
+    "@Component({",
+    "\tselector: '${1:selector-name}',",
+    "\ttemplateUrl: '${2:name}.component.html'",
+    "})",
+    "",
+    "export class ${3:Name}Component implements OnInit {",
+    "constructor(){}",
+    "ngOnInit(){}",
+    "}"
+    ]
+  },
+
   "Amexio Notification": {
   "prefix": "Amexio-ts-Notification",
   "description": "Amexio Notification",
@@ -467,7 +616,8 @@
     "}"
     ]
   },
-"Amexio Carousel View": {
+
+  "Amexio Carousel View": {
   "prefix": "Amexio-ts-Carousel",
   "description": "Amexio Carousel",
   "body": [
@@ -478,8 +628,8 @@
     "})",
     "",
     "export class ${3:Name}Component implements OnInit {",
-    "constructor(private widgetService : WidgetService) {}",
-    "ngOnInit(){}",
+    "constructor() {}",
+    "ngOnInit() {}",
     "}"
     ]
   }
