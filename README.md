@@ -4,9 +4,11 @@ This extension will help the developers of Visual Studio Code with quick code sn
 
 ## Usage
 
+Select the Amexio Ui Component
+<img src="https://raw.githubusercontent.com/meta-magic/Amexio-VSC-Extension/master/images/Amexio-VSC-Ex-1.jpg" />
 
-[<img src="https://raw.githubusercontent.com/meta-magic/Amexio-VSC-Extension/master/images/Amexio-VSC-Ex-1.jpg" />]
-
+Fill up the required Component Params
+<img src="https://raw.githubusercontent.com/meta-magic/Amexio-VSC-Extension/master/images/Amexio-VSC-Ex-2.jpg" />
 
 ## Requirements
 
