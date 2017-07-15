@@ -2,7 +2,7 @@
     "name": "amexio",
     "displayName": "Amexio Angular Extensions",
     "description": "This extension will help the developers of Visual Studio Code with quick code snippet for the Amexio Angular Extension Markup as well as Amexio TypeScript for the Angular.",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "publisher": "MetaMagic",
     "icon": "images/Amexio-Code-Snippet.png",
      "galleryBanner": {
