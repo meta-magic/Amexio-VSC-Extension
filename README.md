@@ -5,7 +5,7 @@ This extension will help the developers of Visual Studio Code with quick code sn
 ## Usage
 
 
-[<img src="images/Amexio-VSC-Ex1.jpg" />]
+[<img src="https://raw.githubusercontent.com/meta-magic/Amexio-VSC-Extension/master/images/Amexio-VSC-Ex-1.jpg" />]
 
 
 ## Requirements
