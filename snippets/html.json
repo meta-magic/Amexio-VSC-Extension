@@ -56,7 +56,7 @@
       "\t </amexio-text-input>"
     ],
     "description": "Amexio Text Input with Font Style"
-  },  
+  },
   "amexio-text-input-font-family": {
     "prefix": "amexio-text-input-font-family",
     "body": [
@@ -68,7 +68,6 @@
     ],
     "description": "Amexio Text Input with Font Family"
   },
-
   //Email Input
   "amexio-email": {
     "prefix": "amexio-email-input",
@@ -78,7 +77,8 @@
       "\t [allowBlank]=\"false\"",
       "\t [errorMsg] =\"'${4:errorMsg}'\"",
       "\t [iconFeedBack]=\"true\">",
-      "\t </amexio-email-input>"],
+      "\t </amexio-email-input>"
+    ],
     "description": "Amexio Email Input"
   },
   "amexio-email-font-style": {
@@ -89,7 +89,8 @@
       "\t [allowBlank]=\"false\"",
       "\t [iconFeedBack]=\"true\"",
       "\t [fontStyle]=\"'${4:fontStyle}'\">",
-      "\t </amexio-email-input>"],
+      "\t </amexio-email-input>"
+    ],
     "description": "Amexio Email Input with Font Style"
   },
   "amexio-email-font-family": {
@@ -99,20 +100,20 @@
       "\t [placeholder]=\"'${3:placeHolder}'\"",
       "\t [fontFamily]=\"'${4:fontFamily}'\"",
       "\t [fontSize]=\"'${5:fontSize}'\">",
-      "\t </amexio-email-input>"],
+      "\t </amexio-email-input>"
+    ],
     "description": "Amexio Email Input with Font Family"
   },
-  
   "amexio-email-disabled": {
     "prefix": "amexio-email-disabled",
     "body": [
       "<amexio-email-input [fieldLabel]=\"'${1:label}'\" name =\"${2:name}\"",
       "\t [placeholder]=\"'${3:placeHolder}'\"",
       "\t [disabled]=\"true\">",
-      "\t </amexio-email-input>"],
+      "\t </amexio-email-input>"
+    ],
     "description": "Amexio Email Input Disabled"
   },
-
   //Password Input
   "amexio-password": {
     "prefix": "amexio-password-input",
@@ -146,7 +147,6 @@
     ],
     "description": "Amexio Password Input"
   },
-
   //Number Input
   "amexio-number": {
     "prefix": "amexio-number-input",
@@ -180,19 +180,19 @@
       "\t [minErrorMsg]=\"'${6:minErrorMsg}'\"",
       "\t [maxLength]=\"${7:maxLength}\"",
       "\t [maxErrorMsg]=\"'${8:maxErrorMsg}'\"",
-      "\t [iconFeedBack]=\"true\">",    
-      "\t </amexio-number-input>"  
+      "\t [iconFeedBack]=\"true\">",
+      "\t </amexio-number-input>"
     ],
     "description": "Amexio Number Input with Validations"
-  },  
+  },
   "amexio-number-disabled": {
     "prefix": "amexio-number-disabled",
     "body": [
       "<amexio-number-input [fieldLabel]=\"'${1:Label}'\"",
       "\t [placeholder]=\"'${3:placeholder}'\"",
       "\t [iconFeedBack]=\"false\"",
-      "\t [disabled]=\"true\">\"",  
-      "\t </amexio-number-input>"  
+      "\t [disabled]=\"true\">\"",
+      "\t </amexio-number-input>"
     ],
     "description": "Amexio Number Input Disabled"
   },
@@ -201,23 +201,22 @@
     "body": [
       "<amexio-number-input [fieldLabel]=\"'${1:Label}'\"",
       "\t [placeholder]=\"'${2:placeholder}'\"",
-      "\t [fontStyle]=\"'${3:fontStyle}'\">", 
-      "\t </amexio-number-input>"  
+      "\t [fontStyle]=\"'${3:fontStyle}'\">",
+      "\t </amexio-number-input>"
     ],
     "description": "Amexio Number Font Style"
-  },  
+  },
   "amexio-number-font-family": {
     "prefix": "amexio-number-font-family",
     "body": [
       "<amexio-number-input [fieldLabel]=\"'${1:Label}'\"",
       "\t [placeholder]=\"'${2:placeholder}'\"",
       "\t [fontFamily]=\"'${3:fontFamily}'\"",
-      "\t [fontSize]=\"'${4:fontSize}'\">", 
-      "\t </amexio-number-input>"  
+      "\t [fontSize]=\"'${4:fontSize}'\">",
+      "\t </amexio-number-input>"
     ],
     "description": "Amexio Number Font Family"
   },
-
   //Text Area
   "amexio-textarea": {
     "prefix": "amexio-textarea-input",
@@ -234,7 +233,7 @@
     ],
     "description": "Amexio TextArea Input"
   },
- "amexio-textarea-input-with-columns-rows": {
+  "amexio-textarea-input-with-columns-rows": {
     "prefix": "amexio-textarea-input-with-columns-rows",
     "body": [
       "<amexio-textarea-input [fieldLabel]=\"'${1:label}'\" name =\"${2:name}\"",
@@ -248,7 +247,6 @@
     ],
     "description": "Amexio TextArea Input with Rows and Columns"
   },
-
   //Tab Pane
   "amexio-tab": {
     "prefix": "amexio-tab",
@@ -265,11 +263,11 @@
       "\t\"</amexio-tab>\"",
       "\t<amexio-tab title=\"'${7:title4}'\">",
       "\t${8:Html4}",
-      "\t\"</amexio-tab>\""      
+      "\t\"</amexio-tab>\""
     ],
     "description": "Amexio Simple Tab Pane "
   },
- "amexio-tab-scrollable": {
+  "amexio-tab-scrollable": {
     "prefix": "amexio-tab-scrollable",
     "body": [
       "<amexio-tab-pane  [closable]=\"false\">",
@@ -285,10 +283,10 @@
       "\t<amexio-tab title=\"'${11:title4}'\">",
       "\t${13:Html4}",
       "\t\"</amexio-tab>\""
-      ],
+    ],
     "description": "Amexio Tab Scrollable"
   },
-"amexio-tab-with-icons": {
+  "amexio-tab-with-icons": {
     "prefix": "amexio-tab-with-icons",
     "body": [
       "<amexio-tab-pane [icons]=\"true\">",
@@ -302,41 +300,38 @@
       "\t <amexio-tab title=\"${7:title3}\"",
       "\t [icon]=\"'${8:icon3}'\">",
       "\t ${9:HTML3}</amexio-tab>",
-      "\t </amexio-tab>",      
+      "\t </amexio-tab>",
       "\t </amexio-tab-pane>"
     ],
     "description": "Amexio Tab with icons"
   },
-
   //CheckBox Group Snippet
   "amexio-check-box": {
     "prefix": "amexio-horizontal-check-box",
     "body": [
       "<amexio-checkbox [fieldLabel]=\"'Horizontal Checkbox'\" name =\"${1:name}\"",
-                 "\t [dataReader]=\"'response.data'\"",
-                 "\t [displayField]=\"'${2:displayField}'\"",
-                 "\t [valueField]=\"'${3:valueField}'\"",
-                 "\t [checkBoxGroupDownBindData]=\"checkboxGroupdata\"",
-                 "\t [column]=\"'${4:columnCount}'\">",
+      "\t [dataReader]=\"'response.data'\"",
+      "\t [displayField]=\"'${2:displayField}'\"",
+      "\t [valueField]=\"'${3:valueField}'\"",
+      "\t [checkBoxGroupDownBindData]=\"checkboxGroupdata\"",
+      "\t [column]=\"'${4:columnCount}'\">",
       "</amexio-checkbox>"
     ],
     "description": "Amexio Horizontal Checkbox Group"
   },
-
   "amexio-check-box-vertical": {
     "prefix": "amexio-vertical-check-box",
-    "body": [      
+    "body": [
       "<amexio-checkbox [fieldLabel]=\"'Vertical Checkbox'\" name =\"'${1:name}'\"",
-                 "\t [dataReader]=\"'response.data'\"",
-                 "\t [displayField]=\"'${2:displayField}'\"",
-                 "\t [valueField]=\"'${3:valueField}'\"",
-                 "\t [checkBoxGroupDownBindData]=\"checkboxGroupdata\"",
-                 "\t [column]=\"'${4:columnCount}'\">",
+      "\t [dataReader]=\"'response.data'\"",
+      "\t [displayField]=\"'${2:displayField}'\"",
+      "\t [valueField]=\"'${3:valueField}'\"",
+      "\t [checkBoxGroupDownBindData]=\"checkboxGroupdata\"",
+      "\t [column]=\"'${4:columnCount}'\">",
       "</amexio-checkbox>"
     ],
     "description": "Amexio Vertical Checkbox Group"
   },
-
   //Radio Group Snippet
   "amexio-radio-group": {
     "prefix": "amexio-radio-group",
@@ -353,7 +348,6 @@
     ],
     "description": "Amexio Horizontal Radio Group"
   },
-
   "amexio-radio-group-vertical": {
     "prefix": "amexio-radio-group-vertical",
     "body": [
@@ -369,7 +363,6 @@
     ],
     "description": "Amexio Vertical Radio Group"
   },
-
   //type ahead
   "amexio-text-type-ahead": {
     "prefix": "amexio-text-type-ahead",
@@ -384,8 +377,7 @@
     ],
     "description": "Amexio Text Type Ahead"
   },
-
-// Button Snippets
+  // Button Snippets
   "amexio-type-button": {
     "prefix": "amexio-type-button",
     "body": [
@@ -480,13 +472,12 @@
       "<amexio-btn [label]=\"'${1:label}'\"",
       "\t [type]=\"${2:type}\"",
       "\t [tooltipMessage]=\"'${3:tooltipMessage}'\"",
-      "\t [size]=\"'large'\"", 
+      "\t [size]=\"'large'\"",
       "\t [block]=\"'true'\">",
       "</amexio-btn>"
     ],
     "description": "Amexio Block Button"
   },
-
   //Button Group Snippets 
   "amexio-button-group": {
     "prefix": "amexio-button-group",
@@ -507,7 +498,7 @@
     ],
     "description": "Amexio Button Group"
   },
-"amexio-button-group-states": {
+  "amexio-button-group-states": {
     "prefix": "amexio-button-group-states",
     "body": [
       "<amexio-btn-group>",
@@ -520,9 +511,10 @@
     ],
     "description": "Amexio Button Group States"
   },
-"amexio-button-group-icons": {
+  "amexio-button-group-icons": {
     "prefix": "amexio-button-group-icon",
-    "body": ["<amexio-btn-group>",
+    "body": [
+      "<amexio-btn-group>",
       "\t <amexio-btn-group-action [label]=\"'${1:label1}'\" \n\t [type]=\"'primary'\"",
       "\t [tooltipMessage]=\"'Next'\" icon=\"chevron-right\">",
       "\t </amexio-btn-group-action>",
@@ -535,7 +527,7 @@
     ],
     "description": "Amexio Button Group Icons"
   },
-"amexio-size-button-group": {
+  "amexio-size-button-group": {
     "prefix": "amexio-button-group-size",
     "body": [
       "<amexio-btn-group [size]=\"'${1:size}'\">",
@@ -546,8 +538,7 @@
     ],
     "description": "Amexio Button Group Size"
   },
-
-//Button Group with Dropdown
+  //Button Group with Dropdown
   "amexio-button-dropdown": {
     "prefix": "amexio-button-dropdown",
     "body": [
@@ -565,11 +556,11 @@
     "prefix": "amexio-size-button-dropdown",
     "body": [
       " <div class=\"col-lg-4\">",
-        "\t<amexio-btn-dropdown [label]=\"'${1:btnDropDownLabel}'\"",
-        "\t[type]=\"'${2:type}'\" [size]=\"'${3:size}'\">",
-          "\t\t<amexio-btn-dropdown-item [label]=\"'${4:label1}'\"></amexio-btn-dropdown-item>",
-          "\t\t<amexio-btn-dropdown-item [label]=\"'${5:label2}'\"></amexio-btn-dropdown-item>",
-        "\t</amexio-btn-dropdown>",
+      "\t<amexio-btn-dropdown [label]=\"'${1:btnDropDownLabel}'\"",
+      "\t[type]=\"'${2:type}'\" [size]=\"'${3:size}'\">",
+      "\t\t<amexio-btn-dropdown-item [label]=\"'${4:label1}'\"></amexio-btn-dropdown-item>",
+      "\t\t<amexio-btn-dropdown-item [label]=\"'${5:label2}'\"></amexio-btn-dropdown-item>",
+      "\t</amexio-btn-dropdown>",
       "</div>"
     ],
     "description": "Amexio Size Button Dropdown"
@@ -577,7 +568,7 @@
   "amexio-disabled-link-button-dropdown": {
     "prefix": "amexio-disabled-link-button-dropdown",
     "body": [
-      "<amexio-btn-dropdown [label]=\"'${1:btnDropDownLabel}'\"", 
+      "<amexio-btn-dropdown [label]=\"'${1:btnDropDownLabel}'\"",
       "\t [type]=\"'${2:type}'\" [size]=\"'${3:size}'\">",
       "\t <amexio-btn-dropdown-item [label]=\"'${4:label1}'\"",
       "\t\t [icon]=\"'${5:icon1}'\"\t\t [disabled]=\"'${6:disabledFlag1}'\">",
@@ -588,7 +579,6 @@
     ],
     "description": "Amexio with Disabled link Button Dropdown"
   },
-
   //Drop-down Basic
   "amexio-dropdown-basic": {
     "prefix": "amexio-dropdown-basic",
@@ -646,7 +636,7 @@
     ],
     "description": "Amexio Dropdown with Multi Select"
   },
- "amexio-dropdown-multiselect-limited": {
+  "amexio-dropdown-multiselect-limited": {
     "prefix": "amexio-dropdown-multiselect-limited",
     "body": [
       "<amexio-dropdown  (onMultiSelect)=\"setMultiVal($${1:event}\")",
@@ -669,8 +659,7 @@
     ],
     "description": "Amexio Dropdown with Multiselect Limited"
   },
-
- "amexio-dropdown-disply-count": {
+  "amexio-dropdown-disply-count": {
     "prefix": "amexio-dropdown-disply-count",
     "body": [
       "<amexio-dropdown  (onMultiSelect)=\"setMultiVal($${1:event})\")",
@@ -685,11 +674,10 @@
       "\t[multiSelect]=\"'true'\"",
       "\t[maxMultiSelect]=\"'${8:maxMultiSelect}'\"",
       "\t[multiCountDisplay]=\"'${9:multiCountDisplay}'\">",
-      "</amexio-dropdown>"      
+      "</amexio-dropdown>"
     ],
     "description": "Amexio Dropdown with Display Count"
   },
-
   //Progress Bar Snippet
   "amexio-progress-bar": {
     "prefix": "amexio-progress-bar",
@@ -703,7 +691,6 @@
     ],
     "description": "Amexio Progress Bar"
   },
-  
   //item selector
   "amexio-items-selector": {
     "prefix": "amexio-items-selector",
@@ -719,7 +706,7 @@
     ],
     "description": "Amexio Item Selector"
   },
-//rating
+  //rating
   "amexio-rating": {
     "prefix": "amexio-rating",
     "body": [
@@ -733,22 +720,23 @@
   //date picker
   "amexio-date-picker": {
     "prefix": "amexio-date-picker",
-    "body": [" <amexio-date-time-picker [timepicker]=\"'${1:timepicker}'\"", 
-       "\t [datepicker]=\"'${2:datepicker}'\"", 
-       "\t [(ngModel)]=\"'${3:ngModel}'\"></amexio-date-time-picker>"      
+    "body": [
+      " <amexio-date-time-picker [timepicker]=\"'${1:timepicker}'\"",
+      "\t [datepicker]=\"'${2:datepicker}'\"",
+      "\t [(ngModel)]=\"'${3:ngModel}'\"></amexio-date-time-picker>"
     ],
     "description": "Amexio Date Picker"
   },
   //time picker
   "amexio-time-picker": {
     "prefix": "amexio-time-picker",
-    "body": ["<amexio-date-time-picker [datepicker]=\"'${1:datepicker}'\"", 
-         "\t [ngModel]=\"'${2:ngModel}'\"", 
-         "\t (ngModelChange)=\"onChangeTime($${3:ngModelChangeEvent})\"></amexio-date-time-picker>"
+    "body": [
+      "<amexio-date-time-picker [datepicker]=\"'${1:datepicker}'\"",
+      "\t [ngModel]=\"'${2:ngModel}'\"",
+      "\t (ngModelChange)=\"onChangeTime($${3:ngModelChangeEvent})\"></amexio-date-time-picker>"
     ],
     "description": "Amexio Time Picker"
   },
-
   //Grid Snippets
   "amexio-grid": {
     "prefix": "amexio-grid",
@@ -770,7 +758,8 @@
       "\t\t [text]=\"'${15:text2}'\"></amexio-data-table-column>",
       "\t\t <amexio-data-table-column [dataIndex]=\"'${16:dataIndex3}'\"",
       "\t\t [dataType]=\"'${17:dataType3}'\" [hidden]=\"'${18:hidden3}'\"",
-      "\t\t [text]=\"'${19:text}'\"></amexio-data-table-column>",
+      "\t\t [text]=\"'${19:text}'\" [summaryCaption]=\"'${20:summaryCaption}'\"",
+      "\t [summaryType]=\"'${21:summaryType}'\"></amexio-data-table-column>",
       "\t</amexio-data-table-column>",
       "</amexio-data-table>"
     ],
@@ -787,7 +776,7 @@
       "\t[httpMethod]=\"'${5:httpMethod}'\"",
       "\t(selectedRowData)=\"onRowSelect($${6:event})\"",
       "\t(rowSelect)=\"onRowClick($${7:event})\">",
-      "\t<amexio-data-table-column [dataIndex]=\"'${8:dataIndex}'\"", 
+      "\t<amexio-data-table-column [dataIndex]=\"'${8:dataIndex}'\"",
       "\t\t[dataType]=\"'${9:dataIndex}'\" [hidden]=\"'${10:hidden}'\"",
       "\t\t[text]=\"'${11:text}'\">",
       "\t\t<ng-template #amexioBodyTmpl let-column let-row=\"row\">",
@@ -810,8 +799,8 @@
     "prefix": "amexio-tree-grid",
     "body": [
       "<amexio-tree-data-table [dataReader]=\"'${1:dataReader}'\"",
-      "\t[pageSize]=\"'${2:pageSize}'\"", 
-      "\t[title]=\"'${3:title}'\"\n\t[httpMethod]=\"'${4:httpMethod}'\"",  
+      "\t[pageSize]=\"'${2:pageSize}'\"",
+      "\t[title]=\"'${3:title}'\"\n\t[httpMethod]=\"'${4:httpMethod}'\"",
       "\t[httpUrl]=\"'${5:httpUrl}'\"",
       "\t(selectedRecord)=\"record = $$event\">",
       "</amexio-tree-data-table>"
@@ -839,9 +828,9 @@
     ],
     "description": "Amexio Filter Data Grid"
   },
-"amexio-grid-with-group-by": {
+  "amexio-grid-with-group-by": {
     "prefix": "amexio-grid-with-group-by",
-    "body": [ 
+    "body": [
       "<amexio-data-table [title]=\"'${1:title}'\"",
       "\t [pageSize] = \"${2:pageSize}\"",
       "\t [groupByColumn]=\"true\"",
@@ -862,9 +851,9 @@
     ],
     "description": "Amexio Data Grid with Group By "
   },
-"amexio-grid-with-scrollbar": {
+  "amexio-grid-with-scrollbar": {
     "prefix": "amexio-grid-with-scrollbar",
-    "body": [ 
+    "body": [
       "<amexio-data-table [title]=\"'${1:title}'\"",
       "\t [pageSize] = \"${2:pageSize}\"",
       "\t [dataReader]=\"'response.data'\"",
@@ -888,10 +877,10 @@
     "prefix": "amexio-tree",
     "body": [
       "<amexio-tree-view",
-        "\t [dataReader]=\"'${1:dataReader}'\"",
-        "\t [httpMethod]=\"'${2:httpMethod}'\"",
-        "\t [httpUrl]=\"'${3:httpUrl}'\"",
-        "\t (selectedRecord)=\"onRowSelect($${4:event})\">",
+      "\t [dataReader]=\"'${1:dataReader}'\"",
+      "\t [httpMethod]=\"'${2:httpMethod}'\"",
+      "\t [httpUrl]=\"'${3:httpUrl}'\"",
+      "\t (selectedRecord)=\"onRowSelect($${4:event})\">",
       "</amexio-tree-view>"
     ],
     "description": "Amexio Tree View"
@@ -899,60 +888,60 @@
   "amexio-tree-template": {
     "prefix": "amexio-tree-template",
     "body": [
-          "<amexio-tree-view",
-        "\t [dataReader]=\"'${1:dataReader}'\"",
-        "\t [httpMethod]=\"'${2:httpMethod}'\"",
-        "\t [httpUrl]=\"${3:httpUrl}'\"",
-        "\t (selectedRecord)=\"onRowSelect($${4:event})\">",
-        "\t <ng-template #amexioTreeTemplate let-tree let-icon=\"${5:icon}\" let-node=\"${6:node}\">",
-        "\t\t <i [attr.class]=\"{7:attrClass}\"></i> &nbsp; {{${8:text1}}}",
-        "\t </ng-template>",
+      "<amexio-tree-view",
+      "\t [dataReader]=\"'${1:dataReader}'\"",
+      "\t [httpMethod]=\"'${2:httpMethod}'\"",
+      "\t [httpUrl]=\"${3:httpUrl}'\"",
+      "\t (selectedRecord)=\"onRowSelect($${4:event})\">",
+      "\t <ng-template #amexioTreeTemplate let-tree let-icon=\"${5:icon}\" let-node=\"${6:node}\">",
+      "\t\t <i [attr.class]=\"{7:attrClass}\"></i> &nbsp; {{${8:text1}}}",
+      "\t </ng-template>",
       "</amexio-tree-view>"
     ],
     "description": "Amexio Tree Grid"
   },
-"amexio-tree-filtered": {
+  "amexio-tree-filtered": {
     "prefix": "amexio-tree-filtered",
     "body": [
-        "<amexio-tree-filter-view",
-        "\t [dataReader]=\"'${1:dataReader}'\"",
-        "\t [httpMethod]=\"'${2:httpMethod}'\"",
-        "\t [httpUrl]=\"${3:httpUrl}'\"",
-        "\t (selectedRecord)=\"onRowSelect($${4:event})\">",
-        "\t <ng-template #amexioTreeTemplate let-tree let-icon=\"${5:icon}\"",
-        " let-node=\"{6:node}\">",
-        "<i [attr.class]=\"${7:attrClass}\"></i> &nbsp; {{${8:text1}}}",
-        "</ng-template>",
-        "</amexio-tree-filter-view>"    ],
+      "<amexio-tree-filter-view",
+      "\t [dataReader]=\"'${1:dataReader}'\"",
+      "\t [httpMethod]=\"'${2:httpMethod}'\"",
+      "\t [httpUrl]=\"${3:httpUrl}'\"",
+      "\t (selectedRecord)=\"onRowSelect($${4:event})\">",
+      "\t <ng-template #amexioTreeTemplate let-tree let-icon=\"${5:icon}\"",
+      " let-node=\"{6:node}\">",
+      "<i [attr.class]=\"${7:attrClass}\"></i> &nbsp; {{${8:text1}}}",
+      "</ng-template>",
+      "</amexio-tree-filter-view>"
+    ],
     "description": "Amexio Tree Filtered"
   },
-"amexio-tree-with-checkbox": {
+  "amexio-tree-with-checkbox": {
     "prefix": "amexio-tree-with-checkbox",
     "body": [
-        "<amexio-tree-view",
-        "\t [dataReader]=\"'${1:dataReader}'\"",
-        "\t [httpMethod]=\"'${2:httpMethod}'\"",
-        "\t [httpUrl]=\"${3:httpUrl}'\"",
-        "\t [enableCheckBox]=\"true\"",
-        "\t (onTreeNodeChecked)=\"onCheckboxSelect($${4:event})\"",
-        "\t (selectedRecord)=\"onRowSelect($${5:event})\">",
-        "\t <ng-template #amexioTreeTemplate let-tree let-icon=\"${5:icon}\"",
-        " let-node=\"${6:node}\">",
-        "<i [attr.class]=\"${7:attrClass}\"></i> &nbsp; {{${8:text1}}}",
-        "</ng-template>",
-        "\t <ng-template #amexioTreeTemplate let-tree let-icon=\"${9:icon}\"",
-        " let-node=\"${10:node}\">",
-        "<i [attr.class]=\"${11:attrClass}\"></i> &nbsp; {{${12:text1}}}",
-        "</ng-template>",
-        "\t <ng-template #amexioTreeTemplate let-tree let-icon=\"${13:icon}\"",
-        " let-node=\"${14:node}\">",
-        "<i [attr.class]=\"${15:attrClass}\"></i> &nbsp; {{${16:text1}}}",
-        "</ng-template>",
-        "</amexio-tree-view>"
-        ],
+      "<amexio-tree-view",
+      "\t [dataReader]=\"'${1:dataReader}'\"",
+      "\t [httpMethod]=\"'${2:httpMethod}'\"",
+      "\t [httpUrl]=\"${3:httpUrl}'\"",
+      "\t [enableCheckBox]=\"true\"",
+      "\t (onTreeNodeChecked)=\"onCheckboxSelect($${4:event})\"",
+      "\t (selectedRecord)=\"onRowSelect($${5:event})\">",
+      "\t <ng-template #amexioTreeTemplate let-tree let-icon=\"${5:icon}\"",
+      " let-node=\"${6:node}\">",
+      "<i [attr.class]=\"${7:attrClass}\"></i> &nbsp; {{${8:text1}}}",
+      "</ng-template>",
+      "\t <ng-template #amexioTreeTemplate let-tree let-icon=\"${9:icon}\"",
+      " let-node=\"${10:node}\">",
+      "<i [attr.class]=\"${11:attrClass}\"></i> &nbsp; {{${12:text1}}}",
+      "</ng-template>",
+      "\t <ng-template #amexioTreeTemplate let-tree let-icon=\"${13:icon}\"",
+      " let-node=\"${14:node}\">",
+      "<i [attr.class]=\"${15:attrClass}\"></i> &nbsp; {{${16:text1}}}",
+      "</ng-template>",
+      "</amexio-tree-view>"
+    ],
     "description": "Amexio Tree with Checkboox"
   },
-
   //menu bar
   "amexio-menubar-top": {
     "prefix": "amexio-menubar-horizontal",
@@ -995,7 +984,7 @@
       "\t</ng-template>",
       "<ng-template #amexioNavHeaderTmpl  let-navHeader=\"${8:navHeader1}\">",
       "\t\t<span [attr.class]=\"${9:attrClass}\">{{${10:text2}}}</span>",
-      "\t</ng-template>",  
+      "\t</ng-template>",
       "</amexio-menubar>"
     ],
     "description": "Amexio Menubar Horizontal at Bottom"
@@ -1041,18 +1030,17 @@
       "\t</ng-template>",
       "<ng-template #amexioNavHeaderTmpl  let-navHeader=\"${8:navHeader1}\">",
       "\t\t<span [attr.class]=\"${9:attrClass}\">{{${10:text2}}}</span>",
-      "\t</ng-template>" ,
+      "\t</ng-template>",
       "</amexio-sidemenubar>"
     ],
     "description": "Amexio Menubar Side at Bottom"
   },
-  
   //notification Pop-up
   "amexio-notification-info": {
     "prefix": "amexio-notification-info",
     "body": [
-      "<amexio-btn (onClick)=\"widgetService.toasterInfo('${1:name}','${2:message}')\"", 
-      "\t [label]=\"'${3:label}'\" [type]=\"'primary'\"", 
+      "<amexio-btn (onClick)=\"widgetService.toasterInfo('${1:name}','${2:message}')\"",
+      "\t [label]=\"'${3:label}'\" [type]=\"'primary'\"",
       "\t [tooltipMessage]=\"'${4:tooltipMessage}'\">",
       "\t </amexio-btn>"
     ],
@@ -1061,8 +1049,8 @@
   "amexio-notification-success": {
     "prefix": "amexio-notification-success",
     "body": [
-      "<amexio-btn (onClick)=\"widgetService.toasterInfo('${1:name}','${2:message}')\"", 
-      "\t [label]=\"'${3:label}'\" [type]=\"'success'\"", 
+      "<amexio-btn (onClick)=\"widgetService.toasterInfo('${1:name}','${2:message}')\"",
+      "\t [label]=\"'${3:label}'\" [type]=\"'success'\"",
       "\t [tooltipMessage]=\"'${4:tooltipMessage}'\">",
       "\t </amexio-btn>"
     ],
@@ -1071,18 +1059,19 @@
   "amexio-notification-danger": {
     "prefix": "amexio-notification-danger",
     "body": [
-      "<amexio-btn (onClick)=\"widgetService.toasterInfo('${1:name}','${2:message}')\"", 
-    "\t [label]=\"'${3:label}'\" [type]=\"'danger'\"", 
-    "\t [tooltipMessage]=\"'${4:tooltipMessage}'\">",
-    "\t </amexio-btn>"
+      "<amexio-btn (onClick)=\"widgetService.toasterInfo('${1:name}','${2:message}')\"",
+      "\t [label]=\"'${3:label}'\" [type]=\"'danger'\"",
+      "\t [tooltipMessage]=\"'${4:tooltipMessage}'\">",
+      "\t </amexio-btn>"
     ],
     "description": "Amexio Notification Danger"
   },
   //Carousel View
   "amexio-carousel-view-image": {
     "prefix": "amexio-carousel-view-image",
-    "body": ["<amexio-carousel  [dataReader]=\"'${1:data}'\"", 
-      "\t [httpMethod]=\"'${2:httpMethod}'\"", 
+    "body": [
+      "<amexio-carousel  [dataReader]=\"'${1:data}'\"",
+      "\t [httpMethod]=\"'${2:httpMethod}'\"",
       "\t [httpUrl]=\"'${3:httpUrl}'\">",
       "</amexio-carousel>"
     ],
@@ -1090,11 +1079,12 @@
   },
   "amexio-carousel-view-content": {
     "prefix": "amexio-carousel-view-content",
-    "body": ["<amexio-carousel  [isContent]=\"true\"",
-    "\t [dataReader]=\"'${1:data}'\"", 
-    "\t [httpMethod]=\"'${2:httpMethod}'\"", 
-    "\t [httpUrl]=\"'${3:httpUrl}'\">",
-    "</amexio-carousel>"
+    "body": [
+      "<amexio-carousel  [isContent]=\"true\"",
+      "\t [dataReader]=\"'${1:data}'\"",
+      "\t [httpMethod]=\"'${2:httpMethod}'\"",
+      "\t [httpUrl]=\"'${3:httpUrl}'\">",
+      "</amexio-carousel>"
     ],
     "description": "Amexio Carousel View for Content"
   }
