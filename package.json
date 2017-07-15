@@ -2,7 +2,7 @@
     "name": "amexio",
     "displayName": "Amexio Angular Extensions",
     "description": "Amexio Code Snippets for HTML Markups and Angular TypeScripts",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "publisher": "MetaMagic",
     "icon": "images/Amexio-Code-Snippet.png",
      "galleryBanner": {
