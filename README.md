@@ -73,6 +73,6 @@ Amexio VSC Extension supports Amexio Varanasi update 1
 
 ## License
 
-[Apache 2.0](http://www.amexio.org/metamagic-showcase/license.html) © MetaMagic Global Inc, 2017
+[Apache 2.0](http://www.amexio.org/metamagic-showcase/license.html) © [MetaMagic Global Inc](http://www.metamagicglobal.com/), 2017. [Amexio Angular Extensions](http://www.amexio.tech)
 
 **Enjoy!**
