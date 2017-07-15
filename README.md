@@ -58,6 +58,10 @@ Once your library is imported, you can use its components, directives and pipes 
 
 ## Installing Extension in Visual Studio Code
 
+[Microsoft Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=MetaMagic.amexio#review-details)
+```bash
+ext install amexio
+```
 
 
 ## Known Issues
