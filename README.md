@@ -5,7 +5,7 @@ This extension will help the developers of Visual Studio Code with quick code sn
 ## Usage
 
 
-\!\[feature X\]\(images/feature-x.png\)
+\!\[feature X\]\(images/Amexio-VSC-Ex1.jpg\)
 
 
 ## Requirements
