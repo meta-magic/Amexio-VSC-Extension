@@ -4,7 +4,7 @@
     "prefix": "amexio-text",
     "body": [
       "<amexio-text-input [fieldLabel]=\"'${1:label}'\" name =\"${2:name}\"",
-      "\t [placeholder]=\"'${3:placeHolder}'\"",
+      "\t [placeholder]=\"'${3:EnterData}'\"",
       "\t [iconFeedBack]=\"true\">",
       "</amexio-text-input>"
     ],
@@ -14,7 +14,7 @@
     "prefix": "amexio-text-input-no-label",
     "body": [
       "<amexio-text-input name =\"'${1:name}'\"",
-      "\t [placeholder]=\"'${2:placeholder}'\"",
+      "\t [placeholder]=\"'${2:EnterData}'\"",
       "\t [iconFeedBack]=\"false\"",
       "\t [hasLabel]=\"false\">",
       "\t </amexio-text-input>"
@@ -25,7 +25,7 @@
     "prefix": "amexio-text-input-validations",
     "body": [
       "<amexio-text-input [fieldLabel]=\"'${1:label}'\" name =\"${2:name}\"",
-      "\t [placeholder]=\"'${3:placeHolder}'\"",
+      "\t [placeholder]=\"'${3:EnterData}'\"",
       "\t [allowBlank]=\"false\"",
       "\t [errorMsg] =\"'${4:errorMsg}'\"",
       "\t [minLength]=\"${5:minLength}\"",
@@ -41,7 +41,7 @@
     "prefix": "amexio-text-input-disabled",
     "body": [
       "<amexio-text-input [fieldLabel]=\"'${1:label}'\" name =\"${2:name}\"",
-      "\t [placeholder]=\"'${3:placeHolder}'\"",
+      "\t [placeholder]=\"'${3:EnterData}'\"",
       "\t [disabled]=\"true\">",
       "\t </amexio-text-input>"
     ],
@@ -51,7 +51,7 @@
     "prefix": "amexio-text-input-font-style",
     "body": [
       "<amexio-text-input [fieldLabel]=\"'${1:label}'\" name =\"${2:name}\"",
-      "\t [placeholder]=\"'${3:placeHolder}'\"",
+      "\t [placeholder]=\"'${3:EnterData}'\"",
       "\t [fontStyle]=\"'${4:fontStyle}'\">",
       "\t </amexio-text-input>"
     ],
@@ -61,7 +61,7 @@
     "prefix": "amexio-text-input-font-family",
     "body": [
       "<amexio-text-input [fieldLabel]=\"'${1:label}'\" name =\"${2:name}\"",
-      "\t [placeholder]=\"'${3:placeHolder}'\"",
+      "\t [placeholder]=\"'${3:EnterData}'\"",
       "\t [fontFamily]=\"'${4:fontFamily}'\"",
       "\t [fontSize]=\"'${5:fontSize}'\">",
       "\t </amexio-text-input>"
@@ -73,7 +73,7 @@
     "prefix": "amexio-email-input",
     "body": [
       "<amexio-email-input [fieldLabel]=\"'${1:label}'\" name =\"${2:name}\"",
-      "\t [placeholder]=\"'${3:placeHolder}'\"",
+      "\t [placeholder]=\"'${3:EnterData}'\"",
       "\t [allowBlank]=\"false\"",
       "\t [errorMsg] =\"'${4:errorMsg}'\"",
       "\t [iconFeedBack]=\"true\">",
@@ -85,7 +85,7 @@
     "prefix": "amexio-email-font-style",
     "body": [
       "<amexio-email-input [fieldLabel]=\"'${1:label}'\" name =\"${2:name}\"",
-      "\t [placeholder]=\"'${3:placeHolder}'\"",
+      "\t [placeholder]=\"'${3:EnterData}'\"",
       "\t [allowBlank]=\"false\"",
       "\t [iconFeedBack]=\"true\"",
       "\t [fontStyle]=\"'${4:fontStyle}'\">",
@@ -97,7 +97,7 @@
     "prefix": "amexio-email-font-family",
     "body": [
       "<amexio-email-input [fieldLabel]=\"'${1:label}'\" name =\"${2:name}\"",
-      "\t [placeholder]=\"'${3:placeHolder}'\"",
+      "\t [placeholder]=\"'${3:EnterData}'\"",
       "\t [fontFamily]=\"'${4:fontFamily}'\"",
       "\t [fontSize]=\"'${5:fontSize}'\">",
       "\t </amexio-email-input>"
@@ -108,7 +108,7 @@
     "prefix": "amexio-email-disabled",
     "body": [
       "<amexio-email-input [fieldLabel]=\"'${1:label}'\" name =\"${2:name}\"",
-      "\t [placeholder]=\"'${3:placeHolder}'\"",
+      "\t [placeholder]=\"'${3:EnterData}'\"",
       "\t [disabled]=\"true\">",
       "\t </amexio-email-input>"
     ],
@@ -119,7 +119,7 @@
     "prefix": "amexio-password-input",
     "body": [
       "<amexio-password-input [fieldLabel]=\"'${1:label}'\" name =\"${2:name}\"",
-      "\t [placeholder]=\"'${3:placeHolder}'\"",
+      "\t [placeholder]=\"'${3:EnterData}'\"",
       "\t [allowBlank]=\"false\"",
       "\t [errorMsg] =\"'${4:errorMsg}'\"",
       "\t [minLength]=\"${5:minLength}\"",
@@ -135,7 +135,7 @@
     "prefix": "amexio-password-no-label",
     "body": [
       "<amexio-password-input name=\"'${1:name}'\"",
-      "\t [placeholder]=\"'${2:placeHolder}'\"",
+      "\t [placeholder]=\"'${2:EnterData}'\"",
       "\t [allowBlank]=\"false\"",
       "\t [errorMsg] =\"'${3:errorMsg}'\"",
       "\t [minLength]=\"${4:minLength}\"",
@@ -152,7 +152,7 @@
     "prefix": "amexio-number-input",
     "body": [
       "<amexio-number-input [fieldLabel]=\"'${1:Label}'\" name =\"'${2:name}'\"",
-      "\t[placeholder]=\"'${3:placeholder}'\">",
+      "\t[placeholder]=\"'${3:EnterData}'\">",
       "</amexio-number-input>"
     ],
     "description": "Amexio Number Input"
@@ -161,7 +161,7 @@
     "prefix": "amexio-number-no-label",
     "body": [
       "<amexio-number-input [fieldLabel]=\"'${1:Label}'\"",
-      "\t [placeholder]=\"'${3:placeholder}'\"",
+      "\t [placeholder]=\"'${3:EnterData}'\"",
       "\t [iconFeedBack]=\"false\"",
       "\t [hasLabel]=\"false\">",
       "\t </amexio-number-input>"
@@ -172,7 +172,7 @@
     "prefix": "amexio-number-validations",
     "body": [
       "<amexio-number-input [fieldLabel]=\"'${1:Label}'\"name =\"'${2:name}'\"",
-      "\t [placeholder]=\"'${3:placeholder}'\"",
+      "\t [placeholder]=\"'${3:EnterData}'\"",
       "\t [iconFeedBack]=\"false\"",
       "\t [allowBlank]=\"false\"",
       "\t [errorMsg] =\"'${4:errorMsg}'\"",
@@ -189,7 +189,7 @@
     "prefix": "amexio-number-disabled",
     "body": [
       "<amexio-number-input [fieldLabel]=\"'${1:Label}'\"",
-      "\t [placeholder]=\"'${3:placeholder}'\"",
+      "\t [placeholder]=\"'${3:EnterData}'\"",
       "\t [iconFeedBack]=\"false\"",
       "\t [disabled]=\"true\">\"",
       "\t </amexio-number-input>"
@@ -200,7 +200,7 @@
     "prefix": "amexio-number-font-style",
     "body": [
       "<amexio-number-input [fieldLabel]=\"'${1:Label}'\"",
-      "\t [placeholder]=\"'${2:placeholder}'\"",
+      "\t [placeholder]=\"'${2:EnterData}'\"",
       "\t [fontStyle]=\"'${3:fontStyle}'\">",
       "\t </amexio-number-input>"
     ],
@@ -210,7 +210,7 @@
     "prefix": "amexio-number-font-family",
     "body": [
       "<amexio-number-input [fieldLabel]=\"'${1:Label}'\"",
-      "\t [placeholder]=\"'${2:placeholder}'\"",
+      "\t [placeholder]=\"'${2:EnterData}'\"",
       "\t [fontFamily]=\"'${3:fontFamily}'\"",
       "\t [fontSize]=\"'${4:fontSize}'\">",
       "\t </amexio-number-input>"
@@ -222,7 +222,7 @@
     "prefix": "amexio-textarea-input",
     "body": [
       "<amexio-textarea-input [fieldLabel]=\"'${1:label}'\" name =\"${2:name}\"",
-      "\t [placeholder]=\"'${3:placeHolder}'\"",
+      "\t [placeholder]=\"'${3:EnterData}'\"",
       "\t [allowBlank]=\"true\"",
       "\t [errorMsg] =\"'${4:errorMsg}'\"",
       "\t [iconFeedBack]=\"false\"",
@@ -237,7 +237,7 @@
     "prefix": "amexio-textarea-input-with-columns-rows",
     "body": [
       "<amexio-textarea-input [fieldLabel]=\"'${1:label}'\" name =\"${2:name}\"",
-      "\t [placeholder]=\"'${3:placeHolder}'\"",
+      "\t [placeholder]=\"'${3:EnterData}'\"",
       "\t [allowBlank]=\"true\"",
       "\t [errorMsg] =\"'${4:errorMsg}'\"",
       "\t [iconFeedBack]=\"false\"",
@@ -584,7 +584,7 @@
     "prefix": "amexio-dropdown-basic",
     "body": [
       " <amexio-dropdown [(ngModel)]=\"${1:ngModel}\"",
-      "\t [placeholder]=\"'${2:placeholder}'\"name=\"${3:name}\"",
+      "\t [placeholder]=\"'${2:EnterData}'\"name=\"${3:name}\"",
       "\t [dataReader]=\"'response.data'\"",
       "\t [fieldLabel]=\"'${5:fieldLabel}'\"",
       "\t [httpUrl]=\"'${6:URL}'\"",
@@ -602,7 +602,7 @@
     "prefix": "amexio-dropdown-filter",
     "body": [
       "<amexio-dropdown [(ngModel)]=\"${1:ngModel}\"",
-      "\t [placeholder]=\"'${2:placeholder}'\" name=\"${3:name}\"",
+      "\t [placeholder]=\"'${2:EnterData}'\" name=\"${3:name}\"",
       "\t [dataReader]=\"'response.data'\"",
       "\t [fieldLabel]=\"'${4:fieldLabel}'\"",
       "\t [httpUrl]=\"'${5:httpUrl}'\"",
@@ -619,7 +619,7 @@
     "prefix": "amexio-dropdown-multiselect",
     "body": [
       "<amexio-dropdown  (onMultiSelect)=\"setMultiVal($${1:event})\"",
-      "\t[placeholder]=\"'${2:placeholder}'\"",
+      "\t[placeholder]=\"'${2:EnterData}'\"",
       "\t[dataReader]=\"'response.data'\"",
       "\t[fieldLabel]=\"'${3:fieldLabel}'\"",
       "\t[httpUrl]=\"'${4:httpUrl}'\"",
@@ -640,7 +640,7 @@
     "prefix": "amexio-dropdown-multiselect-limited",
     "body": [
       "<amexio-dropdown  (onMultiSelect)=\"setMultiVal($${1:event}\")",
-      "\t[placeholder]=\"'${2:placeholder}'\"",
+      "\t[placeholder]=\"'${2:EnterData}'\"",
       "\t[dataReader]=\"'response.data'\"",
       "\t[fieldLabel]=\"'${3:fieldLabel}'\"",
       "\t[httpUrl]=\"'${4:httpUrl}'\"",
@@ -663,7 +663,7 @@
     "prefix": "amexio-dropdown-disply-count",
     "body": [
       "<amexio-dropdown  (onMultiSelect)=\"setMultiVal($${1:event})\")",
-      "\t[placeholder]=\"'${2:placeholder}'\"",
+      "\t[placeholder]=\"'${2:EnterData}'\"",
       "\t[dataReader]=\"'response.data'\"",
       "\t[fieldLabel]=\"'${3:fieldLabel}'\"",
       "\t[httpUrl]=\"'${4:httpUrl}'\"",
