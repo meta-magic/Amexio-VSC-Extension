@@ -5,7 +5,7 @@ This extension will help the developers of Visual Studio Code with quick code sn
 ## Usage
 
 ### Demo
-<img src="https://raw.githubusercontent.com/meta-magic/Amexio-VSC-Extension/master/images/Amexio-VSC-Example.gif" />
+<img src="https://raw.githubusercontent.com/meta-magic/Amexio-VSC-Extension/master/images/Amexio-VSC-Example2.gif" />
 
 ### Select the Amexio Ui Component
 <img src="https://raw.githubusercontent.com/meta-magic/Amexio-VSC-Extension/master/images/Amexio-VSC-Ex-1.jpg" />
@@ -60,6 +60,8 @@ Once your library is imported, you can use its components, directives and pipes 
 
 
 ## Installing Extension in Visual Studio Code
+
+<img src="https://raw.githubusercontent.com/meta-magic/Amexio-VSC-Extension/master/images/Amexio-VSC-Installation.gif" />
 
 [Microsoft Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=MetaMagic.amexio#review-details)
 ```bash
