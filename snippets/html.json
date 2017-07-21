@@ -1,5 +1,5 @@
 {
-  //Text Input 
+  //Text Input
   "amexio-text": {
     "prefix": "amexio-text",
     "body": [
@@ -252,18 +252,20 @@
     "prefix": "amexio-tab",
     "body": [
       "<amexio-tab-pane  [closable]=\"false\">",
-      "\t<amexio-tab title=\"'${1:title}'\" [active]=\"true\">",
-      "\t${2:Html}",
-      "\t\"</amexio-tab>\"",
-      "\t<amexio-tab title=\"'${3:title2}'\">",
-      "\t${4:Html2}",
-      "\t\"</amexio-tab>\"",
-      "\t<amexio-tab title=\"'${5:title3}'\">",
-      "\t${6:Html3}",
-      "\t\"</amexio-tab>\"",
-      "\t<amexio-tab title=\"'${7:title4}'\">",
-      "\t${8:Html4}",
-      "\t\"</amexio-tab>\""
+      "\t <amexio-tab title=\"${1:title}\" [active]=\"true\"",
+      "\t [icon]=\"'${2:icon}'\">",
+      "\t<h4>${3:heading}</h4>",
+      "\t${4:text}",
+      "</amexio-tab>",
+      "<amexio-tab title=\"${5:title1}\"  [icon]=\"'${6:icon1}'\">",
+      "\t<h4>${7:heading1}</h4>",
+      "\t${8:text1}",
+      "</amexio-tab>",
+      "<amexio-tab title=\"${9:title2}\" [icon]=\"'${10:icon3}'\">",
+      "\t<h4>${11:heading4}</h4>",
+      "\t${12:text5}",
+      "</amexio-tab>",
+      "</amexio-tab-pane>"
     ],
     "description": "Amexio Simple Tab Pane "
   },
@@ -271,18 +273,20 @@
     "prefix": "amexio-tab-scrollable",
     "body": [
       "<amexio-tab-pane  [closable]=\"false\">",
-      "\t<amexio-tab title=\"'${2:title}'\" [active]=\"true\">",
-      "\t${3:Html}",
-      "\t\"</amexio-tab>\"",
-      "\t<amexio-tab title=\"'${4:title2}'\">",
-      "\t${5:Html2}",
-      "\t\"</amexio-tab>\"",
-      "\t<amexio-tab title=\"'${6:title3}'\">",
-      "\t${10:Html3}",
-      "\t\"</amexio-tab>\"",
-      "\t<amexio-tab title=\"'${11:title4}'\">",
-      "\t${13:Html4}",
-      "\t\"</amexio-tab>\""
+      "\t <amexio-tab title=\"${1:title}\" [active]=\"true\"",
+      "\t [icon]=\"'${2:icon}'\">",
+      "\t<h4>${3:heading}</h4>",
+      "\t${4:text}",
+      "</amexio-tab>",
+      "<amexio-tab title=\"${5:title1}\"  [icon]=\"'${6:icon1}'\">",
+      "\t<h4>${7:heading1}</h4>",
+      "\t${8:text1}",
+      "</amexio-tab>",
+      "<amexio-tab title=\"${9:title2}\" [icon]=\"'${10:icon3}'\">",
+      "\t<h4>${11:heading4}</h4>",
+      "\t${12:text5}",
+      "</amexio-tab>",
+      "</amexio-tab-pane>"
     ],
     "description": "Amexio Tab Scrollable"
   },
@@ -292,19 +296,84 @@
       "<amexio-tab-pane [icons]=\"true\">",
       "\t <amexio-tab title=\"${1:title}\" [active]=\"true\"",
       "\t [icon]=\"'${2:icon}'\">",
-      "\t ${3:HTML}</amexio-tab>",
-      "\t <amexio-tab title=\"${4:title2}\"",
-      "\t [icon]=\"'${5:icon2}'\">",
-      "\t ${6:HTML2}</amexio-tab>",
-      "\t </amexio-tab>",
-      "\t <amexio-tab title=\"${7:title3}\"",
-      "\t [icon]=\"'${8:icon3}'\">",
-      "\t ${9:HTML3}</amexio-tab>",
-      "\t </amexio-tab>",
-      "\t </amexio-tab-pane>"
+      "\t<h4>${3:heading}</h4>",
+      "\t${4:text}",
+      "</amexio-tab>",
+      "<amexio-tab title=\"${5:title1}\"  [icon]=\"'${6:icon1}'\">",
+      "\t<h4>${7:heading1}</h4>",
+      "\t${8:text1}",
+      "</amexio-tab>",
+      "<amexio-tab title=\"${9:title2}\" [icon]=\"'${10:icon3}'\">",
+      "\t<h4>${11:heading4}</h4>",
+      "\t${12:text5}",
+      "</amexio-tab>",
+      "</amexio-tab-pane>"
     ],
     "description": "Amexio Tab with icons"
   },
+"amexio-tab-vertical-left": {
+    "prefix": "amexio-tab-vertical-left",
+    "body": [
+      "<amexio-tab-pane [vertical]=\"true\">",
+      "<amexio-tab title=\"${1:title}\" [active]=\"true\"  [icon]=\"'${2:icon}'\">",
+      "\t<h4>${3:heading}</h4>",
+      "\t${4:text}",
+      "</amexio-tab>",
+      "<amexio-tab title=\"${5:title1}\"  [icon]=\"'${6:icon1}'\">",
+      "\t<h4>${7:heading1}</h4>",
+      "\t${8:text1}",
+      "</amexio-tab>",
+      "<amexio-tab title=\"${9:title2}\" [icon]=\"'${10:icon3}'\">",
+      "\t<h4>${11:heading4}</h4>",
+      "\t${12:text5}",
+      "</amexio-tab>",
+      "</amexio-tab-pane>"
+    ],
+    "description": "Amexio Tab Vertical Left Aligned "
+  },
+
+"amexio-tab-vertical-right": {
+    "prefix": "amexio-tab-vertical-right",
+    "body": [
+      "<amexio-tab-pane [vertical]=\"true\" [tapPosition]=\"'right'\">",
+      "<amexio-tab title=\"${1:title}\" [active]=\"true\"  [icon]=\"'${2:icon}'\">",
+      "\t<h4>${3:heading}</h4>",
+      "\t${4:text}",
+      "</amexio-tab>",
+      "<amexio-tab title=\"${5:title1}\"  [icon]=\"'${6:icon1}'\">",
+      "\t<h4>${7:heading1}</h4>",
+      "\t${8:text1}",
+      "</amexio-tab>",
+      "<amexio-tab title=\"${9:title2}\" [icon]=\"'${10:icon3}'\">",
+      "\t<h4>${11:heading4}</h4>",
+      "\t${12:text5}",
+      "</amexio-tab>",
+      "</amexio-tab-pane>"
+    ],
+    "description": "Amexio Tab Vertical Right Aligned "
+  },
+
+"amexio-tab-vertical-90-rotation": {
+    "prefix": "amexio-tab-vertical-90-rotation",
+    "body": [
+      "<amexio-tab-pane [vertical]=\"true\" [tapPosition]=\"'right'\">",
+      "<amexio-tab title=\"${1:title}\" [active]=\"true\"  [icon]=\"'${2:icon}'\">",
+      "\t<h4>${3:heading}</h4>",
+      "\t${4:text}",
+      "</amexio-tab>",
+      "<amexio-tab title=\"${5:title1}\"  [icon]=\"'${6:icon1}'\">",
+      "\t<h4>${7:heading1}</h4>",
+      "\t${8:text1}",
+      "</amexio-tab>",
+      "<amexio-tab title=\"${9:title2}\" [icon]=\"'${10:icon3}'\">",
+      "\t<h4>${11:heading4}</h4>",
+      "\t${12:text5}",
+      "</amexio-tab>",
+      "</amexio-tab-pane>"
+    ],
+    "description": "Amexio Tab 90 Rotation "
+  },
+
   //CheckBox Group Snippet
   "amexio-check-box": {
     "prefix": "amexio-horizontal-check-box",
@@ -478,7 +547,7 @@
     ],
     "description": "Amexio Block Button"
   },
-  //Button Group Snippets 
+  //Button Group Snippets
   "amexio-button-group": {
     "prefix": "amexio-button-group",
     "body": [
@@ -800,7 +869,8 @@
     "body": [
       "<amexio-tree-data-table [dataReader]=\"'${1:dataReader}'\"",
       "\t[pageSize]=\"'${2:pageSize}'\"",
-      "\t[title]=\"'${3:title}'\"\n\t[httpMethod]=\"'${4:httpMethod}'\"",
+      "\t[title]=\"'${3:title}'\"",
+      "\t[httpMethod]=\"'${4:httpMethod}'\"",
       "\t[httpUrl]=\"'${5:httpUrl}'\"",
       "\t(selectedRecord)=\"record = $$event\">",
       "</amexio-tree-data-table>"
@@ -872,7 +942,7 @@
     ],
     "description": "Amexio Data Grid with Scrollbar"
   },
-  //tree 
+  //tree
   "amexio-tree": {
     "prefix": "amexio-tree",
     "body": [
