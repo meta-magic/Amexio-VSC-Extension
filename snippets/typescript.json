@@ -1,5 +1,4 @@
 {
-  //All Text inputs
   "Amexio Inputs": {
     "prefix": "Amexio-ts-Input",
     "description": "Amexio Input",
@@ -18,7 +17,6 @@
       "}"
     ]
   },
-  //Email input
   "Amexio Email Input": {
     "prefix": "Amexio-ts-Email-Input",
     "description": "Amexio Email Input",
@@ -40,7 +38,6 @@
       "}"
     ]
   },
-  //Password
   "Amexio Password Input": {
     "prefix": "Amexio-ts-Password-Input",
     "description": "Amexio Password Input",
@@ -60,7 +57,6 @@
       "}"
     ]
   },
-  //Number input
   "Amexio Number Input": {
     "prefix": "Amexio-ts-Number-Input",
     "description": "Amexio Number Input",
@@ -80,7 +76,6 @@
       "}"
     ]
   },
-  //TextArea
   "Amexio TextArea Input": {
     "prefix": "Amexio-ts-TextArea-Input",
     "description": "Amexio TextArea Input",
@@ -100,7 +95,6 @@
       "}"
     ]
   },
-  //Checkbox
   "Amexio Checkbox": {
     "prefix": "Amexio-ts-Checkbox",
     "description": "Amexio Checkbox",
@@ -134,7 +128,6 @@
       "}"
     ]
   },
-  //RadioGroup
   "Amexio RadioGroup": {
     "prefix": "Amexio-ts-RadioGroup",
     "description": "Amexio RadioGroup",
@@ -167,7 +160,6 @@
       "}"
     ]
   },
-  //Type Ahead
   "Amexio Text Type Ahead": {
     "prefix": "Amexio-ts-Text-Type-Ahead",
     "description": "Amexio Text Type Ahead",
@@ -189,7 +181,6 @@
       "}"
     ]
   },
-  //Buttons
   "Amexio Buttons": {
     "prefix": "Amexio-ts-Buttons",
     "description": "Amexio Buttons",
@@ -234,7 +225,6 @@
       "}"
     ]
   },
-  //Group Button
   "Amexio Group Buttons": {
     "prefix": "Amexio-ts-Group-Buttons",
     "description": "Amexio Group Buttons",
@@ -253,7 +243,6 @@
       "}"
     ]
   },
-  //Dropdwon Button
   "Amexio Dropdown Buttons": {
     "prefix": "Amexio-ts-Dropdown-Buttons",
     "description": "Amexio Dropdown Buttons",
@@ -272,7 +261,6 @@
       "}"
     ]
   },
-  //Dropdown 
   "Amexio Dropdown": {
     "prefix": "Amexio-ts-Dropdown",
     "description": "Amexio Dropdown",
@@ -296,7 +284,6 @@
       "}"
     ]
   },
-  //Dropdwon Multiselect
   "Amexio Dropdown Multiselect": {
     "prefix": "Amexio-ts-Dropdown-Multiselect",
     "description": "Amexio Dropdown Multiselect",
@@ -328,7 +315,6 @@
       "}"
     ]
   },
-  //Progress Bar
   "Amexio Progress Bar": {
     "prefix": "Amexio-ts-Progress-Bar",
     "description": "Amexio Progress Bar",
@@ -360,7 +346,6 @@
       "}"
     ]
   },
-  //item selector
   "Amexio Item Selector": {
     "prefix": "Amexio-ts-Item-Selector",
     "description": "Amexio Item Selector",
@@ -384,7 +369,6 @@
       "}"
     ]
   },
-  //rating
   "Amexio Rating": {
     "prefix": "Amexio-ts-Rating",
     "description": "Amexio Rating",
@@ -407,7 +391,6 @@
       "}"
     ]
   },
-  //date-time picker
   "Amexio DateTime": {
     "prefix": "Amexio-ts-Date-Time",
     "description": "Amexio Date-Time Picker",
@@ -442,7 +425,6 @@
       "}"
     ]
   },
-  //Tab Pane
   "Amexio Tab Pane": {
     "prefix": "Amexio-ts-tab-pane",
     "description": "Amexio Tab Pane",
@@ -455,16 +437,32 @@
       "})",
       "",
       "export class ${3:Name}Component implements OnInit {",
-      "ngAfterViewInit(){",
-      "$('.nav-tabs').scrollingTabs();",
-      "}",
       "constructor() {}",
       "ngOnInit() {}",
       "}",
       "}"
     ]
   },
-  //Data Grid
+  "Amexio Tab Scrollable": {
+    "prefix": "Amexio-ts-scrollable",
+    "description": "Amexio Tab Scrollable",
+    "body": [
+      "import {AfterViewInit, Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit , AfterViewInit{",
+      "ngAfterViewInit(){",
+      "}",
+      "constructor() {}",
+      "ngOnInit() {}",
+      "\t}",
+      "}"
+    ]
+  },
   "Amexio Data Grid": {
     "prefix": "Amexio-ts-Data-Grid",
     "description": "Amexio Data Grid",
