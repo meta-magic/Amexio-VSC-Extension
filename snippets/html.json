@@ -1158,17 +1158,34 @@
     ],
     "description": "Amexio Carousel View for Content"
   },
+  //Directives
   "class": {
-    "prefix": "class",
+    "prefix": "class-li",
     "body": [
-      "[class]=\"${1:expression}\""
+      "<li [class]=\"${1:expression}\">\n<li>"
     ],
     "description": "Angular [class] binding"
+  },
+  "class-div": {
+    "prefix": "class-div",
+    "body": [
+      "<div [class]=\"${1:expression}\">",
+      "</div>"
+    ],
+    "description": "Angular [class] binding with div tag"
   },
   "style": {
     "prefix": "style",
     "body": [
       "[style.${1:property}]=\"${2:expression}\""
+    ],
+    "description": "Angular [style] binding"
+  },
+  "style-div": {
+    "prefix": "style-div",
+    "body": [
+      "<div [style.${1:property}]=\"${2:expression}\">",
+      "</div>"
     ],
     "description": "Angular [style] binding"
   },
@@ -1179,10 +1196,93 @@
     ],
     "description": "Angular ngClass Directive"
   },
+  "ngClass-div": {
+    "prefix": "ngClass-div",
+    "body": [
+      "<div [ngClass]=\"{${1:cssClass}: ${2:expression}}\">",
+      "</div>"
+    ],
+    "description": "Angular ngClass Directive with div tag"
+  },
+  "ngClass-li": {
+    "prefix": "ngClass-li",
+    "body": [
+      "<li [ngClass]=\"{${1:cssClass}: ${2:expression}}\">",
+      "</li>"
+    ],
+    "description": "Angular ngClass Directive with li"
+  },  
+  "ngFor": {
+    "prefix": "ngFor",
+    "body": [
+      "*ngFor=\"let ${1:item} of ${2:list}\""
+    ],
+    "description": "Angular *ngFor Loop Directive"
+  },
+  "ngFor-div": {
+    "prefix": "ngFor-div",
+    "body": [
+      "<div *ngFor=\"let ${1:item} of ${2:list}\">",
+      "</div>"
+    ],
+    "description": "Angular *ngFor Loop Directive with div tag"
+  },
+  "ngFor-li": {
+    "prefix": "ngFor-li",
+    "body": [
+      "<li *ngFor=\"let ${1:item} of ${2:list}\">{{${3:}}}</li>"
+    ],
+    "description": "Angular *ngFor Loop Directive for List"
+  },  
+  "ngForAsync": {
+    "prefix": "ngForAsync",
+    "body": [
+      "*ngFor=\"let ${1:item} of ${2:stream} | async as ${3:list}\""
+    ],
+    "description": "Angular *ngForAsync Loop Directive"
+  },
+  "ngForAsync-div": {
+    "prefix": "ngForAsync-div",
+    "body": [
+      "<div *ngFor=\"let ${1:item} of ${2:stream} | async as ${3:list}\">",
+      "</div>"
+    ],
+    "description": "Angular *ngForAsync Loop Directive with div tag"
+  },    
+  "ngIF": {
+    "prefix": "ngIF",
+    "body": [
+       "*ngIf=\"${1:expression}\""
+    ],
+    "description": "Angular *ngIf Directive"
+  },      
+  "ngIF-div": {
+    "prefix": "ngIF-div",
+    "body": [
+       "<div *ngIf=\"${1:expression}\">",
+       "</div>"
+    ],
+    "description": "Angular *ngIf Directive with div tag"
+  },
+  "ngIfElse": {
+    "prefix": "ngIfElse",
+    "body": [
+      "*ngIf=\"${1:expression};\n else ${2:templateName}\""
+    ],
+    "description": "Angular *ngIfElse Directive"
+  },
+  "ngIfElse-div": {
+    "prefix": "ngIfElse-div",
+    "body": [
+      "<div *ngIf=\"${1:expression};\n else ${2:templateName}\">",
+      "</div>"
+    ],
+    "description": "Angular *ngIfElse Directive"
+  },
   "ngModel": {
     "prefix": "ngModel",
     "body": [
-      "[(ngModel)]=\"${1}\""
+      "[(ngModel)]=\"${1:ngModel}\""
     ],
     "description": "Angular ngModel Directive for 2way Data Binding"
   },
@@ -1192,19 +1292,45 @@
       "(click)=\"${1:yourOnClickAction}()\""
     ],
     "description": "Angular on Click Directive"
-  }
-  "ngFor": {
-    "prefix": "ngFor",
+  },
+  "ngRouterLink": {
+    "prefix": "ngRouterLink",
     "body": [
-      "*ngFor=\"let ${1:item} of ${2:list}\""
+     "[routerLink]=\"['${1:routePath}']\"$0"
     ],
-    "description": "Angular *ngFor Loop Directive"
-  }
-  "ngFor-li": {
-    "prefix": "ngFor-li",
+    "description": "Angular *ngRouterLink Directive"
+  },
+  "ngRouterLinkWithParameter": {
+    "prefix": "ngRouterLinkWithParameter",
     "body": [
-      "<li *ngFor=\"let ${1:item} of ${2:list}\">{{${3:}}}</li>"
+     "[routerLink]=\"['${1:routePath}', ${2:routeParameterValue}$0]\""
     ],
-    "description": "Angular *ngFor Loop Directive for List"
+    "description": "Angular *ngRouterLinkWithParameter Directive "
+  },
+  "ngStyle": {
+    "prefix": "ngStyle",
+    "body": [
+      "[ngStyle]=\"{${1:style}: ${2:expression}}\""
+    ],
+    "description": "Angular ngStyle"
+  },
+  "ngStyle-div": {
+    "prefix": "ngStyle-div",
+    "body": [
+      "<div [ngStyle]=\"{${1:style}: ${2:expression}}\">",
+      "</div>"
+    ],
+    "description": "Angular ngStyle with div tag"
+  },
+  "ngSwitch-div": {
+    "prefix": "ngSwitch-div",
+    "body": [
+      "<div [ngSwitch]=\"${1:conditionExpression}\">",
+      "\t<div *ngSwitchCase=\"${2:expression}\">${3:output}</div>",
+      "\t<div *ngSwitchCase=\"${4:expression2}\">${5:output2}</div>",
+      "\t<div *ngSwitchDefault>${6:output2}</div>",
+      "</div>"
+    ],
+    "description": "Angular ngSwitch with div tags"
   }
 }
