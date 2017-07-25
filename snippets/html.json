@@ -1159,31 +1159,31 @@
     "description": "Amexio Carousel View for Content"
   },
   "class": {
-    "prefix": "a-class",
+    "prefix": "class",
     "body": [
       "[class]=\"${1:expression}\""
     ],
     "description": "Angular [class] binding"
   },
   "style": {
-    "prefix": "a-style",
+    "prefix": "style",
     "body": [
       "[style.${1:property}]=\"${2:expression}\""
     ],
     "description": "Angular [style] binding"
   },
   "ngClass": {
-    "prefix": "a-ngClass",
+    "prefix": "ngClass",
     "body": [
       "[ngClass]=\"{${1:cssClass}: ${2:expression}}\""
     ],
-    "description": "Angular ngClass"
+    "description": "Angular ngClass Directive"
   },
   "ngFor": {
-    "prefix": "a-ngFor",
+    "prefix": "ngFor",
     "body": [
       "*ngFor=\"let ${1:item} of ${2:list}\""
     ],
-    "description": "Angular *ngFor"
+    "description": "Angular *ngFor Loop Directive"
   }
 }
