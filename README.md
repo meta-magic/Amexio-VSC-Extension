@@ -63,7 +63,7 @@ Once your library is imported, you can use its components, directives and pipes 
 
 <img src="https://raw.githubusercontent.com/meta-magic/Amexio-VSC-Extension/master/images/Amexio-VSC-Installation.gif" />
 
-[Microsoft Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=MetaMagic.amexio#review-details)
+[Microsoft Visual Studio Market Place](https://marketplace.visualstudio.com/items?itemName=MetaMagic.amexio)
 ```bash
 ext install amexio
 ```
