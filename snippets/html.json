@@ -1179,11 +1179,32 @@
     ],
     "description": "Angular ngClass Directive"
   },
+  "ngModel": {
+    "prefix": "ngModel",
+    "body": [
+      "[(ngModel)]=\"${1}\""
+    ],
+    "description": "Angular ngModel Directive for 2way Data Binding"
+  },
+  "click": {
+    "prefix": "click",
+    "body": [
+      "(click)=\"${1:yourOnClickAction}()\""
+    ],
+    "description": "Angular on Click Directive"
+  }
   "ngFor": {
     "prefix": "ngFor",
     "body": [
       "*ngFor=\"let ${1:item} of ${2:list}\""
     ],
     "description": "Angular *ngFor Loop Directive"
+  }
+  "ngFor-li": {
+    "prefix": "ngFor-li",
+    "body": [
+      "<li *ngFor=\"let ${1:item} of ${2:list}\">{{${3:}}}</li>"
+    ],
+    "description": "Angular *ngFor Loop Directive for List"
   }
 }
