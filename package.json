@@ -1,8 +1,8 @@
 {
     "name": "amexio",
     "displayName": "Amexio Angular Extensions for Visual Studio Code",
-    "description": "Angular 4+ (HTML, TypeScripts, Amexio, ngRx, Flux/Redux) Code Snippets.",
-    "version": "1.0.8",
+    "description": "Angular 4+ (HTML, TypeScripts, Amexio) Code Snippets.",
+    "version": "1.0.9",
     "publisher": "MetaMagic",
     "icon": "images/Amexio-VSC-Icon-3.png",
      "galleryBanner": {
