@@ -1277,7 +1277,7 @@
       "<div *ngIf=\"${1:expression};\n else ${2:templateName}\">",
       "</div>"
     ],
-    "description": "Angular *ngIfElse Directive"
+    "description": "Angular *ngIfElse Directive with Div Tag"
   },
   "ngModel": {
     "prefix": "ngModel",
