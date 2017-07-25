@@ -1,4 +1,4 @@
-# Amexio Microsoft Visual Studio Code Extensions
+# Amexio Angular Extensions for Visual Studio Code 
 
 This extension will help the developers of Visual Studio Code with quick code snippet for the Amexio Markup as well as Amexio TypeScript for the Angular Extensions. 
 
