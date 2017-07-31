@@ -1174,6 +1174,15 @@
     ],
     "description": "Angular [class] binding with div tag"
   },
+
+  "class-li": {
+    "prefix": "class-li",
+    "body": [
+      "<li [class]=\"${1:expression}\">",
+      "</li>"
+    ],
+    "description": "Angular [class] binding with li tag"
+  },
   "style": {
     "prefix": "style",
     "body": [
@@ -1187,7 +1196,15 @@
       "<div [style.${1:property}]=\"${2:expression}\">",
       "</div>"
     ],
-    "description": "Angular [style] binding"
+    "description": "Angular [style] binding with div tag"
+  },
+  "style-li": {
+    "prefix": "style-li",
+    "body": [
+      "<li [style.${1:property}]=\"${2:expression}\">",
+      "</li>"
+    ],
+    "description": "Angular [style] binding with li tag"
   },
   "ngClass": {
     "prefix": "ngClass",
@@ -1211,7 +1228,7 @@
       "</li>"
     ],
     "description": "Angular ngClass Directive with li"
-  },  
+  },
   "ngFor": {
     "prefix": "ngFor",
     "body": [
@@ -1233,7 +1250,7 @@
       "<li *ngFor=\"let ${1:item} of ${2:list}\">{{${3:}}}</li>"
     ],
     "description": "Angular *ngFor Loop Directive for List"
-  },  
+  },
   "ngForAsync": {
     "prefix": "ngForAsync",
     "body": [
@@ -1248,14 +1265,22 @@
       "</div>"
     ],
     "description": "Angular *ngForAsync Loop Directive with div tag"
-  },    
+  },
+  "ngForAsync-li": {
+    "prefix": "ngForAsync-li",
+    "body": [
+      "<li *ngFor=\"let ${1:item} of ${2:stream} | async as ${3:list}\">",
+      "</li>"
+    ],
+    "description": "Angular *ngForAsync Loop Directive with li tag"
+  },
   "ngIF": {
     "prefix": "ngIF",
     "body": [
        "*ngIf=\"${1:expression}\""
     ],
     "description": "Angular *ngIf Directive"
-  },      
+  },
   "ngIF-div": {
     "prefix": "ngIF-div",
     "body": [
@@ -1263,6 +1288,14 @@
        "</div>"
     ],
     "description": "Angular *ngIf Directive with div tag"
+  },
+   "ngIF-li": {
+    "prefix": "ngIF-li",
+    "body": [
+       "<li *ngIf=\"${1:expression}\">",
+       "</li>"
+    ],
+    "description": "Angular *ngIf Directive with li tag"
   },
   "ngIfElse": {
     "prefix": "ngIfElse",
@@ -1278,6 +1311,14 @@
       "</div>"
     ],
     "description": "Angular *ngIfElse Directive with Div Tag"
+  },
+  "ngIfElse-li": {
+    "prefix": "ngIfElse-li",
+    "body": [
+      "<li *ngIf=\"${1:expression};\n else ${2:templateName}\">",
+      "</li>"
+    ],
+    "description": "Angular *ngIfElse Directive with li Tag"
   },
   "ngModel": {
     "prefix": "ngModel",
@@ -1300,10 +1341,42 @@
     ],
     "description": "Angular *ngRouterLink Directive"
   },
+  "ngRouterLink-div": {
+    "prefix": "ngRouterLink-div",
+    "body": [
+     "<div [routerLink]=\"['${1:routePath}']\"$0>",
+     "</div>"
+    ],
+    "description": "Angular *ngRouterLink Directive with div tag"
+  },
+  "ngRouterLink-li": {
+    "prefix": "ngRouterLink-li",
+    "body": [
+     "<li [routerLink]=\"['${1:routePath}']\"$0>",
+     "</li>"
+    ],
+    "description": "Angular *ngRouterLink Directive with li tag"
+  },
   "ngRouterLinkWithParameter": {
     "prefix": "ngRouterLinkWithParameter",
     "body": [
      "[routerLink]=\"['${1:routePath}', ${2:routeParameterValue}$0]\""
+    ],
+    "description": "Angular *ngRouterLinkWithParameter Directive "
+  },
+  "ngRouterLinkWithParameter-div": {
+    "prefix": "ngRouterLinkWithParameter-div",
+    "body": [
+     "<div [routerLink]=\"['${1:routePath}', ${2:routeParameterValue}$0]\">",
+     "</div>"
+    ],
+    "description": "Angular *ngRouterLinkWithParameter Directive "
+  },
+  "ngRouterLinkWithParameter-li": {
+    "prefix": "ngRouterLinkWithParameter-li",
+    "body": [
+     "<li [routerLink]=\"['${1:routePath}', ${2:routeParameterValue}$0]\">",
+     "</li>"
     ],
     "description": "Angular *ngRouterLinkWithParameter Directive "
   },
@@ -1313,6 +1386,14 @@
       "[ngStyle]=\"{${1:style}: ${2:expression}}\""
     ],
     "description": "Angular ngStyle"
+  },
+  "ngStyle-li": {
+    "prefix": "ngStyle-li",
+    "body": [
+      "<li [ngStyle]=\"{${1:style}: ${2:expression}}\">",
+      "</li>"
+    ],
+    "description": "Angular ngStyle with li"
   },
   "ngStyle-div": {
     "prefix": "ngStyle-div",
@@ -1332,5 +1413,26 @@
       "</div>"
     ],
     "description": "Angular ngSwitch with div tags"
+  },
+  "ngSwitch": {
+    "prefix": "ngSwitch",
+    "body": [
+      "[ngSwitch]=\"${1:conditionExpression}\"",
+      "\t<div *ngSwitchCase=\"${2:expression}\">${3:output}</div>",
+      "\t<div *ngSwitchCase=\"${4:expression2}\">${5:output2}</div>",
+      "\t<div *ngSwitchDefault>${6:output2}</div>"
+    ],
+    "description": "Angular ngSwitch"
+  },
+  "ngSwitch-li": {
+    "prefix": "ngSwitch-li",
+    "body": [
+      "<li [ngSwitch]=\"${1:conditionExpression}\">",
+      "\t<div *ngSwitchCase=\"${2:expression}\">${3:output}</div>",
+      "\t<div *ngSwitchCase=\"${4:expression2}\">${5:output2}</div>",
+      "\t<div *ngSwitchDefault>${6:output2}</div>",
+      "</li>"
+    ],
+    "description": "Angular ngSwitch with li"
   }
 }
