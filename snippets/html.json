@@ -648,6 +648,62 @@
     ],
     "description": "Amexio with Disabled link Button Dropdown"
   },
+  // Button Split Dropdown
+  "amexio-button-split-dropdown-basic": {
+    "prefix": "amexio-button-split-dropdown-basic",
+    "body": [
+      " <amexio-card-pane [showCard]=\"true\">",
+      " \t<amexio-pane-header> ${1:header}</amexio-pane-header>",
+      " \t<amexio-pane-body>",
+      " \t\t<div class=\"row\">",
+      " \t\t\t<div class=\"col-lg-12\">",
+      " \t\t\t<amexio-btn-split-dropdown [label]=\"'${2:label}'\" [type]=\"'success'\"[size]=\"'default'\">",
+      " \t\t\t\t<amexio-btn-dropdown-item [label]=\"'${3:label2}'\" [icon]=\"'arrows-alt'\"></amexio-btn-dropdown-item>",
+      " \t\t\t\t<amexio-btn-dropdown-item [label]=\"'${4:label3}'\"  [icon]=\"'trash'\"></amexio-btn-dropdown-item>",
+      " \t\t\t</amexio-btn-split-dropdown>",
+      " \t\t\t</div>\n\t\t</div>",
+      " \t</amexio-pane-body>",
+      " </amexio-card-pane>"
+    ],
+    "description": "Amexio Split Button Dropdown"
+  },
+    "amexio-button-split-dropdown-size": {
+    "prefix": "amexio-button-split-dropdown-size",
+    "body": [
+      " <amexio-card-pane [showCard]=\"true\">",
+      " \t<amexio-pane-header> ${1:header}</amexio-pane-header>",
+      " \t<amexio-pane-body>",
+      " \t\t<div class=\"row\">",
+      " \t\t<div class=\"col-lg-12\">",
+      " \t\t\t<amexio-btn-split-dropdown [label]=\"'${2:label}'\" [type]=\"'success'\"[size]=\"'${3:size}'\">",
+      " \t\t\t\t<amexio-btn-dropdown-item [label]=\"'${4:label2}'\" [icon]=\"'arrows-alt'\"></amexio-btn-dropdown-item>",
+      " \t\t\t\t<amexio-btn-dropdown-item [label]=\"'${5:label3}'\"  [icon]=\"'trash'\"></amexio-btn-dropdown-item>",
+      " \t\t\t</amexio-btn-split-dropdown>",
+      " \t\t</div>\n\t</div>",
+      " \t</amexio-pane-body>",
+      " </amexio-card-pane>"
+    ],
+    "description": "Amexio Split Button Dropdown with Size"
+  },
+    "amexio-button-split-dropdown-disabled-link": {
+    "prefix": "amexio-button-split-dropdown-disabled-link",
+    "body": [
+      " <amexio-card-pane [showCard]=\"true\">",
+      " \t<amexio-pane-header> ${1:header}</amexio-pane-header>",
+      " \t<amexio-pane-body>",
+      " \t\t<div class=\"row\">",
+      " \t\t\t<div class=\"col-lg-12\">",
+      " \t\t\t<amexio-btn-split-dropdown [label]=\"'${2:label}'\" [type]=\"'success'\"[size]=\"'${3:size}'\">",
+      " \t\t\t\t<amexio-btn-dropdown-item [label]=\"'${4:label2}'\" [icon]=\"'arrows-alt'\" [disabled]=\"true\"></amexio-btn-dropdown-item>",
+      " \t\t\t\t<amexio-btn-dropdown-item [label]=\"'${5:label3}'\"  [icon]=\"'trash'\"></amexio-btn-dropdown-item>",
+      " \t\t\t</amexio-btn-split-dropdown>",
+      " \t\t\t</div>",
+      " \t\t</div>",
+      " \t</amexio-pane-body>",
+      " </amexio-card-pane>"
+    ],
+    "description": "Amexio Split Button Dropdown with Disabled Link"
+  },
   //Drop-down Basic
   "amexio-dropdown-basic": {
     "prefix": "amexio-dropdown-basic",
@@ -1158,11 +1214,193 @@
     ],
     "description": "Amexio Carousel View for Content"
   },
+  //window pane
+  "amexio-window-pane": {
+    "prefix": "amexio-window-pane",
+    "body": [
+      " <amexio-btn [label]=\"'${1:btnLabel}'\" [type]=\"'default'\"",
+      "   [tooltipMessage]=\"'${2:tooltipMessage}'\" (click)=\"toggle()\"> </amexio-btn>",
+      " <amexio-window-pane [(showWindow)]=\"${3:flag}\" [title]=\"'${4:title}'\" [closable]=\"true\">",
+      " \t<amexio-pane-body>",
+      " \t\t<form>",
+      " \t\t\t<div class=\"form-group\">",
+      " \t\t\t\t<amexio-text-input [fieldLabel]=\"'${5:fieldLabel}'\" name =\"name\"",
+      " \t\t\t\t [placeholder]=\"'${6:placeholder}'\" [iconFeedBack]=\"true\">",
+      " \t\t\t\t </amexio-text-input>",
+      " \t\t\t</div>",
+      " \t\t\t<div class=\"form-group\">",
+      " \t\t\t\t<amexio-text-input [fieldLabel]=\"'${7:fieldLabel2}'\" name =\"name\"",
+      " \t\t\t\t [placeholder]=\"'${8:placeholder2}'\" [iconFeedBack]=\"true\">",
+      " \t\t\t\t </amexio-text-input>",
+      " \t\t\t</div>",      
+      " \t\t\t<div class=\"form-group\">",
+      " \t\t\t\t<amexio-text-input [fieldLabel]=\"'${9:fieldLabel3}'\" name =\"name\"",
+      " [placeholder]=\"'${10:placeholder3}'\" [iconFeedBack]=\"true\">",
+      " \t\t\t\t </amexio-text-input>",
+      " \t\t\t</div>",      
+      " \t\t</form>",
+      " \t</amexio-pane-body>",
+      " \t<amexio-pane-action>",
+      " \t\t<div style=\"float: right;\">",
+      " \t\t\t<amexio-btn [label]=\"'Save'\" [type]=\"'primary'\"></amexio-btn>",
+      " \t\t</div>",
+      " \t</amexio-pane-action>",
+      " </amexio-window-pane>"
+    ],
+    "description": "Amexio Window Pane"
+  },
+  "amexio-window-pane-large-small": {
+    "prefix": "amexio-window-pane-large-small",
+    "body": [
+      "<amexio-btn-group>",
+      " \t<amexio-btn-group-action [label]=\"'${1:label1}'\"  [type]=\"'default'\"(onClick)=\"small()\" >",
+      " \t</amexio-btn-group-action>",
+      " \t<amexio-btn-group-action [label]=\"'${2:label2}'\"  [type]=\"'primary'\"(onClick)=\"large()\">",
+      " \t</amexio-btn-group-action>",
+      " </amexio-btn-group>",    
+      " <amexio-window-pane [(showWindow)]=\"${3:flag}\" [title]=\"'${4:title}'\"",
+      " [closable]=\"true\" [size]=\"size\">",
+      " \t<amexio-pane-body>",
+      " \t\t <form>",
+      " \t\t\t <div class=\"form-group\">",
+      " \t\t\t\t <amexio-text-input [fieldLabel]=\"'${5:fieldLabel}'\" name =\"name\"",
+      " \t\t\t\t   [placeholder]=\"'${6:placeholder}'\" [iconFeedBack]=\"true\">",
+      " \t\t\t\t </amexio-text-input>",
+      " \t\t\t </div>",
+      " \t\t\t <div class=\"form-group\">",
+      " \t\t\t\t <amexio-text-input [fieldLabel]=\"'${7:fieldLabel}'\" name =\"name\"",
+      " \t\t\t\t  [placeholder]=\"'${8:placeholder}'\" [iconFeedBack]=\"true\">",
+      " \t\t\t\t </amexio-text-input>",
+      " \t\t\t </div>",      
+      " \t\t\t <div class=\"form-group\">",
+      " \t\t\t\t <amexio-text-input [fieldLabel]=\"'${9:fieldLabel}'\" name =\"name\"",
+      " \t\t\t\t   [placeholder]=\"'${10:placeholder}'\" [iconFeedBack]=\"true\">",
+      " \t\t\t\t </amexio-text-input>",
+      " \t\t\t </div>",      
+      " \t\t</form>",
+      " \t</amexio-pane-body>",
+      " \t\t<amexio-pane-action>",
+      " \t\t<div style=\"float: right;\">",
+      " \t\t\t<amexio-btn [label]=\"'Save'\" [type]=\"'primary'\"></amexio-btn>",
+      " \t\t</div>",
+      " \t</amexio-pane-action>",
+      " </amexio-window-pane>"
+    ],
+    "description": "Amexio Window Pane"
+  },
+  "amexio-image-card": {
+    "prefix": "amexio-image-card",
+    "body": [
+      " <div class=\"row\">",
+      " \t <div class=\"col-lg-6\">",
+      " \t\t <amexio-card-pane [enableHeader]=\"false\">",
+      " \t\t\t <amexio-pane-body>",
+      " \t\t\t <img src=\"${1:imgURL}\" class=\"${2:imgClass}\" alt=\"\">",
+      " \t\t\t <br/>",
+      " \t\t\t <h5 class=\"red-text\"><i class=\"fa fa-money\"></i> ${2:imgText}</h5>",
+      " \t\t\t <h4 class=\"card-title\">${3:cardTitle}</h4>",
+      " \t\t\t <p class=\"card-text\">${4:cardText}</p>",
+      " \t\t\t </amexio-pane-body>",
+      " \t\t\t <amexio-pane-action>",
+      " \t\t\t\t <div style=\"float: right;\">",
+      " \t\t\t\t\t <amexio-btn [label]=\"'${5:label}'\" [type]=\"'primary'\"></amexio-btn>",
+      " \t\t\t\t </div>",
+      " \t\t\t </amexio-pane-action>",
+      " \t\t </amexio-card-pane>",
+      " \t </div>",
+      " </div>"
+    ],
+    "description": "Amexio Image Card "
+  },
+  "amexio-image-card-with-header": {
+    "prefix": "amexio-image-card-with-header",
+    "body": [
+      " <div class=\"row\">",
+      " \t <div class=\"col-lg-6\">",
+      " \t <amexio-card-pane [enableFooter]=\"false\">",
+      " \t\t <amexio-pane-header>${1:paneHeader}</amexio-pane-header>",
+      " \t\t <amexio-pane-body>",
+      " \t\t\t <img src=\"${2:imgURL2}\" class=\"${3:imgClass}\" alt=\"\">",
+      " \t\t\t <br/><br/>",
+      " \t\t\t <p class=\"card-text\"></p>",
+      " \t\t </amexio-pane-body>",
+      " \t </amexio-card-pane>",
+      " \t </div>",
+      " </div>"
+    ],
+    "description": "Amexio Image Card with header"
+  },
+  "amexio-form-card": {
+    "prefix": "amexio-form-card",
+    "body": [
+      " <amexio-btn [label]=\"'${1:label}'\" [type]=\"'default'\"",
+      " [tooltipMessage]=\"'${2:tooltipMessage}'\" (click)=\"toggle()\"> </amexio-btn>",
+      " \t <amexio-card-pane [showCard]=\"${3:showCard}\">",
+      " \t\t <amexio-pane-header> ${4:header} </amexio-pane-header>",
+      " \t\t <amexio-pane-body>",
+      " \t\t\t <form>",
+      " \t\t\t\t <div class=\"form-group\">",
+      " \t\t\t\t\t <amexio-text-input [fieldLabel]=\"'${5:fieldLabel}'\" name =\"name\"",
+      " \t\t\t\t\t  [placeholder]=\"'${6:placeholder}'\" [iconFeedBack]=\"true\">",
+      " \t\t\t\t\t </amexio-text-input>",
+      " \t\t\t\t </div>",
+      " \t\t\t\t <div class=\"form-group\">",
+      " \t\t\t\t\t <amexio-text-input [fieldLabel]=\"'${7:fieldLabel}'\" name =\"name\"",
+      " \t\t\t\t\t  [placeholder]=\"'${8:placeholder}'\" [iconFeedBack]=\"true\">",
+      " \t\t\t\t\t </amexio-text-input>",
+      " \t\t\t\t </div>",      
+      " \t\t\t\t <div class=\"form-group\">",
+      " \t\t\t\t\t <amexio-text-input [fieldLabel]=\"'${9:fieldLabel}'\" name =\"name\"",
+      " \t\t\t\t\t  [placeholder]=\"'${10:placeholder}'\" [iconFeedBack]=\"true\">",
+      " \t\t\t\t\t </amexio-text-input>",
+      " \t\t\t\t </div>",
+      " \t\t\t </form> ",
+      " \t\t </amexio-pane-body>",
+      " \t\t <amexio-pane-action>",
+      " \t <div style=\"float: right;\">",
+      " \t\t <amexio-btn [label]=\"'Save'\" [type]=\"'primary'\"></amexio-btn>",
+      " \t </div>",
+      " \t\t </amexio-pane-action>",
+      " </amexio-card-pane>"
+    ],
+    "description": "Amexio Form Card "
+  },
+  "amexio-dialog-box-confirmation": {
+    "prefix": "amexio-dialog-box-confirmation",
+    "body": [
+      " <amexio-btn [label]=\"'${1:label}'\" [type]=\"'default'\"",
+      "   [tooltipMessage]=\"'${2:tooltipMessage}'\" (click)=\"toggle()\"> </amexio-btn>",
+      "   Confirmation Click Status : <b>{{confirmStatus}}</b>",
+      " \t <amexio-dialog [title]=\"'${3:title}'\" [(showWindow)]=\"flag\" [dialogType]=\"2\"",
+      " \t (actionStatus)=\"checkStatus($event)\" [primaryActionLabel]=\"'${4:primaryActionLabel}'\"",
+      " \t [secondaryActionLabel]=\"'${5:secondaryActionLabel}'\">",
+      " \t\t <amexio-pane-body>",
+      " \t\t\t <p style=\"margin: 30px; text-align: center;\">${6:ConfirmationMsg}</p>",
+      " \t\t </amexio-pane-body>",
+      " \t </amexio-dialog>"
+   ],
+    "description": "Amexio confirmation dialog box"
+  },
+  "amexio-dialog-box-alert": {
+    "prefix": "amexio-dialog-box-alert",
+    "body": [
+    "<amexio-btn [label]=\"'${1:label}'\" [type]=\"'default'\"",
+    "  [tooltipMessage]=\"'${2:tooltipMessage}'\" (click)=\"toggle()\"> </amexio-btn>",
+    "  Alert Click Status : <b>{{alertStatus}}</b>",
+    " \t <amexio-dialog [title]=\"'${3:title}'\" [(showWindow)]=\"flag\" [dialogType]=\"1\"",
+    " \t (actionStatus)=\"checkStatus($event)\" [primaryActionLabel]=\"'${4:primaryActionLabel}'\">",
+    " \t\t <amexio-pane-body>",
+    " \t\t\t <p style=\"margin: 30px; text-align: center;\">${5:alertMsg}</p>",
+    " \t\t </amexio-pane-body>",
+    " \t </amexio-dialog>"
+    ],
+    "description": "Amexio alert dialog box"
+  },
   //Directives
   "class": {
-    "prefix": "class-li",
+    "prefix": "class",
     "body": [
-      "<li [class]=\"${1:expression}\">\n<li>"
+      "[class]=\"${1:expression}\""
     ],
     "description": "Angular [class] binding"
   },
@@ -1174,7 +1412,6 @@
     ],
     "description": "Angular [class] binding with div tag"
   },
-
   "class-li": {
     "prefix": "class-li",
     "body": [
@@ -1409,7 +1646,7 @@
       "<div [ngSwitch]=\"${1:conditionExpression}\">",
       "\t<div *ngSwitchCase=\"${2:expression}\">${3:output}</div>",
       "\t<div *ngSwitchCase=\"${4:expression2}\">${5:output2}</div>",
-      "\t<div *ngSwitchDefault>${6:output2}</div>",
+      "\t<div *ngSwitchDefault>${6:output3}</div>",
       "</div>"
     ],
     "description": "Angular ngSwitch with div tags"
@@ -1420,7 +1657,7 @@
       "[ngSwitch]=\"${1:conditionExpression}\"",
       "\t<div *ngSwitchCase=\"${2:expression}\">${3:output}</div>",
       "\t<div *ngSwitchCase=\"${4:expression2}\">${5:output2}</div>",
-      "\t<div *ngSwitchDefault>${6:output2}</div>"
+      "\t<div *ngSwitchDefault>${6:output3}</div>"
     ],
     "description": "Angular ngSwitch"
   },
@@ -1430,7 +1667,7 @@
       "<li [ngSwitch]=\"${1:conditionExpression}\">",
       "\t<div *ngSwitchCase=\"${2:expression}\">${3:output}</div>",
       "\t<div *ngSwitchCase=\"${4:expression2}\">${5:output2}</div>",
-      "\t<div *ngSwitchDefault>${6:output2}</div>",
+      "\t<div *ngSwitchDefault>${6:output3}</div>",
       "</li>"
     ],
     "description": "Angular ngSwitch with li"
