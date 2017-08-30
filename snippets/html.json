@@ -838,9 +838,8 @@
     "prefix": "amexio-rating",
     "body": [
       "<amexio-rating-input [(ngModel)]=\"${1:ngModel}\"",
-      "\t [max]=\"'${2:max}'\" name=\"${3:name}\"",
-      "\t [readonly]=\"'${4:readonly}'\"",
-      "\t [percentageLabel]=\"'${5:percentageLabel}'\"></amexio-rating-input>"
+      "\t [max]=\"${2:max}\" name=\"${3:name}\"",
+      "\t [readonly]=\"'${4:readonly}'\"></amexio-rating-input>"
     ],
     "description": "Amexio Rating"
   },
