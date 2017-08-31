@@ -1435,7 +1435,7 @@
   "amexio-chart-area":{
     "prefix": "amexio-chart-area ",
     "body": [
-      "<amexio-chart-area [data]=\"${1:data}\" [height]=\"'${2:height}'\"",
+      "<amexio-chart-area [data]=\"${1:areaChartData}\" [height]=\"'${2:height}'\"",
       " [width]=\"'${3:width}'\">",
       "\t <amexio-chart-title [title]=\"'${4:title}'\"></amexio-chart-title>",
       "\t <amexio-chart-legend [legendPosition]=\"'${5:position}'\"></amexio-chart-legend>",                           
@@ -1455,7 +1455,7 @@
 },
 "amexio-chartbar-stack":{
   "prefix": "amexio-chartbar-stack",
-  "body": ["<amexio-chart-bar [data]=\"${1:Data}\" [height]=\"'${2:height}'\"",
+  "body": ["<amexio-chart-bar [data]=\"${1:barStackChartData}\" [height]=\"'${2:height}'\"",
       " [width]=\"'${3:width}'\" [isStacked]=\"true\">",
   "\t <amexio-chart-title [title]=\"'${5:title}'\"></amexio-chart-title>",
       "\t <amexio-chart-legend [legendPosition]=\"'${6:position}'\"></amexio-chart-legend>",                           
@@ -1465,7 +1465,7 @@
 },
 "amexio-chart-bubble":{
   "prefix": "amexio-chart-bubble",
-  "body": ["<amexio-chart-bubble [data]=\"${1:Data}\" [height]=\"'${2:height}'\"",
+  "body": ["<amexio-chart-bubble [data]=\"${1:bubbleChartData}\" [height]=\"'${2:height}'\"",
       " [width]=\"'${3:width}'\">",
       "\t <amexio-chart-title [title]=\"'${4:title}'\"></amexio-chart-title>",
   "\t <amexio-chart-horizontal-axis [title]=\"'${5:Horizontaltitle}'\"></amexio-chart-horizontal-axis>",
@@ -1476,7 +1476,7 @@
 },
 "amexio-chart-bubble-color":{
   "prefix": "amexio-chart-bubble-color",
-  "body": ["<amexio-chart-bubble [data]=\"${1:Data}\" [height]=\"'${2:height}'\"",
+  "body": ["<amexio-chart-bubble [data]=\"${1:bubbleChartColorAxis}\" [height]=\"'${2:height}'\"",
       " [width]=\"'${3:width}'\" [colorAxis]=\"['${4:xaxisColor}','${5:yaxizColor}']\">",
   "\t <amexio-chart-title [title]=\"'${6:title}'\"></amexio-chart-title>",
   "\t <amexio-chart-horizontal-axis [title]=\"'${7:Horizontaltitle}'\"></amexio-chart-horizontal-axis>",
@@ -1488,7 +1488,7 @@
 "amexio-chart-candlestick":{
     "prefix": "amexio-chart-candlestick ",
     "body": [
-      "<amexio-chart-candlestick [data]=\"${1:data}\" [height]=\"'${2:height}'\"",
+      "<amexio-chart-candlestick [data]=\"${1:candlestickChartData}\" [height]=\"'${2:height}'\"",
       " [width]=\"'${3:width}'\">",
       "\t <amexio-chart-title [title]=\"'${4:title}'\"></amexio-chart-title>",                          
     "\t</amexio-chart-candlestick>"
@@ -1498,7 +1498,7 @@
 "amexio-chart-candlestick-waterfall":{
     "prefix": "amexio-chart-candlestick-waterfall ",
     "body": [
-      "<amexio-chart-candlestick-waterfall [data]=\"${1:data}\" [height]=\"'${2:height}'\"",
+      "<amexio-chart-candlestick-waterfall [data]=\"${1:candlestickWaterfallChart}\" [height]=\"'${2:height}'\"",
       " [width]=\"'${3:width}'\" [barWidthGroup]=\"'${4:barwidth}'\" [fallingColorOfBar]=\"'${5:colorcode}'\"",
       " [risingColorOfBar]=\"'${6:colorCode}'\">",
       "\t <amexio-chart-title [title]=\"'${7:title}'\"></amexio-chart-title>",                          
@@ -1509,7 +1509,7 @@
 "amexio-chart-column":{
     "prefix": "amexio-chart-column ",
     "body": [
-      "<amexio-chart-column [data]=\"${1:data}\" [height]=\"'${2:height}'\"",
+      "<amexio-chart-column [data]=\"${1:columnChartData}\" [height]=\"'${2:height}'\"",
       " [width]=\"'${3:width}'\">",
       "\t <amexio-chart-title [title]=\"'${4:title}'\"></amexio-chart-title>",
       "\t <amexio-chart-legend [legendPosition]=\"'${5:position}'\"></amexio-chart-legend>",                           
@@ -1519,7 +1519,7 @@
   },
 "amexio-chart-columnbar":{
   "prefix": "amexio-chart-columnbar",
-  "body": ["<amexio-chart-column [data]=\"${1:data}\" [height]=\"'${2:height}'\"",
+  "body": ["<amexio-chart-column [data]=\"${1:columnStackChartData}\" [height]=\"'${2:height}'\"",
       " [width]=\"'${3:width}'\" [isStacked]=\"true\">",
   "\t <amexio-chart-title [title]=\"'${5:title}'\"></amexio-chart-title>",
       "\t <amexio-chart-legend [legendPosition]=\"'${6:position}'\"></amexio-chart-legend>",                           
@@ -1529,7 +1529,7 @@
 },
 "amexio-chart-combo":{
   "prefix": "amexio-chart-combo",
-  "body": ["<amexio-chart-combo [data]=\"${1:data}\" [height]=\"'${2:height}'\"",
+  "body": ["<amexio-chart-combo [data]=\"${1:comboChartData}\" [height]=\"'${2:height}'\"",
       " [width]=\"'${3:width}'\">",
   "\t <amexio-chart-title [title]=\"'${4:title}'\"></amexio-chart-title>",
   "\t <amexio-chart-legend [legendPosition]=\"'${5:position}'\"></amexio-chart-legend>",           
@@ -1541,7 +1541,7 @@
 },
 "amexio-chart-donut":{
   "prefix": "amexio-chart-donut",
-  "body": ["<amexio-chart-donut [data]=\"${1:data}\" [height]=\"'${2:height}'\"",
+  "body": ["<amexio-chart-donut [data]=\"${1:donutChartData}\" [height]=\"'${2:height}'\"",
       " [width]=\"'${3:width}'\">",
   "\t <amexio-chart-title [title]=\"'${4:title}'\"></amexio-chart-title>",
       "\t <amexio-chart-legend [legendPosition]=\"'${5:position}'\"></amexio-chart-legend>",                           
@@ -1551,7 +1551,7 @@
 },
 "amexio-chart-histogram":{
   "prefix": "amexio-chart-histogram",
-  "body": ["<amexio-chart-histogram [data]=\"${1:data}\" [height]=\"'${2:height}'\"",
+  "body": ["<amexio-chart-histogram [data]=\"${1:histogramChartData}\" [height]=\"'${2:height}'\"",
       " [width]=\"'${3:width}'\">",
   "\t <amexio-chart-title [title]=\"'${4:title}'\"></amexio-chart-title>",
       "\t <amexio-chart-legend [legendPosition]=\"'${5:position}'\"></amexio-chart-legend>",                           
@@ -1561,7 +1561,7 @@
 },
 "amexio-chart-line":{
   "prefix": "amexio-chart-line",
-  "body": ["<amexio-chart-line [data]=\"${1:data}\" [height]=\"'${2:height}'\"",
+  "body": ["<amexio-chart-line [data]=\"${1:lineChartData}\" [height]=\"'${2:height}'\"",
       " [width]=\"'${3:width}'\">",
       "\t <amexio-chart-legend [legendPosition]=\"'${4:position}'\"></amexio-chart-legend>",                           
     "\t</amexio-chart-line>"
@@ -1570,7 +1570,7 @@
 },
 "amexio-chart-pie":{
   "prefix": "amexio-chart-pie",
-  "body": ["<amexio-chart-pie [data]=\"${1:data}\" [height]=\"'${2:height}'\"",
+  "body": ["<amexio-chart-pie [data]=\"${1:pieChartData}\" [height]=\"'${2:height}'\"",
       " [width]=\"'${3:width}'\">",
   "\t <amexio-chart-title [title]=\"'${4:title}'\"></amexio-chart-title>",
       "\t <amexio-chart-legend [legendPosition]=\"'${5:position}'\"></amexio-chart-legend>",                           
@@ -1580,7 +1580,7 @@
 },
 "amexio-chart-pie3d":{
   "prefix": "amexio-chart-pie3d",
-  "body": ["<amexio-chart-pie [data]=\"${1:data}\" [height]=\"'${2:height}'\"",
+  "body": ["<amexio-chart-pie [data]=\"${1:pieChartData}\" [height]=\"'${2:height}'\"",
       " [width]=\"'${3:width}'\" [is3D]=\"true\">",
   "\t <amexio-chart-title [title]=\"'${5:title}'\"></amexio-chart-title>",
       "\t <amexio-chart-legend [legendPosition]=\"'${6:position}'\"></amexio-chart-legend>",                           
@@ -1590,7 +1590,7 @@
 },
 "amexio-chart-scatter":{
   "prefix": "amexio-chart-scatter",
-  "body": ["<amexio-chart-scatter [data]=\"${1:data}\" [height]=\"'${2:height}'\">",
+  "body": ["<amexio-chart-scatter [data]=\"${1:scatterChartData}\" [height]=\"'${2:height}'\">",
   "\t <amexio-chart-title [title]=\"'${3:title}'\"></amexio-chart-title>",         
   "\t <amexio-chart-horizontal-axis [title]=\"'${4:Horizontaltitle}'\"></amexio-chart-horizontal-axis>",
   "\t <amexio-chart-vertical-axis [title]=\"'${5:Verticaltitle}'\"></amexio-chart-vertical-axis>",   
@@ -1600,7 +1600,7 @@
 },
 "amexio-chart-timeline":{
   "prefix": "amexio-chart-timeline",
-  "body": ["<amexio-chart-timeline [data]=\"${1:data}\" [width]=\"'${2:width}'\">",
+  "body": ["<amexio-chart-timeline [data]=\"${1:timelineChartData}\" [width]=\"'${2:width}'\">",
   "\t</amexio-chart-timeline>"
     ],
   "description": "Amexio-chart-timeline"
@@ -1609,7 +1609,7 @@
 // DASHBOARDS
 "amexio-dashboard-gauge":{
   "prefix": "amexio-dashboard-gauge",
-  "body": ["<amexio-dashboard-gauge [data]=\"${1:data}\" [height]=\"'${2:height}'\"",
+  "body": ["<amexio-dashboard-gauge [data]=\"${1:gaugeChartData}\" [height]=\"'${2:height}'\"",
   " [redColorFrom]=\"${3:RedFrom}\" [redColorTo]=\"${4:RedTo}\"",
   " [yellowColorFrom]=\"${5:YellowFrom}\" [yellowColorTo]=\"${6:YellowTo}\" [minorTicks]=\"${7:minorTicks}\">",
   "\t</amexio-dashboard-gauge>"
@@ -1791,7 +1791,7 @@
 //MAPS
 "amexio-map-geo-chart":{
   "prefix": "amexio-map-geo-chart",
-  "body": ["<amexio-map-geo-chart [data]=\"data\" [width]=\"'${2:width}'\" [height]=\"'${3:height}'\">",
+  "body": ["<amexio-map-geo-chart [data]=\"${1:geoChartData}\" [width]=\"'${2:width}'\" [height]=\"'${3:height}'\">",
   "\t</amexio-map-geo-chart>"
     ],
   "description": "Amexio-map-geo-chart"
@@ -1799,7 +1799,7 @@
 
 "amexio-map-treemap":{
   "prefix": "amexio-map-treemap",
-  "body": ["<amexio-map-treemap [data]=\"${1:data}\" [height]=\"'${2:height}'\"",
+  "body": ["<amexio-map-treemap [data]=\"${1:treeMapData}\" [height]=\"'${2:height}'\"",
   " [width]=\"'${3:width}'\" [maxColor]=\"'${4:maxColorCode}'\" [showScale]=\"${5:true}\"",
   " [midColor]=\"'${6:midColorCode}'\" [minColor]=\"'${7:minColorCode}'\" [maxPostDepth]=\"${8:maxPostDepth}\">",
   "\t</amexio-map-treemap>"
