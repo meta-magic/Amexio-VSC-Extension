@@ -769,6 +769,32 @@
     "}"
     ]
   },
+    "Amexio Charts": {
+    "prefix": "Amexio-ts-charts",
+    "description": "Amexio Charts",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "${4:chartName}Data : any;",
+      "\tconstructor() {",
+      "\t\tthis.${4:chartName}Data=[",
+      
+      "${5:Enter Chart Data}",
+      "",
+      "];",
+      "}",
+      "",
+      "\tngOnInit() { }$0",
+      "",
+      "}"
+      ]
+  },
     "Amexio Charts Column": {
     "prefix": "Amexio-ts-charts column",
     "description": "Amexio Charts Column",
