@@ -949,5 +949,32 @@
       "",
       "}"
       ]
+  },
+     "Amexio listbox": {
+    "prefix": "Amexio-ts-listbox",
+    "description": "Amexio listbox",
+    "body": [
+      "import { Component, OnInit } from '@angular/core';",
+      "",
+      "@Component({",
+      "\tselector: '${1:selector-name}',",
+      "\ttemplateUrl: '${2:name}.component.html'",
+      "})",
+      "",
+      "export class ${3:Name}Component implements OnInit {",
+      "record : ${4:string};",
+      "bindData : any;",
+      "selectedData : any;",
+      "",
+      "\tconstructor() { }",
+      "",
+      "\tngOnInit() { }$0",
+      "",
+      "onSelect(data : any){",
+      "\tthis.selectedData = data;",
+      "}",
+      "",
+      "}"
+    ]
   }
 }
