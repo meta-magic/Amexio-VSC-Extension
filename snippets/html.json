@@ -1856,6 +1856,37 @@
  ],
   "description": "amexio-fieldset"
 },
+//LISTBOX
+"amexio-listbox": {
+    "prefix": "amexio-listbox",
+    "body": [
+      "<amexio-listbox [data]=\"${1:bindData}\" [filter]=\"true\"",
+      "\t[enableCheckbox] = \"false\" [dataReader]=\"'${2:response.data}'\"",
+      "\t[displayField]=\"'${3:name}'\"",
+      "\t(selectedRows)=\"onSelect($${4:event})\"",
+      "\t(rowClick)=\"onSelect($${5:event})\">",
+      "<ng-template #amexioBodyTmpl let-row=\"row\">",
+      "\t<table>",
+      "\t\t<tr>",
+      "\t\t\t<td>",
+      "\t\t\t\t<img class=\"${6:rounded-circle}\" width=\"${7:width}\" src=\"${8:path{{row.profile}}}\"/>",
+      "\t\t\t</td>",
+      "\t\t\t<td style=\"padding: 20px; vertical-align: top;\">",
+      "\t\t\t\t<b>{{row.name}}</b>",
+      "\t\t\t</td>",
+      "\t\t</tr>",
+      "\t</table>",
+      "</ng-template>",
+      "</amexio-listbox>",
+      "<amexio-card-pane [enableFooter]=\"false\">",
+      "\t<amexio-pane-header>Selected data</amexio-pane-header>",
+      "\t<amexio-pane-body>",
+      "\t\t<pre>{{selectedData | json}}</pre>",
+      "\t</amexio-pane-body>",
+      "</amexio-card-pane>"
+    ],
+    "description": "Amexio listbox"
+  },
 
   //Directives
   "class": {
