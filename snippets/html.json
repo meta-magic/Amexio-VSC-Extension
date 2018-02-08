@@ -1,5 +1,6 @@
-{
-  //Layout
+{ //Layout
+  //Layout-accordian
+
   "amexio-accordion": {
     "prefix": "amexio-accordion",
     "body": [
@@ -17,7 +18,7 @@
         "<amexio-accordion-tab header=\"${1:header}\"",
           "active=\"${2:isActive}\">",
           "\t${3:Content}",
-        "</amexio-accordion-tab>",
+        "</amexio-accordion-tab>"
       
     ],
     "description": "Amexio Accordian Pane Tab"
@@ -26,8 +27,8 @@
     "prefix": "amexio-accordion-expand-all",
     "body": [
       "<amexio-accordion  expand-all=\"${1:isExpandAll}\">",
-        "\t<amexio-accordion-tab header=\"${1:header}\" active=\"true\">",
-          "\t\t${2:Content}",
+        "\t<amexio-accordion-tab header=\"${3:header}\" active=\"true\">",
+          "\t\t${3:Content}",
         "\t</amexio-accordion-tab>",
       "</amexio-accordion>"
     ],
@@ -44,6 +45,7 @@
     ],
     "description": "Amexio Accordian Pane Expand All"
   },
+  //Layout-border
   "amexio-border-layout": {
     "prefix": "amexio-border-layout",
     "body": [
@@ -64,6 +66,7 @@
     ],
     "description": "Amexio Border Layout [position] :: north : east : center : west : south"
   },
+  //Layout-column
   "amexio-row": {
     "prefix": "amexio-row",
     "body": [      
@@ -82,6 +85,7 @@
     ],
     "description": "Amexio Column [size] :: 2:4:6:12"
   },
+  //Layout-card
   "amexio-card": {
     "prefix": "amexio-card",
     "body": [      
@@ -125,6 +129,8 @@
     ],
     "description": "Amexio Card with image"
   },
+  //Panel
+  //Panel-carousel
   "amexio-carousel": {
     "prefix": "amexio-carousel",
     "body": [      
@@ -154,6 +160,7 @@
     ],
     "description": "Amexio Carousel with Shuffle Interval"
   },
+  //Panels-fieldset
   "amexio-fieldset": {
     "prefix": "amexio-fieldset",
     "body": [      
@@ -172,6 +179,7 @@
     ],
     "description": "Amexio Fieldset "
   },
+  //Panels-panel
   "amexio-panel": {
     "prefix": "amexio-panel",
     "body": [      
@@ -214,6 +222,7 @@
     ],
     "description": "Amexio Panel without Header"
   },
+  //Panels-steps
   "amexio-steps": {
     "prefix": "amexio-steps",
     "body": [      
@@ -270,6 +279,8 @@
     ],
     "description": "Amexio Steps with Index"
   },
+  //Panels-tab
+  //Panels-tab-horizontal
   "amexio-tab-view": {
     "prefix": "amexio-tab-view",
     "body": [      
@@ -288,7 +299,7 @@
           "\t <amexio-tab title=\"${1:title}\"",
           "\t [active]=\"${2:isActive}\">",
           "\t\t${3:content}",
-          "\t </amexio-tab>",
+          "\t </amexio-tab>"
     ],
     "description": "Amexio Tab"
   },
@@ -311,7 +322,7 @@
           "\t [active]=\"${2:isActive}\"",
           "\t [icon]=\"'${3:icon}'\">",
           "\t\t${4:content}",
-          "</amexio-tab>",
+          "</amexio-tab>"
     ],
     "description": "Amexio Tab with Icon"
   },
@@ -328,6 +339,8 @@
     ],
     "description": "Amexio Tab with Icon"
   },
+//Panels-tab-Vertical
+
   "amexio-tab-view-vertical": {
     "prefix": "amexio-tab-view-vertical",
     "body": [    
@@ -354,6 +367,7 @@
     ],
     "description": "Amexio Right Vertical Tab "
   },
+  //Panels-window
   "amexio-window": {
     "prefix": "amexio-window",
     "body": [    
@@ -413,6 +427,7 @@
     ],
     "description": "Amexio Window Closable "
   },
+  //Panels-dialogue
   "amexio-dialogue-confirm": {
     "prefix": "amexio-dialogue-confirm",
     "body": [    
@@ -479,7 +494,7 @@
     ],
     "description": "Amexio Custom Dialogue Box "
   },
-
+//Media-images
   "amexio-image": {
     "prefix": "amexio-image",
     "body": [    
@@ -511,7 +526,7 @@
     ],
     "description": "Amexio Icon form material design "
   },
-
+//Media-videoPlayer
   "amexio-video": {
     "prefix": "amexio-video",
     "body": [    
@@ -520,6 +535,7 @@
     ],
     "description": "Amexio Video "
   },
+  //AppNavigation-dockbar
   "amexio-dockbar": {
     "prefix": "amexio-dockbar",
     "body": [    
@@ -544,7 +560,7 @@
     ],
     "description": "Amexio Dockbar Item"
   },
-
+//Appnavigation-navbar
   "amexio-navbar": {
     "prefix": "amexio-navbar",
     "body": [    
@@ -558,6 +574,7 @@
     ],
     "description": "Amexio Navbar "
   },
+  //Appnavigation-sidenavbar
   "amexio-sidenav": {
     "prefix": "amexio-sidenav",
     "body": [    
@@ -571,6 +588,7 @@
     ],
     "description": "Amexio Sidenav Bar"
   },
+  //Appnavigation-menubar
   "amexio-menubar": {
     "prefix": "amexio-menubar",
     "body": [    
@@ -581,5 +599,980 @@
       "</amexio-menu>"
     ],
     "description": "Amexio Menu Bar"
-  }
+  },
+//Forminputs
+//Forminputs-checkbox
+"amexio-checkbox":{
+  "prefix": "amexio-checkbox",
+  "body": [  
+              "<amexio-checkbox ",
+              "\t\t[field-label]=\"'${1:label}'\"",
+             "\t\t[(ngModel)]=\"${2:ngModel}\"",
+              "\t\t(onSelection)=\"${3:onCheckClick}(\\$event)\">",
+             " </amexio-checkbox>"
+          ],
+  "description": " Simple Single CheckBox"
+                       },
+
+
+
+"amexio-checkbox-disable":{
+  "prefix": "amexio-checkbox-disable",
+
+  "body": [
+            "<amexio-checkbox",
+            "\t [disabled]=\"true\"",
+            "\t [field-label]=\"'${1:label}'\"",
+            "\t [(ngModel)]=\"${2:ngModel}\">",
+             "</amexio-checkbox>"
+
+         ],
+
+"description": "Single CheckBox With Disable option"
+                    },
+"amexio-checkbox-group-local-data":{
+     "prefix": "amexio-checkbox-group-local-data",
+     "body": [
+                 " <amexio-checkbox-group",
+                 "\t [field-label]=\"'${1:label}'\"",
+                 "\t name=\" ${2:name}\"",
+                 "\t [data-reader]=\"'${3:dataReader}'\"",
+                 "\t [display-field]=\"'${2:displayField}'\"",
+                 "\t [horizontal]=\"true\"",
+                 "\t [value-field]=\"'${5:valueField}'\"",
+                 "\t (onSelection)=\"${6:selectedCheckboxgroup}(\\$event)\"",
+                 "\t [data]=\"'${7:checkboxdata}'\"",
+                 "\t [column]=\"'${8:number of columns}'\">",
+                 "</amexio-checkbox-group>"
+     ],
+     "description": "Checkbox Group With Local Data"
+                 },
+                 
+"amexio-checkbox-group-http-url":{
+ "prefix": "amexio-checkbox-group-http-url",
+ "body": [
+         "<amexio-checkbox-group",
+         "\t [field-label]=\"'label'\"",
+         "\t name=\"${2:name}\"", 
+         "\t [data-reader]=\"'${3:data}'\"",
+         "\t [display-field]=\"'${2:displayField}'\"",
+         "\t [value-field]=\"'${4:valueField}'\"",
+         "\t [http-method]=\"'get'\"",
+         "\t [http-url]=\"${5:url}\">",
+         "</amexio-checkbox-group>"
+         ],
+
+ "description": "Checkbox Group With Http Url"
+
+},          
+//Forminputs-date time picker
+
+ "amexio-date-picker":{
+                 "prefix": "amexio-date-picker",
+                   "body": [
+                     "<amexio-date-time-picker ",
+                     "\t [field-label]=\"'${1:label}'\"",
+                     "\t [time-picker]=\"false\"",
+                     "\t [date-picker]=\"true\"",
+                     "\t [(ngModel)]=\"${2:ngModel}\">",
+                     "</amexio-date-time-picker>" ],     
+            "description": "Date Picker Used To Select The Date"
+ },      
+ 
+ "amexio-time-picker":{
+                 "prefix": "amexio-time-picker",
+                 "body": [
+                     "<amexio-date-time-picker",
+                     " \t [field-label]=\"'${1:label}'\"",
+                     "\t [time-picker]=\"true\"",
+                     "\t [date-picker]=\"false\"",
+                     "\t [ngModel]=\"'${2:ngModel}'\"",
+                     "\t (change)=\"${3:onChangeTime}(\\$event)\">",
+                     "</amexio-date-time-picker>"
+                         ],
+                 "description": "Time Picker Used To Select Time"
+ },
+//Forminputs-dropdown
+"amexio-dropdown":{
+                     "prefix": "amexio-dropdown",
+                     "body": [
+                             "<amexio-dropdown" ,
+                             "\t [(ngModel)]=\"${1:ngModel}\"",
+                             "\t [place-holder]=\"'${2:placeHolder}'\"",
+                             "\t name=\"${3:name}\"",
+                             "\t [data-reader]=\"'${4:data}'\"",
+                             "\t [field-label]=\"'${5:fieldLabel}'\"",
+                             "\t [http-url]=\"'${6:url}'\"",
+                             "\t [http-method]=\"'get'\"",
+                             "\t [display-field]=\"'${3:displayField}'\"",
+                             "\t [value-field]=\"'${7:valueField}'\">",
+                             "</amexio-dropdown>"
+                             ],
+                     "description": "Basic Dropdown List"
+
+               },
+
+
+"amexio-dropdown-http-url":{
+                                 "prefix": "amexio-dropdown-http-url",
+                                 "body": [
+                                     "  <amexio-dropdown",
+                                     "\t [(ngModel)]=\"${1:ngModel}\"",
+                                     "\t [place-holder]=\"'${1:placeHolder}'\"",
+                                     "\t name=\"'${2:name}'\"",
+                                     "\t [data-reader]=\"'${3:data}'\"",
+                                     "\t [field-label]=\"'${4:fieldLabel}'\"",
+                                     "\t [http-url]=\"'${5:url}'\"",
+                                     "\t [http-method]=\"'get'\"",
+                                     "\t [display-field]=\"'${2:displayField}'\"",
+                                     "\t [value-field]=\"'${6:valueField}'\"",
+                                       "</amexio-dropdown>"
+                                         ],
+                                 "description": "Simple dropdown with http url"
+ },
+
+ "amexio-dropdown-filter-http-url":{
+                                     "prefix": "amexio-dropdown-filter-http-url",
+                                     "body": [
+                                         "<amexio-dropdown",
+                                         "\t\t [(ngModel)]=\"${1:ngModel}\"",
+                                         "\t\t [place-holder]=\"'${2:placeHolder}'\"",
+                                         "\t\t name=\"${3:name}\"",
+                                         "\t\t [search]=\"search\"",
+                                         "\t\t [data-reader]=\"'${4:data}'\"",
+                                         "\t\t [field-label]=\"'${5:fieldLabel}'\"",
+                                         "\t\t [http-url]=\"'${6:url}'\"",
+                                         "\t\t [http-method]=\"'get'\"",
+                                         "\t\t [display-field]=\"'${3:displayField}'\"",
+                                         "\t\t [value-field]=\"'${7:valueField}'\"",
+                                         "\t\t (onSingleSelect)=\"${8:getSingleVal}(\\$event)\">",
+                                         "</amexio-dropdown>"
+
+                                     ]
+                                     
+                                     ,
+                                     "description": "Simple dropdown Filter With Http Url"
+ },
+
+ "amexio-dropdown-multi-select-http-url":{
+     "prefix": "amexio-dropdown-multi-select-http-url",
+     "body": [
+             " <amexio-dropdown",
+             "\t [(ngModel)]=\"${1:ngModel}\"",
+             "\t [place-holder]=\"'${2:placeHolder}'\"",
+             "\t name=\"${3:name}\"",
+             "\t [data-reader]=\"'${4:dataReader}'\"",
+             "\t [field-label]=\"'${5:fieldLabel}'\"",
+             "\t [http-url]=\"'${6:url}'\"",
+             "\t [http-method]=\"'get'\"",
+             "\t [display-field]=\"'${3:displayField}'\"",
+             "\t [value-field]=\"'${7:valueField}'\"",
+             "\t [multi-select]=\"true\"",
+             "\t (onSingleSelect)=\"${8:getSingleVal}(\\$event)\">",
+             "</amexio-dropdown>"
+     ],
+     "description": "Simple Dropdown Multi Select With Http Url"
+ },
+//Forminputs-email
+ "amexio-email-input":{
+                     "prefix": "amexio-email-input",
+                     "body": [
+                         "<amexio-email-input",
+                         "\t [field-label]=\"'${1:fieldLabel}'\"", 
+                         "\t name =\"${2:name}\"",
+                         "\t [place-holder]=\"'${3:placeHolder}'\"",
+                         "\t [allow-blank]=\"false\"",
+                         "\t [error-msg] =\"'${4:errorMsg}'\"",
+                         "\t [enable-popover]=\"true\"",
+                         "\t [icon-feedback]=\"true\">",
+                         "</amexio-email-input>"
+                     ],
+                     "description": "Basic Email Input Feature"
+
+ },
+
+ "amexio-email-input-disable":{
+                                  "prefix": "amexio-email-input-disable",
+                                  "body": [
+                               "<amexio-email-input",
+                               "\t name =\"${1:name}\"",
+                               "\t [field-label]=\"'${2:fieldLabel}'\"",
+                               "\t [place-holder]=\"'${3:placeHolder}'\"",
+                               "\t [disabled]=\"true\">",
+                                " </amexio-email-input>"              ],
+                                 "description": "Email Input With Disable Feature"
+                                  },
+
+ "amexio-email-input-font-style":{
+                             "prefix": "amexio-email-input-font-style",
+                             "body": [
+                                 "<amexio-email-input",
+                                 "\t [field-label]=\"'${1:fieldLabel}'\"",
+                                 "\t name =\"${2:name}\"",
+                                 "\t [place-holder]=\"'${3:placeHolder}'\"",
+                                 "\t [icon-feedback]=\"true\"",
+                                 "\t [font-style]=\"'${4:fontStyle}'\">",
+                                 "</amexio-email-input>"
+                                     ],
+                             "description"
+                             : "Email Input with Font Style feature"
+ },
+
+"amexio-email-font-family":{
+               "prefix": "amexio-email-font-family",
+               "body": [
+                 "<amexio-email-input",
+                 "\t name=\"${1:name}\"",
+                 "\t [field-label]=\"'${1:fieldlabel}'\"",
+                 "\t [place-holder]=\"'${2:placeHolder}'\"",
+                 "\t [font-family]=\"'${3:fontFamily}'\"",
+                 "\t [font-size]=\"'${4:fontSize}'\">",
+                 "</amexio-email-input>"
+                       ],
+               "description": "Email Font Family"
+
+               },
+ //Forminputs-fileupload              
+ "amexio-file-upload":{
+                             "prefix": "amexio-file-upload",
+                             "body": [
+                                     "<amexio-fileupload",
+                                     "\t [http-url]=\"'${1:httpUrl}'\"",
+                                     "\t [http-method]=\"'POST'\"",
+                                     "\t [file-type]=\"'${2:fileType/*}'\"",
+                                     "\t [multiple-file]=\"'*'\"",
+                                     "\t [field-label]=\"'${4:fieldLabel}'\">",
+                                     "</amexio-fileupload>"
+                                     ],
+                             "description": "Simple-File-Upload"
+                             },
+                             
+ "amexio-file-upload-drag-drop":{
+                             "prefix": "amexio-file-upload-drag-drop",
+                              "body": [
+                                      "<amexio-fileupload",
+                                      "\t [http-url]=\"'${1:httpUrl}'\"",
+                                      "\t [http-method]=\"'POST'\"",
+                                      "\t [file-type]=\"'${2:fileType}'\"",
+                                    
+                                      "\t  [field-label]=\"'${4:fieldLabel}'\"",
+                                      "\t droppable=\"true\">",
+                                      "</amexio-fileupload>"
+                                      ],
+                              "description": "Drag drop zone"
+                         },                                                                                                                              
+           
+//Forminputs-number
+ "amexio-number-input":{
+     "prefix":"amexio-number-input",
+     "body": [
+             "<amexio-number-input",
+             "\t [field-label]=\"'${1:fieldLabel}'\"",
+             "\t [place-holder]=\"'${2:placeHolder}'\">",
+             "</amexio-number-input>"
+             ],
+     "description": "Basic Number Input"
+     },
+
+ "amexio-number-input-disable":{
+                                     "prefix":"amexio-number-input-disable",
+                                     "body": [
+                                         "<amexio-number-input",
+                                         "\t [place-holder]=\"'${1:placeHolder}'\"",
+                                         "\t [icon-feedback]=\"false\"",
+                                         "\t [has-label]=\"false\"",
+                                         "\t [disabled]=\"true\">",
+                                         "</amexio-number-input>"
+                                             ],
+                                     "description": "Number Input With Disable"
+                                     },  
+                                     
+ "amexio-number-input-font-style":{
+                                  "prefix":"amexio-number-input-font-style",
+                                  "body":[
+                                  "<amexio-number-input",
+                                  "\t[field-label]=\"'${1:fieldLabel}'\"",
+                                  "\t [place-holder]=\"'${2:placeHolder}'\"",
+                                  "\t [font-style]=\"'${3:fontStyle}'\">",
+                                  "</amexio-number-input>"   
+                                         ],
+                                   "description": "Number Input With Different Font Style"
+                                  },
+                         
+ "amexio-number-input-min-max-validation":{
+                                         "prefix": "amexio-number-input-min-max-validation",
+                                         "body": [
+                                             "<amexio-number-input ",
+                                             "\t [enable-popover]=\"true\"",
+                                             "\t [field-label]=\"'${1:fieldLabel}'\"",
+                                             "\t [place-holder]=\"'${2:placeHolder}'\"",
+                                             "\t [allow-blank]=\"false\"",
+                                             "\t [error-msg] =\"'${3:errorMsg}'\"",
+                                             "\t [min-value]=\"${4:minValue}\"",
+                                             "\t [min-error-msg]=\"'${5:minErrrorMsg}'\"",
+                                             "\t [max-value]=\"${6:maxValue}\"",
+                                             "\t [max-error-msg]=\"'${7:maxErrorMsg}'\"",
+                                             "\t [icon-feedback]=\"true\">",
+                                             "</amexio-number-input>"
+                                                 ],
+                                         "description": "Number Input With Min/Max Validation Feature"
+                                        },
+//Forminput-password                            
+ "amexio-password-min-max-validation":{
+                                     "prefix": "amexio-password-min-max-validation",
+                                     "body": [
+                                             "<amexio-password-input" ,
+                                             "\t [enable-popover]=\"true\"",
+                                             "\t [field-label]=\"'${1:fieldLabel}'\"",
+                                             "\t name =\"${2:name}\"",
+                                             "\t [place-holder]=\"'${3:placeHolder}'\"",
+                                             "\t [allow-blank]=\"false\"",
+                                             "\t [error-msg] =\"'${4:errorMsg}'\"",
+                                             "\t [min-length]=\"${5:minLength}\"",
+                                             "\t [min-error-msg]=\"'${6:minErrorMsg}'\"",
+                                             "\t [max-length]=\"${7:maxLength}\"",
+                                             "\t [max-error-msg]=\"'${8:maxErrorMsg}'\"",
+                                             "\t [icon-feedback]=\"true\">",
+                                              "</amexio-password-input>"
+                                             ],
+                                     "description": "Password With Min/Max Validation"           
+                                    },
+ "amexio-password-input-disable-label":{
+                                           "prefix": "amexio-password-input-disable-label",
+                                           "body": [
+                                             "<amexio-password-input", 
+                                             "\t name =\"${1:name}\"",
+                                             "\t [place-holder]=\"'${2:placeHolder}'\"",
+                                             "\t [allow-blank]=\"false\"",
+                                             "\t [error-msg] =\"'${3:errorMsg}'\"",
+                                             "\t [min-length]=\"${4:minLength}\"",
+                                             "\t [min-error-msg]=\"'${5:minErrorMsg}'\"",
+                                             "\t [max-length]=\"${maxLength}\"",
+                                             "\t [max-error-msg]=\"'${6:maxErrorMsg}'\"",
+                                             "\t [icon-feedback]=\"true\"",
+                                             "\t [has-label]=\"false\">",
+                                             "</amexio-password-input>"
+                                                   ],
+                                           "description": "Password Input With Disable Field Label"
+                                           },
+//Forminputs-radiogroup                                           
+ "amexio-radio-group-horizontal-local-data":{
+                                           "prefix": "amexio-radio-group-horizontal-local-data",
+                                           "body": [
+                                                   "<amexio-radio-group",
+                                                  "\t [field-label]=\"'${1:fieldLabel}'\"",
+                                                  "\t name =\"${2:name}\"",
+                                                  "\t [data-reader]=\"'${3:dataReader}'\"",
+                                                  "\t [display-field]=\"'${2:displayField}'\"",
+                                                  "\t [value-field]=\"'${4:valueField}'\"",
+                                                  "\t [horizontal]=\"true\"",
+                                                  "\t [data]=\"${5:data}\"",
+                                                  "\t (onSelection)=\"${6:setSelectedGender}(\\$event)\">",
+                                                 "</amexio-radio-group>"
+                                                   ],
+                                           "description": "Horizontal Radio Group With Lcoal Data"
+                                          },
+
+ "amexio-radio-group-vertical-http-URL":{
+                                             "prefix": "amexio-radio-group-vertical-http-URL",
+                                             "body": [
+                                                      "<amexio-radio-group",
+                                                      "\t [field-label]=\"'${1:fieldLabel}'\"",
+                                                      "\t name =\"${2:name}\"",
+                                                      "\t [data-reader]=\"'${3:dataReader}'\"",
+                                                      "\t [display-field]=\"'${2:displayField}'\"",
+                                                     "\t [value-field]=\"'${4:valueField}'\"",
+                                                     "\t [http-method]=\"'get'\"",
+                                                      "\t [http-url]=\"'${5:assets/data/componentdata/file.json}'\"",
+                                                      "\t (onSelection)=\"${6:setSelectedGender(\\$event)}\">",
+                                                      "</amexio-radio-group>"
+                                                     ],
+                                             "description": "Vertical Radio Group With Http URL"
+                                      },
+//Forminputs-rating
+ "amexio-rating-label":{
+                                      "prefix": "amexio-rating-label",
+                                      "body": [
+                                         "<amexio-rating-input",
+                                         "\t [(ngModel)]=\"${1:ngModel}\"",
+                                         "\t [field-label]=\"'${2:fieldLabel}'\"",
+                                         "\t [max]=\"${3:max}\"",
+                                          "\t name=\"${4:name}\"",
+                                         "\t [read-only]=\"${5:isReadonly}\">",
+                                         "</amexio-rating-input>"
+                                              ],
+                                      "description": "Simple Rating Component With Label"
+                                      },
+ "amexio-rating-read-only":{
+                            "prefix": "amexio-rating-read-only",
+                             "body": [
+                                     "<amexio-rating-input",
+                                     "\t [field-label]=\"'${1:fieldLabel}'\"",
+                                     "\t [(ngModel)]=\"${2:ngModel}\"",
+                                     "\t [max]=\"${3:max}\"",
+                                     "\t [read-only]=\"true\">",
+                                        "</amexio-rating-input>"
+            
+                                     ],
+                             "description": "Read Only Rating"
+
+                     },
+                     
+ "amexio-rating-custom-icons":{
+                                             "prefix": "amexio-rating-custom-icons",
+                                             "body": [
+                                                     "<amexio-rating-input", 
+                                                     "\t [(ngModel)]=\"${1:ngModel}\"",
+                                                     "\t [full-icon]=\"'☑'\"",
+                                                     "\t [empty-icon]=\"'☐'\"",
+                                                     "\t [max]=\"${2:max}\"",
+                                                     "\t name=\"${3:name}\"",
+                                                     "\t [read-only]=\"isReadonly\">",
+                                                     "</amexio-rating-input>"
+                            
+                                                     ],
+                                             "description": "Rating Component With Custom Icons"
+
+                                             },
+
+ "amexio-rating-rate-titles":{
+                           "prefix": "amexio-rating-rate-titles",
+                           "body": [
+                                   "<amexio-rating-input", 
+                                   "\t [(ngModel)]=\"${1:ngModel}\"",
+                                   "\t [full-icon]=\"'☑'\"",
+                                   "\t [empty-icon]=\"'☐'\"",
+                                   "\t [max]=\"${2:max}\"",
+                                   "\t name=\"${3:name}\"",
+                                   "\t [titles]=\"${4:titles}\"",
+                                   "\t [read-only]=\"isReadonly\">",
+                                   "</amexio-rating-input>"
+                                   ],
+                           "description": "Rating With Rate Titles"
+                           },
+//Forminputs-slider
+ "amexio-slider-min-max":{
+                               "prefix": "amexio-slider-min-max",
+                               "body": [
+                                        "<amexio-slider",  
+                                        "\t min-value=\"${1:minValue}\"",
+                                        "\t max-value=\"${2:maxValue}\"",
+                                        "\t step-value=\"${3:stepValue}\"",
+                                        "\t [(ngModel)]=\"${4:ngModel}\">",
+                                        "</amexio-slider>"
+                                       ]  ,
+                               "description": "Slider With Min/Max"
+                              },                       
+//Forminputs-typeahead
+ "amexio-type-head":{
+                           "prefix": "amexio-type-head",
+                           "body": [
+                                     "<amexio-typeahead",
+                                    "\t [data-reader]=\"'${1:dataReader}'\"",
+                                    "\t [key]=\"'${2:key}'\"",
+                                    "\t [display-field]=\"'${3:displayField}'\"",
+                                    "\t [place-holder]=\"'${4:placeHolder}'\"",
+                                    "\t [http-url]=\"'${url}'\"",
+                                    "\t [http-method]=\"'get'\"",
+                                    "\t (change)=\"${6:onSelection(\\$event)}\"",
+                                    "\t [field-label]=\"'${7:fieldLabel}'\">",
+                                    "</amexio-typeahead>"
+                                   ],
+                           "description": "Simple Type a Head That Displays Type a Head Options"
+                           },
+ //Forminputs-taginput        
+ "amexio-tag-input-http-url":{
+                                 "prefix": "amexio-tag-input-http-url",
+                                 "body": [
+                                          "<amexio-tag-input",
+                                          "\t [data-reader]=\"'${1:dataReader}'\"",
+                                          "\t [http-url]=\"'${url}'\"",
+                                          "\t [http-method]=\"'get'\"",
+                                          "\t [key]=\"'${3:key}'\"",
+                                          "\t [display-field]=\"'${4:displayField}'\"",
+                                          "\t [value-field]=\"'${5:valueField}'\"",
+                                          "\t [(ngModel)]=\"${6:ngModel}\"",
+                                          "\t [field-label]=\"'${7:fieldLabel}'\"",
+                                          "\t (onChange)=\"${8:onRecordSelect}(\\$event)\">",
+                                          "</amexio-tag-input>"
+                                         ],
+                                 "description": "Taginput With Http-url"
+                                 },
+ //Forminputs-textfield                                
+ "amexio-text-field":{
+                           "prefix": "amexio-text-field",
+                           "body": [
+                                    "<amexio-text-input",
+                                    "\t field-label=\"${1:fieldLabel}\"",
+                                    "\t name=\"${2:name}\"",
+                                    "\t place-holder=\"${3:placeHolder}\"",
+                                    "\t icon-feedback=\"true\">",
+                                    "</amexio-text-input>"
+                                   ],
+                           "description": "Basic Text Field"
+                           },
+                           
+ "amexio-text-field-without-label-icon-feedback":{
+                                                 "prefix": "amexio-text-field-without-label-icon-feedback",
+                                                 "body": [
+                                                          "<amexio-text-input", 
+                                                          "\t name=\"${1:name}\"",
+                                                          "\t place-holder=\"${2:placeHolder}\"",
+                                                          "\t icon-feedback=\"false\"",
+                                                          "\t has-label=\"false\">",
+                                                          "</amexio-text-input>"
+                                                         ],
+                                                 "description": "Input Without Label and Icon Feedback"
+                                                },
+                                                
+ "amexio-text-field-min-max-validations":{
+                              "prefix": "amexio-text-field-min-max-validations",
+                              "body": [
+                                       "<amexio-text-input", 
+                                       "\t enable-popover=\"true\"",
+                                       "\t field-label=\"${1:fieldLabel}\"",
+                                       "\t name=\"${2:name}\"",
+                                       "\t place-holder=\"${3:placeHolder}\"",
+                                       "\t allow-blank=\"false\"",
+                                       "\t error-msg=\"${4:errorMsg}\"",
+                                       "\t min-length=\"${5:minLength}\"",
+                                       "\t min-error-msg=\"${6:minErrorMsg}\"",
+                                       "\t max-length=\"${7:maxLength}\"",
+                                       "\t max-error-msg=\"${8:maxErrorMsg}\"",
+                                       "\t icon-feedback=\"true\">",
+                                       "</amexio-text-input> "
+                                      ],
+                              "description": "Min/Max Validations"
+                              },
+                              
+ "amexio-text-field-disabeled":{
+                               "prefix": "amexio-text-field-disabeled",
+                               "body": [
+                                        "<amexio-text-input",
+                                        "\t name=\"${1:name}\"",
+                                        "\t field-label=\"${2:fieldLabel}\"",
+                                        "\t place-holder=\"${3:placeHolder}\"",
+                                        "\t disabled=\"true\">",
+                                        "</amexio-text-input>"
+                                       ],
+                               "description": "Disabled Text Field"
+                              },         
+ "amexio-text-field-font-styling":{
+                       "prefix": "amexio-text-field-font-styling",
+                       "body": [
+                                "<amexio-text-input",
+                                "\t field-label=\"${1:fieldLabel}\"",
+                                "\t name=\"${2:name}\"",
+                                "\t place-holder=\"${3:placeHolder}\"",
+                                "\t icon-feedback=\"true\"",
+                                "\t font-style=\"${4:fontStyle}\">",
+                                "</amexio-text-input>"
+                               ],
+                       "description": "Font Styling"
+                       },                             
+                              
+ "amexio-text-field-family-styling":{
+                          "prefix": "amexio-text-field-family-styling",
+                          "body": [
+                                   "<amexio-text-input" ,
+                                   "\t [field-label]=\"'${1:fieldLabel}'\"",
+                                   "\t name=\"${2:name}\"",
+                                   "\t [place-holder]=\"'${3:placeHolder}'\"",
+                                   "\t [icon-feedback]=\"true\"",
+                                   "\t [font-style]=\"'${4:fontStyle}'\">",
+                                   "</amexio-text-input>"
+                                  ],
+                          "description": "Family Styling"
+                         },                    
+                         
+ "amexio-text-field-font-size":{
+                     "prefix": "amexio-text-field-font-size",
+                     "body": [
+                              "<amexio-text-input" ,
+                              "\t [field-label]=\"'${1:fieldLabel}'\"",
+                              "\t name=\"${2:name}\"",
+                              "\t [place-holder]=\"'${3:placeHolder}'\"",
+                              "\t [icon-feedback]=\"true\"",
+                              "\t [font-size]=\"'${4:large}'\">",
+                              "</amexio-text-input>"
+                             ],
+                     "description": "Font Size"
+                    },                       
+  //Forminputs-textarea                  
+ "amexio-text-area":{
+                           "prefix": "amexio-text-area",
+                           "body": [
+                                    "<amexio-textarea-input",
+                                    "\t [enable-popover]=\"true\"",
+                                    "\t [field-label]=\"'${1:fieldLabel}'\"",
+                                    "\t name =\"${2:name}\"",
+                                    "\t [place-holder]=\"'${3:placeHolder}'\"",
+                                    "\t [allow-blank]=\"true\"",
+                                    "\t [error-msg] =\"'${4:errorMsg}'\"",
+                                    "\t [icon-feedback]=\"true\"",
+                                    "\t [rows]=\"'${5:rows}'\"",
+                                    "\t [columns]=\"'${6:columns}'\">",
+                                    "</amexio-textarea-input>"
+                                   ],
+                           "description": "Basic Text Area"
+                          },
+  //Forminputs-toggle                        
+ "amexio-toggle-round":{
+                        "prefix": "amexio-toggle-round",
+                        "body": [
+                                 "<amexio-toggle" ,
+                                 "\t [field-label]=\"'${1:fieldLabel}'\">",
+                                 "</amexio-toggle>"
+                                ],
+                        "description": "Round Toggle"
+                       },
+                       
+ "amexio-toggle-square-event":{
+                                    "prefix": "amexio-toggle-square-event",
+                                    "body": [
+                                             "<amexio-toggle", 
+                                             "\t shape=\"square\"",
+                                             "\t (onChange)=\"${1:onSquareToggleClick(\\$event)}\">",
+                                             "</amexio-toggle>"
+                                            ],
+                                    "description": "Square Toggle With Event"
+                                   },
+//Form Actions
+//Formactions-button           
+ "amexio-button-type":{
+                        "prefix": "amexio-button-type",
+                        "body": [
+                                 "<amexio-button" ,
+                                 "\t [label]=\"'${1:label}'\"",
+                                 "\t [type]=\"'${2:type}'\"",
+                                 "\t [tooltip]=\"'${3:toolTip}'\" >",
+                                 "</amexio-button>"                    
+                                ],
+                        "description": "Button Types"
+                       },
+                       
+ "amexio-button-state":{
+                         "prefix": "amexio-button-state",
+                         "body": [
+                                  "<amexio-button" ,
+                                  "\t [label]=\"'${1:label}'\"",
+                                  "\t [type]=\"'disabled'\"",
+                                  "\t [tooltip]=\"'${2:toolTip}'\"",
+                                  "\t [disabled]=\"'true'\" >",
+                                  "</amexio-button>"
+                                 ],
+                         "description": "Button States"
+                        },
+                        
+ "amexio-button-icon":{
+                             "prefix": "amexio-button-icon",
+                             "body": [
+                                      "<amexio-button", 
+                                      "\t [label]=\"'${1:label}'\"",
+                                      "\t [type]=\"'danger'\"",
+                                      "\t [tooltip]=\"'${2:toolTip}'\"",
+                                      "\t [icon]=\"'${4:icon}'\">",
+                                      "</amexio-button>"],                                        
+                             "description": "Button with Icons"
+                             },
+                             
+ "amexio-button-size":{
+                        "prefix": "amexio-button-size",
+                        "body": [
+                                 "<amexio-button", 
+                                 "\t [label]=\"'${1:label}'\"",
+                                 "\t [type]=\"'primary'\"",
+                                 "\t [tooltip]=\"'${2:toolTip}'\"",
+                                 "\t [size]=\"'${3:size}'\">"
+                                ],
+                        "description": "-Button Sizes can be set using this tag"
+                       },
+ //Formactions-buttongroup                      
+ "amexio-button-group":{
+                                  "prefix": "amexio-button-group",
+                                  "body": [
+                                           "<amexio-btn-group>",
+                                            "\t <amexio-button ",
+                                            "\t\t[label]=\"'${1:label}'\"",
+                                            "\t\t (onClick)=\"${2:getData}(\\$event)\">",
+                                            "\t </amexio-button>",
+                                     
+                                            "\t <amexio-button", 
+                                            "\t\t [label]=\"'${3:label}'\"",
+                                            "\t\t [type]=\"'warning'\">",
+                                            "\t </amexio-button>",
+                                   
+                                            "</amexio-btn-group>"
+                                          ],
+                                  "description": "Button Group Component"
+                                 },
+
+ "amexio-button-group-state":{
+                               "prefix": "amexio-button-group-state",
+                               "body": [
+                                        "<amexio-btn-group>",
+                                                         "\t <amexio-button", 
+                                                         "\t\t [label]=\"'${1:label}'\"",
+                                                         "\t\t [type]=\"'primary'\"",
+                                                         "\t\t [tooltip]=\"'${2:toolTip}'\"",
+                                                         "\t\t [disabled]=\"'true'\">",
+                                                         "\t </amexio-button>",
+                                       
+                                                         "\t <amexio-button", 
+                                                         "\t\t [label]=\"'${4:label}'\"",
+                                                         "\t\t [type]=\"'primary'\"",
+                                                         "\t\t [tooltip]=\"'${3:toolTip}'\">",
+                                                         "\t </amexio-button>",
+                                        "</amexio-btn-group>"
+                                       ],
+                               "description": "Button Group States"
+                              },
+                              
+ "amexio-button-group-icon":{
+                                   "prefix": "amexio-button-group-icon",
+                                   "body": [
+                                     "<amexio-btn-group>",
+                                                 "\t <amexio-button", 
+                                                 "\t\t [label]=\"'${1:label}'\"",
+                                                 "\t\t [type]=\"'primary'\"", 
+                                                 "\t\t [tooltip]=\"'${2:toolTip}'\"", 
+                                                 "\t\t [icon]=\"'${3:icon}'\" >",
+                                                 "\t </amexio-button>",
+                                     
+                                                 "\t <amexio-button", 
+                                                 "\t\t [label]=\"'${4:label}'\"", 
+                                                 "\t\t [type]=\"'success'\"", 
+                                                 "\t\t [tooltip]=\"'${5:toolTip}'\"", 
+                                                 "\t\t [icon]=\"'${6:icon}'\" >",
+                                                 "\t </amexio-button>",
+                                     
+                                     "</amexio-btn-group>"
+                                           ],
+                                   "description": "Button Group with Icons"
+                                  },
+         
+ "amexio-button-group-size":{
+                             "prefix": "amexio-button-group-size",
+                             "body": [
+                                     "<amexio-row>",
+                                     "\t <amexio-column",
+                                     "\t\t [size]=\"${1:size}\">",
+                                         "\t\t\t <amexio-btn-group>",
+                                             "\t\t\t\t <amexio-button", 
+                                             "\t\t\t\t\t [size]=\"'${2:size}'\"", 
+                                             "\t\t\t\t\t[label]=\"'${3:label}'\"", 
+                                             "\t\t\t\t\t [type]=\"'primary'\"", 
+                                             "\t\t\t\t\t [tooltip]=\"'${4:toolTip}'\"", 
+                                             "\t\t\t\t\t [icon]=\"'${5:icon}'\" >",
+                                             "\t\t\t\t </amexio-button>",
+                                             
+                                             "\t\t\t\t <amexio-button",
+                                             "\t\t\t\t\t [size]=\"'${6:size}'\"",
+                                             "\t\t\t\t\t [label]=\"'${7:label}'\"",
+                                             "\t\t\t\t\t [type]=\"'success'\"", 
+                                             "\t\t\t\t\t [tooltip]=\"'save'\"",
+                                             "\t\t\t\t\t [icon]=\"'${8:icon}'\" >",
+                                             "\t\t\t\t </amexio-button>",
+                                         
+                                             
+                                         "\t\t\t </amexio-btn-group>",
+                                     "\t </amexio-column>",
+                                     
+                                     "</amexio-row>"
+                               
+                                     ],
+                             "description": "Button Group Sizes"
+                             
+                              },
+  //Formactions-buttondropdown                            
+ "amexio-button-dropdown":{
+                          "prefix": "amexio-button-dropdown",
+                          "body": [
+                                   "<amexio-btn-dropdown" ,
+                                   "\t [label]=\"'${1:label}'\"",
+                                   "\t [type]=\"'${2:type}'\"",
+                                   "\t [size]=\"'${3:size}'\" >",
+
+                                    "\t\t <amexio-btn-dropdown-item",
+                                     "\t\t\t [label]=\"'${4:label}'\"",
+                                     "\t\t\t [icon]=\"'${5:icon}'\">",
+                                   "\t\t </amexio-btn-dropdown-item>",
+                                   "\t\t <amexio-btn-dropdown-item",
+                                   "\t\t\t [label]=\"'${6:label}'\"",
+                                   "\t\t\t [icon]=\"'${7:icon}'\">",
+                                   "\t\t </amexio-btn-dropdown-item>",
+                                   "</amexio-btn-dropdown>"
+                                  ],
+                          "description": "Button dropdown list "
+                          },
+                          
+ "amexio-button-dropdown-size":{
+                                     "prefix": "amexio-button-dropdown-size",
+                                     "body": [
+                                              "<amexio-btn-dropdown ",
+                                              "\t [label]=\"'${1:label}'\"",
+                                              "\t [type]=\"'success'\"",
+                                              "\t [size]=\"'default'\">",
+                                              "\t\t <amexio-btn-dropdown-item", 
+                                              "\t\t\t [label]=\"'${4:label}'\" >",
+                                              "\t\t </amexio-btn-dropdown-item>",
+                                              "\t\t <amexio-btn-dropdown-item" ,
+                                              "\t\t\t [label]=\"'${5:label}'\" >",
+                                              "\t\t </amexio-btn-dropdown-item>",
+                                              "</amexio-btn-dropdown>"
+                                             ],
+                                     "description": " Dropdown Button with size"
+                                    },
+                                    
+ "amexio-button-dropdown-disabled-link":{
+                                              "prefix": "amexio-button-dropdown-disabled-link",
+                                              "body": [
+                                                       "<amexio-btn-dropdown",
+                                                       "\t [label]=\"'${1:label}'\"",
+                                                       "\t [type]=\"'primary'\"",
+                                                       "\t [size]=\"'default'\">",
+                                                       "\t\t <amexio-btn-dropdown-item",
+                                                       "\t\t\t [label]=\"'${4:label}'\"",
+                                                       "\t\t\t [icon]=\"'${5:icon}'\"",
+                                                       "\t\t\t [disabled]=\"true\">",
+                                                       "\t\t </amexio-btn-dropdown-item>",
+                                                       "\t\t <amexio-btn-dropdown-item" ,
+                                                       "\t\t\t [label]=\"'${6:label}'\"",
+                                                       "\t\t\t [icon]=\"'${7:icon}'\">",
+                                                       "\t\t </amexio-btn-dropdown-item>",
+                                                       "</amexio-btn-dropdown>"
+                                                      ],
+                                              "description": "Dropdown Button with disabled link feature"
+                                             },
+ //Formaction-notification                                            
+ "amexio-notification-top":{
+                            "prefix": "amexio-notification-top",
+                            "body": [
+                                     "<amexio-notification", 
+                                     "\t [data]=\"${1:data}\"",
+                                     "\t [vertical-position]=\"'top'\"",
+                                     "\t [horizontal-position]=\"'right'\"",
+                                     "\t [auto-dismiss-msg]=\"true\"",
+                                     "\t [auto-dismiss-msg-interval]=\"${1:autoDismissMsgInterval}\">",
+                                     "</amexio-notification>",
+                                     "<amexio-button", 
+                                     "\t (onClick)=\"${2:cliclkfunction()}\"",
+                                     "\t [label]=\"'${3:label}'\"",
+                                     "\t [type]=\"'${4:type}'\"",
+                                     "\t [tooltip]=\"'${5:toolTip}'\">",
+                                     "</amexio-button>"
+                                    ],
+                             "description": "Top Notification shows notification on top of screen"      
+                           },
+  
+
+ "amexio-notification-top-left":{
+                                  "prefix": "amexio-notification-top-left",
+                                  "body": [
+                                     "<amexio-notification ",
+                                     "\t [data]=\"${1:data}\"",
+                                     "\t [vertical-position]=\"'top'\"",
+                                     "\t [horizontal-position]=\"'left'\"", 
+                                     "\t [auto-dismiss-msg]=\"true\"",
+                                     "\t [auto-dismiss-msg-interval]=\"${2:msgInterval}\">",
+                                     "</amexio-notification>",
+                                     "<amexio-button ",
+                                     "(onClick)=\"${3:functionName}()\"",
+                                     "\t [label]=\"'${4:label}'\"", 
+                                     "\t [type]=\"'${5:type}'\"",
+                                     "\t [tooltip]=\"'${6:toolTip}'\">",
+                                     "</amexio-button>"
+                                          ],
+                                  "description": "Top Left Notificaion on Screen "
+                                },
+
+ "amexio-notification-top-right":{
+                                  "prefix": "amexio-notification-top-right",
+                                  "body": [
+                                           "<amexio-notification ",
+                                           "\t [data]=\"${1:data}\"",
+                                           "\t [vertical-position]=\"'top'\"",
+                                           "\t [horizontal-position]=\"'right'\"", 
+                                           "\t [auto-dismiss-msg]=\"true\"",
+                                           "\t [auto-dismiss-msg-interval]=\"${2:msgInterval}\">",
+                                           "</amexio-notification>",
+                                           "<amexio-button", 
+                                           "\t (onClick)=\"${3:FunctionName}()\"",
+                                           "\t [label]=\"'${4:label}'\"", 
+                                           "\t [type]=\"'${5:type}'\"",
+                                           "\t [tooltip]=\"'${6:toolTip}'\">",
+                                           "</amexio-button>"
+                                          ],
+                                  "description": "Top Right Notification"   
+                             },
+ "amexio-notification-bottom-left":{
+                                     "prefix": "amexio-notification-bottom-left",
+                                     "body": [
+                                             "<amexio-notification ",
+                                             "\t [data]=\"${1:data}\"",
+                                             "\t [vertical-position]=\"'bottom'\"",
+                                             "\t [horizontal-position]=\"'left'\"",
+                                             "\t [auto-dismiss-msg]=\"true\"",
+                                             "\t [auto-dismiss-msg-interval]=\"${2:msgInterval}\">",
+                                             "</amexio-notification>",
+                                             "<amexio-button ",
+                                             "\t (onClick)=\"${3:functionName}()\"",
+                                             "\t [label]=\"'${4:label}'\"",
+                                             "\t [type]=\"'${5:type}'\"",
+                                             "\t [tooltip]=\"'${6:toolTip}'\">",
+                                             "</amexio-button>"
+                        
+                                             ],
+                                     "description": "Bottom Left Notification"
+                                   }, 
+ "amexio-notification-bottom-right":{
+                                     "prefix": "amexio-notification-bottom-right",
+                                     "body": [
+                                             "<amexio-notification" ,
+                                             "\t [data]=\"${1:data}\"",
+                                             "\t [vertical-position]=\"'bottom'\"",
+                                             "\t [horizontal-position]=\"'right'\"", 
+                                             "\t [auto-dismiss-msg]=\"true\"",
+                                             "\t [auto-dismiss-msg-interval]=\"${2:msgInterval}\">",
+                                             "</amexio-notification>",
+                                             "<amexio-button" ,
+                                             "\t(onClick)=\"${3:functionName}()\"",
+                                             "\t [label]=\"'${4:label}'\" ",
+                                             "\t [type]=\"'${5:type}'\"",
+                                             "\t [tooltip]=\"'${6:toolTip}'\">",
+                                             "</amexio-button>"
+                                             ],
+                                     "description": "bottom right notification"
+                                    },
+//Formactions-paginator
+ "amexio-paginator-page-size":{
+                                    "prefix": "amexio-paginator-page-size",
+                                    "body": [
+                                             "<amexio-paginator", 
+                                             "\t [pages]=\"${1:pages}\"",
+                                             "\t [rows]=\"${2:rows}\"", 
+                                             "\t (onPageChange)=\"${3:clickfunction(\\$event)}\">",
+                                             "</amexio-paginator>"
+                                            ],
+                                    "description": "paginator with page size 10-"
+                                   },
+ //Formactions-progressbar                                  
+ "amexio-progress-bar":{
+                        "prefix": "amexio-progress-bar",
+                         "body": [
+                                  "<amexio-row>",
+                                  "\t <amexio-column", 
+                                  "\t [size]=\"${1:size}\">",
+                                  "\t\t <amexio-progress-bar",
+                                  "\t\t\t [current-value]=\"'${2:currentValue}'\"", 
+                                  "\t\t\t [infinite]=\"false\"", 
+                                  "\t\t\t type=\"${3:type}\">",
+                                  "\t\t </amexio-progress-bar>",
+                                  "\t </amexio-column>",
+                                  "</amexio-row>"
+                                 ],
+                         "description": "Progress bar"
+                       }
+
+
 }
