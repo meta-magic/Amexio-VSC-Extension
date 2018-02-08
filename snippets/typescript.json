@@ -1145,9 +1145,1342 @@
 						   "\t\t\t\t\t\t\t\t\t\t\t}" 
 							 ],
 							 "description": "Progress bar"
-							}
+							},
+							
+
+
+"Amexio item selector":{
+	
+						"prefix": "amexio-ts-item-selector",
+						"description": "Amexio Item Selector",
+						"body": [
+								"import { Component, OnInit } from '@angular/core';",
+								"",
+								"@Component({",
+								"\tselector: '${1:selectorname}',",
+								"\ttemplateUrl: '${2:name}.component.html',",
+								"\tstyleUrls: ['${3:name}.component.css'],",
+								"})",
+								
+								"",
+								"\texport class ${4:name}Component implements OnInit {",
+								"\t${5:data}:any;",
+								"\tconstructor() { }",
+
+								"\tngOnInit() {}",
+
+								"\tgetSelectedData(${6:data}: any) {",
+									"\t\tthis.${5:data} = ${6:data};",
+								  "}",
+								  "}"
+								]
+								
+						
+},
+	"Amexio Simple Grid":{
+	
+						"prefix": "amexio-ts-simple-grid",
+						"description": "Amexio Simple Grid",
+						"body":[
+								"import { Component, OnInit } from '@angular/core';",
+								"import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+								"",
+								"@Component({",
+								"\tselector: '${1:selectorname}',",
+								"\ttemplateUrl: '${2:name}.component.html',",
+								"\tstyleUrls: ['${3:name}.component.css'],",
+								"})",
+								"",
+								"\texport class ${4:name}Component implements OnInit {",
+								
+								"\tconstructor() { }",
+								
+
+								"\tngOnInit() {}",
+								"}",
+								
+								]
+	
+},
+	"Amexio-ts-template-grid":{
+
+						"prefix": "amexio-ts-template-grid",
+						"description": "amexio grid template",
+						"body": [
+								"import { Component, OnInit } from '@angular/core';",
+								"import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+								"",
+								"@Component({",
+								"\tselector: '${1:selectorname}',",
+								"\ttemplateUrl: '${2:name}.component.html',",
+								"\tstyleUrls: ['${3:name}.component.css'],",
+								"})",
+								
+								"",
+								"\texport class ${4:name}Component implements OnInit {",
+								"\t${5:data}:any;",
+								"\tconstructor() { }",
+								"\tgetRowData(${6:data}: any) {",
+									
+								"}",
+
+								"\tngOnInit() {}",
+								"}"
+								
+
+						]
+	
+},
+		"Amexio-ts-datagrid-filter":{
+	
+								"prefix": "amexio-ts-datagrid-filter",
+								"description": "Amexio Filter Grid",
+								"body": [
+											"import { Component, OnInit } from '@angular/core';",
+											"import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+											"",
+											"@Component({",
+											"\tselector: '${1:selectorname}',",
+											"\ttemplateUrl: '${2:name}.component.html',",
+											"\tstyleUrls: ['${3:name}.component.css'],",
+											"})",
+											
+											"",
+											"\texport class ${4:name}Component implements OnInit {",
+											
+											"\tconstructor() { }",
+											"\tonRowSelect(${6:data}: any) {",
+											
+											"}",
+											
+											"\tngOnInit() {}",
+											"}"
+
+										
+										
+										]
+								},
+	"Amexio-ts-grid-groupby":{
+	
+									"prefix": "amexio-ts-grid-groupby",
+									"description": "description",
+									"body": [
+												"import { Component, OnInit } from '@angular/core';",
+												"import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+												"",
+												"@Component({",
+												"\tselector: '${1:selectorname}',",
+												"\ttemplateUrl: '${2:name}.component.html',",
+												"\tstyleUrls: ['${3:name}.component.css'],",
+												"})",
+												"\t@NgModule({",
+												"\timports: [AmexioWidgetModule ],",
+												"\texports: [],",
+												"\tdeclarations : [],",
+												"\tproviders : []",
+												"})",
+												"",
+												"\texport class ${4:name}Component implements OnInit {",
+												
+												"\tconstructor() { }",
+												
+				
+												"\tngOnInit() {}",
+												"}"
+
+												
+											]
+									
+								},
+			"Amexio-ts-grid-columnsize":{
+	
+										"prefix": "amexio-ts-grid-columnsize",
+										"description": "Amexio columnsize Grid",
+										"body": [
+													"import { Component, OnInit } from '@angular/core';",
+													"import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+													"",
+													"@Component({",
+													"\tselector: '${1:selectorname}',",
+													"\ttemplateUrl: '${2:name}.component.html',",
+													"\tstyleUrls: ['${3:name}.component.css'],",
+													"})",
+												
+													"",
+													"\texport class ${4:name}Component implements OnInit {",
+													"\t${5:data}:any;",
+													"\tconstructor() { }",
+													"\tgetRowData(${6:data}: any) {",
+														
+													"}",
+													
+					
+													"\tngOnInit() {}",
+													"}"
+												]
+															
+									},
+				"Amexio-ts-grid-scroll":{
+								
+										"prefix": "amexio-ts-grid-scroll",
+										"description": "Amexio Scroll Grid ",
+										"body": [
+													"import { Component, OnInit } from '@angular/core';",
+													"import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+													"",
+													"@Component({",
+													"\tselector: '${1:selectorname}',",
+													"\ttemplateUrl: '${2:name}.component.html',",
+													"\tstyleUrls: ['${3:name}.component.css'],",
+													"})",
+													
+													"",
+													"\texport class ${4:name}Component implements OnInit {",
+													
+													"\tconstructor() { }",
+													
+					
+													"\tngOnInit() {}",
+													"}"
+											
+
+										        ]
+										
+
+									},
+				"Amexio-ts-data-treegrid":{
+									
+											"prefix": "amexio-ts-data-treegrid",
+											"description": "Amexio Treegrid Data",
+											"body": [
+														"import { Component, OnInit } from '@angular/core';",
+														"import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+														"",
+														"@Component({",
+														"\tselector: '${1:selectorname}',",
+														"\ttemplateUrl: '${2:name}.component.html',",
+														"\tstyleUrls: ['${3:name}.component.css'],",
+														"})",
+														"\t@NgModule({",
+														"\timports: [AmexioWidgetModule ],",
+														"\texports: [],",
+														"\tdeclarations : [],",
+														"\tproviders : []",
+														"})",
+														"",
+														"\texport class ${4:name}Component implements OnInit {",
+														"\t${5:data}:any;",
+														"\tconstructor() { }",
+						
+														"\tngOnInit() {}",
+						
+														"\tgetSelectedData(${6:data}: any) {",
+															"\t\tthis.${5:data} = ${6:data};",
+														"}",
+														"}"
+
+													]
+											
+										},
+			"Amexio-ts-tree-simple":{
+	
+										"prefix": "amexio-ts-tree-simple",
+										"description": "Amexio Tree Simple Data",
+										"body": [
+													"import { Component, OnInit } from '@angular/core';",
+													"import {AmexioWidgetModule from 'amexio-ng-extensions';",
+													"",
+													"@Component({",
+													"\tselector: '${1:selectorname}',",
+													"\ttemplateUrl: '${2:name}.component.html',",
+													"\tstyleUrls: ['${3:name}.component.css'],",
+													"})",
+													
+													"",
+													"\texport class ${4:name}Component implements OnInit {",
+													
+													"\tconstructor() { }",
+													"\tgetNodeData(${6:data}: any) {",
+														
+													"}",
+													"\tngOnInit() {}",
+													"}"
+												]
+										
+										},
+		"Amexio-ts-tree-template":{
+	
+											"prefix": "amexio-ts-tree-template",
+											"description": "Amexio tree template",
+											"body": [
+														"import { Component, OnInit } from '@angular/core';",
+														"import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+														"",
+														"@Component({",
+														"\tselector: '${1:selectorname}',",
+														"\ttemplateUrl: '${2:name}.component.html',",
+														"\tstyleUrls: ['${3:name}.component.css'],",
+														"})",
+														
+														"",
+														"\texport class ${4:name}Component implements OnInit {",
+														"\t${5:data}:any;",
+														"\tconstructor() { }",
+														"\tgetNodeData(${6:data}: any) {",
+														
+														"}",
+														"\tngOnInit() {}",
+														"}"
+																
+
+													]
+											
+										},
+		"Amexio-ts-tree-filter":{
+	
+											"prefix": "amexio-ts-tree-filter",
+											"description": "Amexio Tree Filter",
+											"body": [
+														"import { Component, OnInit } from '@angular/core';",
+														"import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+														"",
+														"@Component({",
+														"\tselector: '${1:selectorname}',",
+														"\ttemplateUrl: '${2:name}.component.html',",
+														"\tstyleUrls: ['${3:name}.component.css'],",
+														"})",
+														
+														"",
+														"\texport class ${4:name}Component implements OnInit {",
+														"\t${5:data}:any;",
+														"\tconstructor() { }",
+														"\tgetNodeData(${6:data}: any) {",
+														
+														"}",
+														"\tngOnInit() {}",
+														"}"
+															
+												
+													]
+
+					},
+	"Amexio-ts-tree-checkbox":{
+						
+									"prefix": "amexio-ts-tree-checkbox",
+									"description": "Amexio Tree with Checkbox",
+									"body": [
+
+												"import { Component, OnInit } from '@angular/core';",
+												"import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+												"",
+												"@Component({",
+												"\tselector: '${1:selectorname}',",
+												"\ttemplateUrl: '${2:name}.component.html',",
+												"\tstyleUrls: ['${3:name}.component.css'],",
+												"})",
+												
+												"",
+												"\texport class ${4:name}Component implements OnInit {",
+												"\t${5:data}:any;",
+												"\tconstructor() { }",
+												"\tgetNodeData(${6:data}: any) {",
+													
+												"}",
+												"\tngOnInit() {}",
+												"}"
+											]
+									
+								},
+"Amexio-ts-tree-horizontal":{
+
+									"prefix": "amexio-ts-tree-horizontal",
+									"description": "Amexio Tree Horizontal",
+									"body": [
+												"import { Component, OnInit } from '@angular/core';",
+												"import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+												"",
+												"@Component({",
+												"\tselector: '${1:selectorname}',",
+												"\ttemplateUrl: '${2:name}.component.html',",
+												"\tstyleUrls: ['${3:name}.component.css'],",
+												"})",
+												
+												"",
+												"\texport class ${4:name}Component implements OnInit {",
+												"\t${5:data}:any;",
+												"\tconstructor() { }",
+												"\tgetNodeData(${6:data}: any) {",
+													
+												"}",
+												"\tngOnInit() {}",
+												"}"
+										]		
+									
+								},
+
+	//Amexio Data Listbox
+	"Amexio-ts-data-listbox":{
+	
+							"prefix": "amexio-ts-data-listbox",
+							"description": "Amexio listbox Data",
+							"body": [
+								"import { Component, OnInit } from '@angular/core';",
+								"import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+								"",
+								"@Component({",
+								"\tselector: '${1:selectorname}',",
+								"\ttemplateUrl: '${2:name}.component.html',",
+								"\tstyleUrls: ['${3:name}.component.css'],",
+								"})",
+								
+								"",
+								"\texport class ${4:name}Component  {",
+								"\t${5:localdata}:any;",
+								"\tconstructor() { ",
+									"\tthis.${5:localdata} = {",
+										"\t\"response\": {",
+										  "\t\"success\": \"true\",",
+											"\t\"message\": \"${7:Fetching  Data  Request Succeeded: Profile}\",",
+											"\t\"data\":[",
+												"\t\t{",												
+													"\t\t\t\"profile\" : \"${1}\",",
+													"\t\t\t\"name\" : \"${3}\"",
+											"\t\t},",
+											"\t\t{",												
+													"\t\t\t\"profile\" : \"${1}\",",
+													"\t\t\t\"name\" : \"${3}\"",
+											"\t\t}",												
+											"\t\t\t]",
+											"}",
+											"};",
+											"}", 
+											
+											"\t}"
+											
+							]
+							
+					 
+											
+						},
+	"Amexio-ts-data-listbox-media":{
+						
+							"prefix": "amexio-ts-data-listbox-media",
+							"description": "Amexio Image Media",
+							"body": [
+								"import { Component, OnInit } from '@angular/core';",
+								"import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+								"",
+								"@Component({",
+								"\tselector: '${1:selectorname}',",
+								"\ttemplateUrl: '${2:name}.component.html',",
+								"\tstyleUrls: ['${3:name}.component.css'],",
+								"})",
+								"\t@NgModule({",
+								"\timports: [AmexioWidgetModule ],",
+								"\texports: [],",
+								"\tdeclarations : [],",
+								"\tproviders : []",
+								"})",
+								"",
+								"\texport class ${4:name}Component {",
+								"\t${5:data}:any;",
+								"\tconstructor() { }",
+								"}"
+									
+							]
+
+
+							
+						},
+		"Amexio-ts-media-video":{
+	
+							"prefix": "amexio-ts-media-video",
+							"description": "description",
+							"body": [
+										"import { Component, OnInit } from '@angular/core';",
+										"import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+										"",
+										"@Component({",
+										"\tselector: '${1:selectorname}',",
+										"\ttemplateUrl: '${2:name}.component.html',",
+										"\tstyleUrls: ['${3:name}.component.css'],",
+										"})",
+										"\t@NgModule({",
+										"\timports: [AmexioWidgetModule ],",
+										"\texports: [],",
+										"\tdeclarations : [],",
+										"\tproviders : []",
+										"})",
+										"",
+										"\texport class ${4:name}Component {",
+										"\t${5:data}:any;",
+										"\tconstructor() { }",
+										"}"
+									]
+						},
+//Amexio App Navigation
+	"Amexio-ts-app-navigation-docker":{
+	
+								"prefix": "amexio-ts-app-navigation-docker",
+								"description": "Amexio Docker App Navigation ",
+								"body": [	
+									"import { Component, OnInit } from '@angular/core';",
+									"import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+									"",
+									"@Component({",
+									"\tselector: '${1:selectorname}',",
+									"\ttemplateUrl: '${2:name}.component.html',",
+									"\tstyleUrls: ['${3:name}.component.css'],",
+									"})",
+									"\t@NgModule({",
+									"\timports: [AmexioWidgetModule ],",
+									"\texports: [],",
+									"\tdeclarations : [],",
+									"\tproviders : []",
+									"})",
+									"",
+									"\texport class ${4:name}Component {",
+									"\tconstructor() { }",
+									"}"
+								]
+},
+//Amexio NavBar AppNavigation
+	"Amexio-ts-appNavigation-navbar":{
+	
+						"prefix": "amexio-ts-appNavigation-navbar",
+						"description": "Amexio AppNavigation Navbar",
+						"body": [
+									"import { Component, OnInit } from '@angular/core';",
+									"import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+									"",
+									"@Component({",
+									"\tselector: '${1:selectorname}',",
+									"\ttemplateUrl: '${2:name}.component.html',",
+									"\tstyleUrls: ['${3:name}.component.css'],",
+									"})",
+									"\t@NgModule({",
+									"\timports: [AmexioWidgetModule ],",
+									"\texports: [],",
+									"\tdeclarations : [],",
+									"\tproviders : []",
+									"})",
+									"",
+									"\texport class ${4:name}Component {",
+									"\t${5:data}:any;",
+									"\tconstructor() {",
+										
+										"\tthis.${6:data} = JSON.parse(`[{}]`);",
+										
+									"}",
+									
+									"}"
+								]
+					},
+//Amexio slidenavbar AppNAvigation
+"Amexio-ts-appnavigation-sidenavbar":{
+	
+						"prefix": "amexio-ts-appnavigation-sidenavbar",
+						"description": "Amexio SideNavbar AppNavigation",
+						"body": [
+							"import { Component, OnInit } from '@angular/core';",
+							"import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+							"",
+							"@Component({",
+							"\tselector: '${1:selectorname}',",
+							"\ttemplateUrl: '${2:name}.component.html',",
+							"\tstyleUrls: ['${3:name}.component.css'],",
+							"})",
+							"\t@NgModule({",
+							"\timports: [AmexioWidgetModule ],",
+							"\texports: [],",
+							"\tdeclarations : [],",
+							"\tproviders : []",
+							"})",
+							"",
+							"\texport class ${4:name}Component {",
+							
+							"\tconstructor() {",
+							"}",
+							
+							"}"
+
+								]
+					},
+//Amexio MenuBar
+	
+"Amexio-ts-appnavigation-menubar":{
+	
+						"prefix": "amexio-ts-appnavigation-menubar",
+						
+						"description": "Amexio Appnavigation Menubar",
+						"body": [
+									"import { Component, OnInit } from '@angular/core';",
+									"import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+									"",
+									"@Component({",
+									"\tselector: '${1:selectorname}',",
+									"\ttemplateUrl: '${2:name}.component.html',",
+									"\tstyleUrls: ['${3:name}.component.css'],",
+									"})",
+									"\t@NgModule({",
+									"\timports: [AmexioWidgetModule ],",
+									"\texports: [],",
+									"\tdeclarations : [],",
+									"\tproviders : []",
+									"})",
+									"",
+									"\texport class ${4:name}Component {",
+									
+									"\tconstructor() {",
+									"}",
+									
+									"}"
+
+								]
+					},
+	//Amexio Charts
+	"Amexio-ts-chart-area":{
+	
+							"prefix": "amexio-ts-chart-area",
+							"description": "Amexio Area Chart",
+							"body": [	
+								"\timport {Component, OnInit} from '@angular/core';",
+								"\timport {AmexioWidgetModule,ChartLoaderService} from \"${1:amexio-ng-extensions}\";",
+								"\timport{NgModule} from '@angular/core';",
+								"\t@Component({",
+								"\tselector: '${2:Selectorname}',",
+								 "\t templateUrl: '${3:name}demo.html'",
+								"})",
+								"\t@NgModule({",
+								  "\timports: [AmexioWidgetModule ],",
+								  "\texports: [],",
+								  "\tdeclarations : [],",
+								  "\tproviders : [ChartLoaderService]",
+								"})",
+								"\texport class AreaChartDemoComponent implements OnInit {",
+								  "\t${4:Data}:any;",
+								  "\tconstructor() {",
+									"\tthis.${4:Data}=[",
+									  
+									"];",
+								  "}",
+								
+								  "\tngOnInit() {",
+								  "}",
+								
+								"}"
+
+								]
+						},
+						//Amexio Bar Chart
+	"Amexio Bar Chart":{
+	
+							"prefix": "amexio-ts-chart-bar",
+							"description": "Amexio Chart Bar",
+							"body": [
+
+								"\timport {Component, OnInit} from '@angular/core';",
+								"\timport {AmexioWidgetModule,ChartLoaderService} from \"${1:amexio-ng-extensions}\";",
+								"\timport{NgModule} from '@angular/core';",
+								"\t@Component({",
+								"\tselector: '${2:Selectorname}',",
+								 "\t templateUrl: '${3:name}demo.html'",
+								"})",
+								"\t@NgModule({",
+								  "\timports: [AmexioWidgetModule ],",
+								  "\texports: [],",
+								  "\tdeclarations : [],",
+								  "\tproviders : [ChartLoaderService]",
+								"})",
+								"\texport class Component_name implements OnInit {",
+								  "\t${4:Data:any};",
+								  "\tconstructor() {",
+									"\tthis.${4:Data}=[",
+									  
+									"];",
+								  "}",
+								
+								  "\tngOnInit() {",
+								  "}",
+								
+								"}"
+								  ]
+									
+							},
+							//Amexio Bubble Chart
+	"Amexio Bubble Chart":{
+	
+								"prefix": "amexio-ts-chart-bubble",
+								
+								"description": "Amexio Bubble Chart",
+								"body": [
+									"\timport {Component, OnInit} from '@angular/core';",
+									"\timport {AmexioWidgetModule,ChartLoaderService} from \"${1:amexio-ng-extensions}\";",
+									"\timport{NgModule} from '@angular/core';",
+									"\t@Component({",
+									"\tselector: '${2:Selectorname}',",
+									 "\t templateUrl: '${3:name}demo.html'",
+									"})",
+									"\t@NgModule({",
+									  "\timports: [AmexioWidgetModule ],",
+									  "\texports: [],",
+									  "\tdeclarations : [],",
+									  "\tproviders : [ChartLoaderService]",
+									"})",
+									"\texport class Component_name implements OnInit {",
+									  "\t${4:Data}:any;",
+									  "\tconstructor() {",
+										"\tthis.${4:Data}=[",
+										  
+										"];",
+									  "}",
+									
+									  "\tngOnInit() {",
+									  "}",
+									
+									"}"
+									]
+							},
+	//Amexio candlestick chart
+	"amexio Candlestick chart":{
+	
+								"prefix": "amexio-ts-candlestick-chart",
+								
+								"description": "Amexio candlestick chart",
+								"body":[
+									"\timport {Component, OnInit} from '@angular/core';",
+									"\timport {AmexioWidgetModule,ChartLoaderService} from \"${1:amexio-ng-extensions}\";",
+									"\timport{NgModule} from '@angular/core';",
+									"\t@Component({",
+									"\tselector: '${2:Selectorname}',",
+									 "\t templateUrl: '${3:name}demo.html'",
+									"})",
+									"\t@NgModule({",
+									  "\timports: [AmexioWidgetModule ],",
+									  "\texports: [],",
+									  "\tdeclarations : [],",
+									  "\tproviders : [ChartLoaderService]",
+									"})",
+									"\texport class Component_name implements OnInit {",
+									  "\t${4:Data}:any;",
+									  "\tconstructor() {",
+										"\tthis.${4:Data}=[",
+										  
+										"];",
+									  "}",
+									
+									  "\tngOnInit() {",
+									  "}",
+									
+									"}"
+								]
+	},
+
+	//Amexio candlestick Waterfall
+	"Amexio candlestick Waterfall":{
+	
+									"prefix": "amexio-ts-chart-candlestick-waterfall",
+									
+									"description": "Amexio candlestick chart",
+									"body": [
+										"\timport {Component, OnInit} from '@angular/core';",
+										"\timport {AmexioWidgetModule,ChartLoaderService} from \"${1:amexio-ng-extensions}\";",
+										"\timport{NgModule} from '@angular/core';",
+										"\t@Component({",
+										"\tselector: '${2:Selectorname}',",
+										 "\t templateUrl: '${3:name}demo.html'",
+										"})",
+										"\t@NgModule({",
+										  "\timports: [AmexioWidgetModule ],",
+										  "\texports: [],",
+										  "\tdeclarations : [],",
+										  "\tproviders : [ChartLoaderService]",
+										"})",
+										"\texport class Component_name implements OnInit {",
+										  "\t${4:Data}:any;",
+										  "\tconstructor() {",
+											"\tthis.${4:Data}=[",
+											  
+											"];",
+										  "}",
+										
+										  "\tngOnInit() {",
+										  "}",
+										
+										"}"
+
+										]
+},
+//Amexio column chart
+"Amexio column chart":{
+	
+						"prefix": "amexio-ts-chart-column",
+						"description": "amexio column chart",
+						"body": [
+							"\timport {Component, OnInit} from '@angular/core';",
+										"\timport {AmexioWidgetModule,ChartLoaderService} from \"${1:amexio-ng-extensions}\";",
+										"\timport{NgModule} from '@angular/core';",
+										"\t@Component({",
+										"\tselector: '${2:Selectorname}',",
+										 "\t templateUrl: '${3:name}demo.html'",
+										"})",
+										"\t@NgModule({",
+										  "\timports: [AmexioWidgetModule ],",
+										  "\texports: [],",
+										  "\tdeclarations : [],",
+										  "\tproviders : [ChartLoaderService]",
+										"})",
+										"\texport class Component_name implements OnInit {",
+										  "\t${4:Data}:any;",
+										  "\tconstructor() {",
+											"\tthis.${4:Data}=[",
+											  
+											"];",
+										  "}",
+										
+										  "\tngOnInit() {",
+										  "}",
+										
+										"}"
+										]
+						
+						},
+						//Amexio combo chart(doubt)
+	"Amexio-combo-chart":{
+	
+							"prefix": "amexio-ts-chart-combo",
+							
+							"description": "Amexio Combo Chart",
+							"body": [
+								"\timport {Component, OnInit} from '@angular/core';",
+								"\timport {AmexioWidgetModule,ChartLoaderService} from \"${1:amexio-ng-extensions}\";",
+								"\timport{NgModule} from '@angular/core';",
+								"\t@Component({",
+								"\tselector: '${2:Selectorname}',",
+								 "\t templateUrl: '${3:name}demo.html'",
+								"})",
+								"\t@NgModule({",
+								  "\timports: [AmexioWidgetModule ],",
+								  "\texports: [],",
+								  "\tdeclarations : [],",
+								  "\tproviders : [ChartLoaderService]",
+								"})",
+								"\texport class AreaChartDemoComponent implements OnInit {",
+								  "\t${4:Data}:any;",
+								  "\tconstructor() {",
+									"\tthis.${4:Data}=[",
+									  
+									"];",
+								  "}",
+								
+								  "\tngOnInit() {",
+								  "}",
+								
+								"}"
+								]
+						},
+//Amexio Donut Chart
+		"amexio donut chart":{
+						
+								"prefix": "Amexio-ts-chart-donut",
+								
+								"description": "Amexio donut chart",
+								"body": [
+									"\timport {Component, OnInit} from '@angular/core';",
+									"\timport {AmexioWidgetModule,ChartLoaderService} from \"${1:amexio-ng-extensions}\";",
+									"\timport{NgModule} from '@angular/core';",
+									"\t@Component({",
+									"\tselector: '${2:Selectorname}',",
+									 "\t templateUrl: '${3:name}demo.html'",
+									"})",
+									"\t@NgModule({",
+									  "\timports: [AmexioWidgetModule ],",
+									  "\texports: [],",
+									  "\tdeclarations : [],",
+									  "\tproviders : [ChartLoaderService]",
+									"})",
+									"\texport class AreaChartDemoComponent implements OnInit {",
+									  "\t${4:Data}:any;",
+									  "\tconstructor() {",
+										"\tthis.${4:Data}=[",
+										  
+										"];",
+									  "}",
+									
+									  "\tngOnInit() {",
+									  "}",
+									
+									"}"
+
+										]
+							},
+
+								//Amexio Histogram Chart
+								"Amexio Histogram Chart":{
+	
+									"prefix": "amexio-ts-chart-histogram",
+									"description": "Amexio histogram chart",
+									"body":[
+										"\timport {Component, OnInit} from '@angular/core';",
+									"\timport {AmexioWidgetModule,ChartLoaderService} from \"${1:amexio-ng-extensions}\";",
+									"\timport{NgModule} from '@angular/core';",
+									"\t@Component({",
+									"\tselector: '${2:Selectorname}',",
+									 "\t templateUrl: '${3:name}demo.html'",
+									"})",
+									"\t@NgModule({",
+									  "\timports: [AmexioWidgetModule ],",
+									  "\texports: [],",
+									  "\tdeclarations : [],",
+									  "\tproviders : [ChartLoaderService]",
+									"})",
+									"\texport class AreaChartDemoComponent implements OnInit {",
+									  "\t${4:Data}:any;",
+									  "\tconstructor() {",
+										"\tthis.${4:Data}=[",
+										  
+										"];",
+									  "}",
+									
+									  "\tngOnInit() {",
+									  "}",
+									
+									"}"
+
+											
+									]
+								},
+
+//Amexio Line Chart(Doubt)
+"amexio-ts-line-chart":		{
+								
+								"prefix": "amexio-ts-chart-line",
+								"description": "Amexio Line Chart",
+								"body": [
+									"\timport {Component, OnInit} from '@angular/core';",
+										"\timport {AmexioWidgetModule,ChartLoaderService} from \"${1:amexio-ng-extensions}\";",
+										"\timport{NgModule} from '@angular/core';",
+										"\t@Component({",
+										"\tselector: '${2:Selectorname}',",
+										 "\t templateUrl: '${3:name}demo.html'",
+										"})",
+										"\t@NgModule({",
+										  "\timports: [AmexioWidgetModule ],",
+										  "\texports: [],",
+										  "\tdeclarations : [],",
+										  "\tproviders : [ChartLoaderService]",
+										"})",
+										"\texport class Component_name implements OnInit {",
+										  "\t${4:Data}:any;",
+										  "\tconstructor() {",
+											"\tthis.${4:Data}=[",
+											  
+											"];",
+										  "}",
+										
+										  "\tngOnInit() {",
+										  "}",
+										
+										"}"
+										]
+							},
+
+							//Amexio Pie Chart
+	"amexio-ts-pie-chart":{
+			
+										"prefix": "amexio-ts-chart-pie",
+										
+										"description": "Amexio Pie Chart",
+										"body":[
+											"\timport {Component, OnInit} from '@angular/core';",
+											"\timport {AmexioWidgetModule,ChartLoaderService} from \"${1:amexio-ng-extensions}\";",
+											"\timport{NgModule} from '@angular/core';",
+											"\t@Component({",
+											"\tselector: '${2:Selectorname}',",
+											"\t templateUrl: '${3:name}demo.html'",
+											"})",
+											"\t@NgModule({",
+											"\timports: [AmexioWidgetModule ],",
+											"\texports: [],",
+											"\tdeclarations : [],",
+											"\tproviders : [ChartLoaderService]",
+											"})",
+											"\texport class AreaChartDemoComponent implements OnInit {",
+											"\t${4:Data}:any;",
+											"\tconstructor() {",
+												"\tthis.${4:Data}=[",
+												
+												"];",
+											"}",
+											
+											"\tngOnInit() {",
+											"}",
+											
+											"}"
+												
+										]
+									},
+									//Amexio scatter chart
+	"amexio-ts-scatter-chart":{
+			
+					"prefix": "amexio-ts-chart-scatter",
+
+					"description": "Amexio Scatter Chart",
+					"body": [
+									"\timport {Component, OnInit} from '@angular/core';",
+									"\timport {AmexioWidgetModule,ChartLoaderService} from \"${1:amexio-ng-extensions}\";",
+									"\timport{NgModule} from '@angular/core';",
+									"\t@Component({",
+									"\tselector: '${2:Selectorname}',",
+									 "\t templateUrl: '${3:name}demo.html'",
+									"})",
+									"\t@NgModule({",
+									  "\timports: [AmexioWidgetModule ],",
+									  "\texports: [],",
+									  "\tdeclarations : [],",
+									  "\tproviders : [ChartLoaderService]",
+									"})",
+									"\texport class AreaChartDemoComponent implements OnInit {",
+									  "\t${4:Data}:any;",
+									  "\tconstructor() {",
+										"\tthis.${4:Data}=[",
+										  
+										"];",
+									  "}",
+									
+									  "\tngOnInit() {",
+									  "}",
+									
+									"}"
+
+								]
+
+						},
+						//Amexio Timeline Chart
+						"amexio TimeLine Chart":{
+
+							"prefix": "amexio-ts-chart-timeline",
+							
+							"description": "Amexio TimeLine Chart",
+							"body": [
+								"\timport {Component, OnInit} from '@angular/core';",
+									"\timport {AmexioWidgetModule,ChartLoaderService} from \"${1:amexio-ng-extensions}\";",
+									"\timport{NgModule} from '@angular/core';",
+									"\t@Component({",
+									"\tselector: '${2:Selectorname}',",
+									 "\t templateUrl: '${3:name}demo.html'",
+									"})",
+									"\t@NgModule({",
+									  "\timports: [AmexioWidgetModule ],",
+									  "\texports: [],",
+									  "\tdeclarations : [],",
+									  "\tproviders : [ChartLoaderService]",
+									"})",
+									"\texport class AreaChartDemoComponent implements OnInit {",
+									  "\t${4:Data}:any;",
+									  "\tconstructor() {",
+										"\tthis.${4:Data}=[",
+										  
+										"];",
+									  "}",
+									
+									  "\tngOnInit() {",
+									  "}",
+									"}"
+									
+							]
+						},
+						//Dashboard
+						"amexio gauge  dashboard Chart":{
+						
+							"prefix": "amexio-ts-chart-dashboard",
+							
+							"description": "Amexio Chart Dashboard",
+							"body": [
+								"\timport {Component, OnInit} from '@angular/core';",
+								"\timport {AmexioWidgetModule,DashboardLoaderService} from \"${1:amexio-ng-extensions}\";",
+								"\timport{NgModule} from '@angular/core';",
+								"\t@Component({",
+									"\tselector: '${2:Selectorname}',",
+									 "\t templateUrl: '${3:name}demo.html'",
+									"})",
+									"\t@NgModule({",
+									  "\timports: [AmexioWidgetModule ],",
+									  "\texports: [],",
+									  "\tdeclarations : [],",
+									  "\tproviders : [DashboardLoaderService]",
+									"})",
+									"\texport class AreaChartDemoComponent implements OnInit {",
+									  "\t${4:Data}:any;",
+									  "\tconstructor() {",
+										"\tthis.${4:Data}=[",
+										  
+										"];",
+									  "}",
+									
+									  "\tngOnInit() {",
+									  "}",
+									"}"
+								
+									
+							]	
+						},
+
+						//Amexio Data Points Dashboards
+						"Amexio-datapoints-dashboards":{
+						
+							"prefix": "amexio-ts-datapoints-dashboards",
+							"description": "Amexio Datapionts-dashboards",
+							"body": [
+										"import { Component, OnInit } from '@angular/core';",
+										"import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+										"\timport{NgModule} from '@angular/core';",
+								"\t@Component({",
+									"\tselector: '${2:Selectorname}',",
+									 "\t templateUrl: '${3:name}demo.html'",
+									"})",
+									"\t@NgModule({",
+									  "\timports: [AmexioWidgetModule ],",
+									  "\texports: [],",
+									  "\tdeclarations : [],",
+									  "\tproviders : [DashboardLoaderService]",
+									"})",
+									"\texport class AreaChartDemoComponent implements OnInit {",
+									  "\t${4:Data}:any;",
+									  "\tconstructor() {",
+										"\tthis.${4:Data}=[",
+										  
+										"];",
+									  "}",
+									
+									  "\tngOnInit() {",
+									  "}",
+									"}"
+								
+									]
+						},
+						//Maps
+						"amexio Geo charts Maps":{
+						
+							"prefix": "amexio-ts-maps-geo-chart",
+							"description": "Amexio-map-geo-chart",
+							"body": [
+								"import { Component, OnInit } from '@angular/core';",
+										"import {AmexioWidgetModule,AmexioMapModule} from 'amexio-ng-extensions';",
+										"\timport{NgModule} from '@angular/core';",
+								"\t@Component({",
+									"\tselector: '${2:Selectorname}',",
+									 "\t templateUrl: '${3:name}demo.html'",
+									"})",
+									
+									"\texport class Component_name implements OnInit {",
+									  "\t${4:Data}:any;",
+									  "\tconstructor() {",
+										"\tthis.${4:Data}=[",
+										  
+										"];",
+									  "}",
+									
+									  "\tngOnInit() {",
+									  "}",
+									"}"
+									  
+									]
+
+
+
+
+
+					},
+					//Amexio tree Maps
+					"amexio-tree-maps":{
+				
+											"prefix": "amexio-ts-maps-tree",
+											
+											"description": "Amexio Tree Maps",
+											"body": [
+												"import { Component, OnInit } from '@angular/core';",
+										"import {AmexioWidgetModule,AmexioMapModule} from 'amexio-ng-extensions';",
+										"\timport{NgModule} from '@angular/core';",
+								"\t@Component({",
+									"\tselector: '${2:Selectorname}',",
+									 "\t templateUrl: '${3:name}demo.html'",
+									"})",
+									
+									"\texport class Component_name implements OnInit {",
+									  "\t${4:Data}:any;",
+									  "\tconstructor() {",
+										"\tthis.${4:Data}=[",
+										  
+										"];",
+									  "}",
+									
+									  "\tngOnInit() {",
+									  "}",
+									"}"
+													]
+												},
+			//Enterprise
+			//Enterprise media content
+			"amexio enterpise media content":{
+										
+													"prefix": "amexio-ts-enterpise-media-content",
+													"description": "Amexio Media Content",
+													"body":[
+														"import { Component, OnInit } from '@angular/core';",
+														"import {AmexioWidgetModule,AmexioMapModule,AmexioEnterpriseModule} from 'amexio-ng-extensions';",
+														"\timport{NgModule} from '@angular/core';",
+														"\t@Component({",
+														"\tselector: '${2:Selectorname}',",
+													 	"\t templateUrl: '${3:name}demo.html'",
+														"})",
+													
+														"\texport class Component_name {",
+														"}"
+																
+															]
+
+												},
+
+			//Enterprise youtube video player
+			"Amexio Enterprise Youtube video player":{
+					
+														"prefix": "amexio-ts-enterprise-video-player",
+														"description": "Amexio Video player",
+														"body": [
+														"import { Component, OnInit } from '@angular/core';",
+														"import {AmexioWidgetModule,AmexioMapModule,AmexioEnterpriseModule} from 'amexio-ng-extensions';",
+														"\timport{NgModule} from '@angular/core';",
+														"\t@Component({",
+														"\tselector: '${2:Selectorname}',",
+													 	"\t templateUrl: '${3:name}demo.html'",
+														"})",
+														"\t@NgModule({",
+															"\timports: [AmexioWidgetModule ],",
+															"\texports: [],",
+															"\tdeclarations : [],",
+															"\tproviders : [DashboardLoaderService]",
+														  "})",
+													
+														"\texport class Component_name {",
+														"}"
+																
+																]
+															},
+
+			//Enterpise Multi-item-carousel
+			"Amexio-ts-enterprise":{
+															
+										"prefix": "amexio-ts-enterprise-multi-item-carousel",
+										
+										
+										"description": "Amexio Enterprise Multi item carousel",
+										"body": [
+											"import { Component, OnInit } from '@angular/core';",
+														"import {AmexioWidgetModule,AmexioMapModule,AmexioEnterpriseModule} from 'amexio-ng-extensions';",
+														"\timport{NgModule} from '@angular/core';",
+														"\timport { Http } from '@angular/http';",
+														"\t@Component({",
+														"\tselector: '${2:Selectorname}',",
+													 	"\t templateUrl: '${3:name}demo.html'",
+														"})",
+														
+													
+														"\texport class Component_name{",
+															"\tnewreleases : any;",
+															"\ttopRateContent : any;",
+																 "\tconstructor(private http :Http) {",
+																   "\tthis.http.get('path').subscribe(res=>this.newreleases = res.json());",
+																   "\tthis.http.get('path').subscribe(res=>this.topRateContent = res.json());",
+																 "}",
+																"}"
+											]
+										}
+}
+
+														
+
+				
+			
+
+
+
+						
+
+
+
+
+
+			
+
+
+
+
+		
+	
+
+
+
+
+
+
+					
+
+						
+
+
+						
+					
+										
+																		
+									
+								
+								
+
+
+
+
+
+
+
+									
+							
+						
+					
+
+		
+
+
+						
+
+
+
+
+									
+									
+
+
+
+
+
+							
+
+
+
+
+
+							
+
+
+
+
+
+
+
+
+							
 	  
-	  }
+	  
 	  
 		
   
