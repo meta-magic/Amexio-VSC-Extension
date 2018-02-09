@@ -24,7 +24,7 @@
     "description": "Amexio Accordian Pane Tab"
   },
   "amexio-accordion-expand-all": {
-    "prefix": "amexio-accordion-expand-all",
+    "prefix": "amexio-accordion-axpand-all",
     "body": [
       "<amexio-accordion  expand-all=\"${1:isExpandAll}\">",
         "\t<amexio-accordion-tab header=\"${3:header}\" active=\"true\">",
@@ -245,11 +245,17 @@
   },
   "amexio-steps-block-with-icon": {
     "prefix": "amexio-step-block-with-icon",
-    "body": [      
-      "\t <amexio-step-block [label]=\"'${2:label}'\"",
-      "\t [active]=\"true\"",
-      "\t [icon] = \"${3:icon}\">",
-      "\t </amexio-step-block>"
+    "body": [  
+       
+              "<amexio-steps ",
+              "\t [block]=\"true\"",
+              "\t [icon]=\"true\"",
+              "\t (onClick)=\"${1:functionName}(\\$event)\">",
+              "\t <amexio-step-block" ,
+              "\t [label]=\"'${2:label}'\"",
+              "\t [active]=\"active\"",
+              "\t [active]=\"${3:active}\" >",
+              "\t </amexio-step-block>"
     ],
     "description": "Amexio Steps Block with Icon"
   },
@@ -413,7 +419,7 @@
       "<amexio-window [show-window]=\"showClosable\"",
       "\t type=\"window\"",
       "\t [closable]=\"true\"",
-      "\t [maximize]=\"true\">",
+      
       "\t\t<amexio-header>",
       "${1:header}",
       "\t\t</amexio-header>",
@@ -614,8 +620,6 @@
   "description": " Simple Single CheckBox"
                        },
 
-
-
 "amexio-checkbox-disable":{
   "prefix": "amexio-checkbox-disable",
 
@@ -686,8 +690,7 @@
                      " \t [field-label]=\"'${1:label}'\"",
                      "\t [time-picker]=\"true\"",
                      "\t [date-picker]=\"false\"",
-                     "\t [ngModel]=\"'${2:ngModel}'\"",
-                     "\t (change)=\"${3:onChangeTime}(\\$event)\">",
+                     "\t [ngModel]=\"'${2:ngModel}'\"",nent)\">",
                      "</amexio-date-time-picker>"
                          ],
                  "description": "Time Picker Used To Select Time"
@@ -725,7 +728,7 @@
                                      "\t [http-url]=\"'${5:url}'\"",
                                      "\t [http-method]=\"'get'\"",
                                      "\t [display-field]=\"'${2:displayField}'\"",
-                                     "\t [value-field]=\"'${6:valueField}'\"",
+                                     "\t [value-field]=\"'${6:valueField}'\">",
                                        "</amexio-dropdown>"
                                          ],
                                  "description": "Simple dropdown with http url"
@@ -773,6 +776,29 @@
      ],
      "description": "Simple Dropdown Multi Select With Http Url"
  },
+
+//FormInputs - Label
+"amexio-label":{
+                "prefix":"amexio-label",
+                "body":[
+                        "<amexio-label ",
+                        "\t size=\"${1:size}\">",
+                        "</amexio-label>"
+                       ],
+                "description":"Label"
+               },
+"amexio-label-fontcolor":{
+                "prefix":"amexio-label-fontcolor",
+                "body":[
+                        "<amexio-label ",
+                        "\t size=\"${1:size}\">",
+                        "\tfont-color=\"${2:fontColor}\"",
+                        "</amexio-label>"
+                ],
+                "description":"Label"
+                },
+
+
 //Forminputs-email
  "amexio-email-input":{
                      "prefix": "amexio-email-input",
@@ -947,7 +973,7 @@
                                              "\t [error-msg] =\"'${3:errorMsg}'\"",
                                              "\t [min-length]=\"${4:minLength}\"",
                                              "\t [min-error-msg]=\"'${5:minErrorMsg}'\"",
-                                             "\t [max-length]=\"${maxLength}\"",
+                                             "\t [max-length]=\"${7:maxLength}\"",
                                              "\t [max-error-msg]=\"'${6:maxErrorMsg}'\"",
                                              "\t [icon-feedback]=\"true\"",
                                              "\t [has-label]=\"false\">",
@@ -1445,8 +1471,8 @@
                                               "description": "Dropdown Button with disabled link feature"
                                              },
  //Formaction-notification                                            
- "amexio-notification-top":{
-                            "prefix": "amexio-notification-top",
+ "amexio-notification":{
+                            "prefix": "amexio-notification",
                             "body": [
                                      "<amexio-notification", 
                                      "\t [data]=\"${1:data}\"",
@@ -1876,15 +1902,15 @@
       "prefix": "amexio-datapoints",
       "body": [
         "<amexio-datapoints [west]=\"true\"[center]=\"true\"[east]=\"true\"[south]=\"true\">",
-            "\t<amexio-west [contentalign]=\"'center'\"[c-class]=\"'datapoint-west'\">",
+            "\t<amexio-west [content-align]=\"'center'\">",
             "\t<amexio-image [icon-class]=\"'${7:icon-class}'\">",
             "\t</amexio-image>",
             "\t</amexio-west>",
-            "\t<amexio-center [contentalign]=\"'center'\">",
+            "\t<amexio-center [content-align]=\"'center'\">",
             "\t<amexio-label size=\"${8:size}\">data</amexio-label><br/>",
               "\t<amexio-label size=\"${9:size}\">data</amexio-label>",
             "\t</amexio-center>",
-            "\t<amexio-south [contentalign]=\"'center'\">",
+            "\t<amexio-south [content-align]=\"'center'\">",
             "\t<amexio-label>contents</amexio-label>",
             "\t</amexio-south>",
         " </amexio-datapoints>"
@@ -1941,7 +1967,7 @@
 														"\t[description]=\"'${3:content}'\"",
 														"\t[contents]=\"${4:content}\"",
 														"\t[link]=\"'${5:link}'\"",
-														"\t[matchPercentage]=\"'${6:matchpercentage}'\"",
+														"\t[match-percentage]=\"'${6:matchpercentage}'\"",
 														"\t[age-limit]=\"'${7:age-limit}'\"",
 														"\t[release-year]=\"'${8:release-year}'\"",
 														"\t[seasonNo]=\"${9:seasonNo}\"",
@@ -1967,6 +1993,18 @@
 
 											],
 											"description": "Amexio Video player Enterprise"
+},
+"amexio-enterprise-video-player-width":{
+                        "prefix":"amexio-enterprise-video-player-width",
+                        "body":[
+                          "<amexio-ee-youtube-player url=\"${1:url}\"",
+                          "\t[height]=\"${2:height}\"",
+                          "\t[width]=\"'${3:width}'\">",
+													"</amexio-ee-youtube-player>"
+
+                          
+                        ],
+                        "description":"Amexio Video Player with Width"
 },
 //Enterprise Multi Item Carousel	
 		"amexio-enterprise-multi-item-carousel":{
