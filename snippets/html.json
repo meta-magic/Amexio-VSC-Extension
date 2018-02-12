@@ -24,7 +24,7 @@
     "description": "Amexio Accordian Pane Tab"
   },
   "amexio-accordion-expand-all": {
-    "prefix": "amexio-accordion-axpand-all",
+    "prefix": "amexio-accordion-expand-all",
     "body": [
       "<amexio-accordion  expand-all=\"${1:isExpandAll}\">",
         "\t<amexio-accordion-tab header=\"${3:header}\" active=\"true\">",
@@ -2009,24 +2009,26 @@
 //Enterprise Multi Item Carousel	
 		"amexio-enterprise-multi-item-carousel":{
 															
-												"prefix": 	"amexio-enterprise-multi-item-carosel",
+												"prefix": 	"amexio-enterprise-multi-item-carousel-horizontal",
 												"body": [
 															"<amexio-media-ee-carousel title=\"${1:title}\"",
 															"\t[data]=\"${2:data}\">",
 															"</amexio-media-ee-carousel>"
+                                	],
+												"description": "Amexio Enterprise multi item carousel horizontal"
+                        },
+   "amexio-enterprise-muiti-item-carousel-vertical":{
 
-															<!--Vertical Multi-carousel -->
+                        "perfix":"amexio-enterprise-multi-item-carousel-vertical",
+                        "body":[
+                          "<amexio-media-ee-carousel title=\"${1:title}\"",
+                          "\tcarousel-type=\"vertical\"",
+                          "\t[data]=\"${2:data}\">",
+                          "</amexio-media-ee-carousel>"
+                         ],
+                         "description":"Amexio Enterprise multi item carousel vertical"
 
-															"<amexio-media-ee-carousel title=\"${1:title}\"",
-															"\tcarousel-type=\"vertical\"",
-															"\t[data]=\"${2:data}\">",
-															"</amexio-media-ee-carousel>"
-						  
-
-
-												],
-												"description": "Amexio Enterprise multi item horizontal vertical"
-												},
+                        },
 
 //Data
 //Data Item Selector
@@ -2037,7 +2039,7 @@
 													"<amexio-item-selector [height]=\"'${1:height}'\"",
 													"[display-field]=\"'${2:feild1}'\"",
 													"[value-field]=\"'${3:feild2}'\"",
-													"\t(selectedRecords)=\"${4:getSelectedData}($event)\"",
+													"\t(selectedRecords)=\"${4:getSelectedData}(\\$event)\"",
 													"\t[http-url]=\"'${5:path}'\"",
 													"\t[http-method]=\"'get'\"",
 													"\t[data-reader]=\"'${6:data}'\">",
