@@ -2187,7 +2187,7 @@
       "\t\t\t\t\t\t\t\t\t\t</amexio-image>",
       "\t\t\t\t\t</amexio-column>",
       "\t\t\t\t\t<amexio-column",
-      "\t\t\t\t\t\t\t[size]=\"'${11:size}'\">{{json}}",
+      "\t\t\t\t\t\t\t[size]=\"'${11:size}'\">",
       "\t\t\t\t\t\t\t{{row.name}}",
       "\t\t\t\t\t</amexio-column>",
       "</amexio-row>",
