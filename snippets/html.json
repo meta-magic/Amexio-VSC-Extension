@@ -1580,7 +1580,7 @@
                                              "\t (onPageChange)=\"${3:clickfunction(\\$event)}\">",
                                              "</amexio-paginator>"
                                             ],
-                                    "description": "paginator with page size 10-"
+                                    "description": "paginator with page size"
                                    },
  //Formactions-progressbar                                  
  "amexio-progress-bar":{
@@ -1623,7 +1623,7 @@
 	"amexio-chart-bar":{
 		
 			"prefix": "amexio-chart-bar",
-			"body": ["<amexio-chart-bar [data]=\"${1:data}\"",
+			"body": ["<amexio-chart-bar [data]=\"${1:Data}\"",
                   "\t\t\t\t\t\t\t[height]=\"'${2:height}'\"",
                   "\t\t\t\t\t\t\t[width]=\"'${3:width%}'\">",
            "\t <amexio-chart-title [title]=\"'${4:title}'\">",
@@ -1638,7 +1638,7 @@
 //Stack Chart
 	"amexio-chartbar-stack":{
 			"prefix": "amexio-chartbar-stack",
-			"body": ["<amexio-chart-bar [data]=\"${1:data}\"",
+			"body": ["<amexio-chart-bar [data]=\"${1:Data}\"",
                   "[height]=\"'${2:height}'\"",
                   "[width]=\"'${3:width}'\"",
                   "[stacked]=\"true\">",
@@ -1675,7 +1675,7 @@
 		"body": ["<amexio-chart-bubble [height]=\"'${1:height}'\"",
 			"\t\t\t\t\t[width]=\"'${2:width}'\"",
 			"\t\t\t\t\t[data]=\"${3:data}\"",
-			"\t [axis-color]=\"['yellow', 'red']\">",
+			"\t [axis-color]=\"['yellow','red']\">",
 			"</amexio-chart-bubble>"
 
 	],
@@ -1723,7 +1723,7 @@
 					"\t<amexio-chart-legend [position]=\"'${5:position}'\">",
 					"</amexio-chart-legend>",
 				
-					"\t</amexio-chart-column>",
+					"\t</amexio-chart-column>"
 
 			],
 			"description": "Amexio chart column"
@@ -2019,7 +2019,7 @@
                         },
    "amexio-enterprise-muiti-item-carousel-vertical":{
 
-                        "perfix":"amexio-enterprise-multi-item-carousel-vertical",
+                        "prefix":"amexio-enterprise-multi-item-carousel-vertical",
                         "body":[
                           "<amexio-media-ee-carousel title=\"${1:title}\"",
                           "\tcarousel-type=\"vertical\"",
@@ -2058,7 +2058,7 @@
 									"\t[http-url]=\"'${2:path}'\"",
 									"\t[data-reader]=\"'${3:data}'\"",
 									"\t[page-size] = \"${4:page-size}\"", 
-									"\t(selectedRowData)=\"${5:onSelectRow}($event)\">",
+									"\t(selectedRowData)=\"${5:onSelectRow}(\\$event)\">",
 									"\t<amexio-data-table-column [data-index]=\"'${6:columnName}'\"",
 									"\t\t\t\t\t\t\t[data-type]=\"'string'\" [hidden]=\"false\"",
 									"\t\t\t\t\t\t\t[text]=\"'${7:Name}'\">",
@@ -2093,7 +2093,7 @@
 												"\t[data-reader]=\"'${3:data}'\"",
 												"\t[page-size] = \"${4:pagesize}\"",
 												"\t[enable-data-filter]=\"false\"",
-												"\t(rowSelect)=\"'${5:getRowData}($event)'\">",
+												"\t(rowSelect)=\"'${5:getRowData}(\\$event)'\">",
 												"\t<amexio-data-table-column [width]=\"${6:width}\"",
 												"\t\t\t\t\t\t\t[data-index]=\"'${7:name_official}'\"",
 												"\t\t\t\t\t\t\t[data-type]=\"'string'\" [hidden]=\"false\"",
@@ -2134,7 +2134,7 @@
 												"\t[data-reader]=\"'${3:data}'\"",
 												"\t[http-url]=\"'${4:path}'\"",
 												"\t[http-method]=\"'get'\"",
-												"\t[enable-data-filter]=\"true\" (selectedRowData)=\"${5:onRowSelect}($event)\">",
+												"\t[enable-data-filter]=\"true\" (selectedRowData)=\"${5:onRowSelect}(\\$event)\">",
 												"\t\t<amexio-data-table-column [data-index]=\"'${6:preferredFullName}'\"",
 												"\t\t\t\t\t\t\t\t[data-type]=\"'string'\"",
 												"\t\t\t\t\t\t\t\t[hidden]=\"false\"",
@@ -2207,7 +2207,7 @@
 												"\t[http-method]=\"'get'\"",
 												"\t[http-url]=\"'${1:path}'\"",
 												"\t[data-reader]=\"'${2:data}'\"",
-												"\t(selectedRecord)=\"${3:getSelectedData}($event)\">",
+												"\t(selectedRecord)=\"${3:getSelectedData}(\\$event)\">",
 												"\t<amexio-data-table-column",
 												"\t\t\t\t\t\t\t[data-index]=\"'${4:user}'\"",
 												"\t\t\t\t\t\t\t[data-type]=\"'string'\"", 
@@ -2236,7 +2236,7 @@
 					"body": [
 								"<amexio-treeview [data-reader]=\"'${1:data}'\"",
 								"\t\t\t\t\t\t\t\t[data]=\"${2:treeLocalData}\"",
-								"\t\t\t\t\t\t\t\t(nodeClick)=\"${3:getNodeData}($event)\">",
+								"\t\t\t\t\t\t\t\t(nodeClick)=\"${3:getNodeData}(\\$event)\">",
 								"</amexio-treeview>"
 
 					],
