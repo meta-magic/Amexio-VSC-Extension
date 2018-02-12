@@ -27,8 +27,8 @@
     "prefix": "amexio-accordion-expand-all",
     "body": [
       "<amexio-accordion  expand-all=\"${1:isExpandAll}\">",
-        "\t<amexio-accordion-tab header=\"${3:header}\" active=\"true\">",
-          "\t\t${3:Content}",
+        "\t<amexio-accordion-tab header=\"${2:header}\" active=\"true\">",
+          "\t\t${3:content}",
         "\t</amexio-accordion-tab>",
       "</amexio-accordion>"
     ],
@@ -38,8 +38,8 @@
     "prefix": "amexio-accordion-transperent",
     "body": [
       "<amexio-accordion transparent=\"true\" angle-icon=\"true\">",
-        "\t<amexio-accordion-tab header=\"${2:header}\" active=\"true\">",
-          "\t\t${3:Content}",
+        "\t<amexio-accordion-tab header=\"${1:header}\" active=\"true\">",
+          "\t\t${2:Content}",
         "\t</amexio-accordion-tab>",
       "</amexio-accordion>"
     ],
@@ -79,7 +79,7 @@
   "amexio-column": {
     "prefix": "amexio-column",
     "body": [      
-      "<amexio-column [size] =${1:Size} >",
+      "<amexio-column [size] =${1:size} >",
       "\t",
       "</amexio-column>"      
     ],
@@ -120,7 +120,8 @@
                       "\t\t${6:header}",
                     "\t</amexio-header>",
                     "\t<amexio-body>",
-                    "\t\t<amexio-image path=\"${7:image}\"/>",
+                    "\t\t<amexio-image path=\"${7:image}\">",
+                    "\t\t</amexio-image> ",
                     "\t</amexio-body>",
                     "\t<amexio-action>",
                       "\t\t${8:footer}",
@@ -148,12 +149,12 @@
   "amexio-carousel-shuffle": {
     "prefix": "amexio-carousel-shuffle",
     "body": [      
-      "<amexio-carousel [header]=\"'${1:Header}'\"", 
+      "<amexio-carousel [header]=\"'${1:header}'\"", 
                         "\t\t[data]=\"${2:data}\"",
                         "\t\t mode=\"multiple\"",
                         "\t\t shuffle-interval=\"${3:interval}\">",
-                        "\t\t\t <ng-template let-img amexioTemplate=\"${3:item}\">",
-                        "\t\t\t\t <amexio-image [height]=\"'${4:height}'\"",
+                        "\t\t\t <ng-template let-img amexioTemplate=\"${4:item}\">",
+                        "\t\t\t\t <amexio-image [height]=\"'${5:height}'\"",
                         "\t\t\t\t path=\"{{img}}\"/>",
                         "\t\t\t </ng-template>",
     "</amexio-carousel>"    
@@ -237,7 +238,7 @@
   "amexio-steps-block": {
     "prefix": "amexio-step-block",
     "body": [      
-      "\t <amexio-step-block [label]=\"'${2:label}'\"",
+      "\t <amexio-step-block [label]=\"'${1:label}'\"",
       "\t [active]=\"true\">",
       "\t </amexio-step-block>"
     ],
@@ -336,9 +337,9 @@
     "prefix": "amexio-tab-with-icon",
     "body": [    
       "<amexio-tab-view  [closable]=\"${1:closable}\">",
-          "\t<amexio-tab title=\"${1:title}\"",
-          "\t [active]=\"${2:isActive}\"",
-          "\t [icon]=\"'${3:icon}'\">",
+          "\t<amexio-tab title=\"${2:title}\"",
+          "\t [active]=\"${3:isActive}\"",
+          "\t [icon]=\"'${4:icon}'\">",
           "\t\t${4:content}",
           "\t</amexio-tab>",
         "</amexio-tab-view>"
@@ -367,7 +368,7 @@
           "\t<amexio-tab title=\"${1:title}\"",
           "\t [active]=\"${2:isActive}\"",
           "\t [icon]=\"'${3:icon}'\">",
-          "\t\t${3:content}",
+          "\t\t${4:content}",
           "\t</amexio-tab>",
       "<amexio-right-vertical-tab-view>"
     ],
@@ -690,7 +691,7 @@
                      " \t [field-label]=\"'${1:label}'\"",
                      "\t [time-picker]=\"true\"",
                      "\t [date-picker]=\"false\"",
-                     "\t [ngModel]=\"'${2:ngModel}'\"",nent)\">",
+                     "\t [ngModel]=\"'${2:ngModel}'\">",
                      "</amexio-date-time-picker>"
                          ],
                  "description": "Time Picker Used To Select Time"
@@ -867,7 +868,7 @@
                                      "\t [http-method]=\"'POST'\"",
                                      "\t [file-type]=\"'${2:fileType/*}'\"",
                                      "\t [multiple-file]=\"'*'\"",
-                                     "\t [field-label]=\"'${4:fieldLabel}'\">",
+                                     "\t [field-label]=\"'${3:fieldLabel}'\">",
                                      "</amexio-fileupload>"
                                      ],
                              "description": "Simple-File-Upload"
