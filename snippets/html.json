@@ -41,7 +41,7 @@
       "\t</amexio-accordion-tab>",
       "</amexio-accordion>"
     ],
-    "description": "Amexio Accordian Pane Expand All"
+    "description": "Amexio Accordian Pane Transperent"
   },
   //Layout-border
   "amexio-border-layout": {
@@ -515,7 +515,7 @@
       "\t[tooltip]=\"'${2:tooltip}'\">",
       "</amexio-image>"
     ],
-    "description": "Amexio Icon form font-awesome "
+    "description": "Amexio Image Icon font-awesome "
   },
   "amexio-image-icon-mdb": {
     "prefix": "amexio-image-icon-mdb",
@@ -525,7 +525,7 @@
       "\t[tooltip]=\"'${2:tooltip}'\">",
       "</amexio-image>"
     ],
-    "description": "Amexio Icon form material design "
+    "description": "Amexio Image Icon  material design "
   },
   //Media-videoPlayer
   "amexio-video": {
