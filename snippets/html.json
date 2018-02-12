@@ -140,7 +140,8 @@
                         "\t\t mode=\"multiple\">",
   "\t\t\t <ng-template let-img amexioTemplate=\"${3:item}\">",
   "\t\t\t\t <amexio-image [height]=\"'${4:height}'\"",
-  "\t\t\t\t path=\"{{img}}\"/>",
+  "\t\t\t\t path=\"{{img}}\">",
+  "\t\t\t\t </amexio-image>",
   "\t\t\t </ng-template>",
 " </amexio-carousel>"    
     ],
@@ -155,7 +156,8 @@
                         "\t\t shuffle-interval=\"${3:interval}\">",
                         "\t\t\t <ng-template let-img amexioTemplate=\"${4:item}\">",
                         "\t\t\t\t <amexio-image [height]=\"'${5:height}'\"",
-                        "\t\t\t\t path=\"{{img}}\"/>",
+                        "\t\t\t\t path=\"{{img}}\">",
+                        "</amexio-image>",
                         "\t\t\t </ng-template>",
     "</amexio-carousel>"    
     ],
