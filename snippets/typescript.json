@@ -138,7 +138,7 @@
             "@NgModule({",
             "imports: [AmexioChartsModule],",
             "providers : [CommonDataService,ChartLoaderService]",
-            "})",
+            "})"
         ]
     },
     "AmexioDataModule": {
@@ -155,7 +155,7 @@
             "exports: [],",
             "providers : [CommonDataService],",
             "declarations : []",
-            "})",
+            "})"
         ]
     },
     "AmexioDashBoardModule": {
@@ -170,7 +170,7 @@
             "@NgModule({",
             "imports: [AmexioDashBoardModule],",
             "providers : [DashboardLoaderService,ChartLoaderService]",            
-            "})",
+            "})"
         ]
     },
     "Amexio Accordion": {
@@ -267,8 +267,14 @@
             "declarations : []",
             "})",
             "export class ${3:Name}Component implements OnInit {",
-            "\tconstructor() { }",
+            "flag : boolean;" ,   
+            "\tconstructor() { ",
+            " this.flag=true;",
+            "}",
             "",
+            "toggle(){",
+            "this.flag = !this.flag;",
+            "}",
             "\tngOnInit() { }$0",
             "}"
         ]
@@ -2105,7 +2111,7 @@
         "description": "Amexio Chart Dashboard",
         "body": [
             "\timport {Component, OnInit} from '@angular/core';",
-            "\timport {AmexioWidgetModule,DashboardLoaderService} from 'amexio-ng-extensions';",
+            "\timport {AmexioWidgetModule,DashboardLoaderService,ChartLoaderService} from 'amexio-ng-extensions';",
             "\timport{NgModule} from '@angular/core';",
             "\t@Component({",
             "\tselector: '${2:Selectorname}',",
@@ -2115,7 +2121,7 @@
             "\timports: [AmexioWidgetModule ],",
             "\texports: [],",
             "\tdeclarations : [],",
-            "\tproviders : [DashboardLoaderService]",
+            "\tproviders : [DashboardLoaderService,ChartLoaderService]",
             "})",
             "\texport class${4:name}Component implements OnInit {",
             "\t${5:Data}:any;",
@@ -2236,7 +2242,7 @@
             "\timports: [AmexioWidgetModule ],",
             "\texports: [],",
             "\tdeclarations : [],",
-            "\tproviders : [DashboardLoaderService]",
+            "\tproviders : []",
             "})",
             "\texport class${4:name}Component{",
             "}"
@@ -2256,11 +2262,8 @@
             "\t templateUrl: '${3:name}demo.html'",
             "})",
             "\texport class${4:name}Component{",
-            "\tnewreleases : any;",
-            "\ttopRateContent : any;",
             "\tconstructor(private http :Http) {",
-            "\tthis.http.get('path').subscribe(res=>this.newreleases = res.json());",
-            "\tthis.http.get('path').subscribe(res=>this.topRateContent = res.json());",
+            "\t //make some operation here ",   
             "}",
             "}"
         ]
