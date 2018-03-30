@@ -2,17 +2,17 @@
     "name": "amexio",
     "displayName": "Amexio Angular Extensions for Visual Studio Code",
     "description": "Angular 4+ (HTML, TypeScripts, Amexio) Code Snippets.",
-    "version": "1.0.13",
+    "version": "2.1.1",
     "publisher": "MetaMagic",
     "icon": "images/Amexio-VSC-Icon-3.png",
-     "galleryBanner": {
+    "galleryBanner": {
         "color": "#0273D4",
         "theme": "dark"
     },
     "engines": {
         "vscode": "^1.13.0"
     },
-     "license": "SEE LICENSE IN LICENSE",
+    "license": "SEE LICENSE IN LICENSE",
     "repository": {
         "type": "git",
         "url": "https://github.com/meta-magic/Amexio-VSC-Extension.git"
