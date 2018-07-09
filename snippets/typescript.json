@@ -1665,6 +1665,46 @@
             "\tngOnInit() {}",
             "}"
         ]
+	},
+	
+	    //Tree
+		"Amexio Tree with Drag Drop": {
+        "prefix": "Amexio-ts-Tree-drag-drop",
+        "description": "Amexio Tree With Drag Drop",
+        "body": [
+            "import { Component, OnInit, ViewChild } from '@angular/core';",
+            "import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+            "",
+            "@Component({",
+            "\tselector: '${1:selectorname}',",
+            "\ttemplateUrl: '${2:name}.component.html',",
+            "\tstyleUrls: ['${3:name}.component.css'],",
+            "})",
+            "",
+			"\texport class ${4:name}Component implements OnInit {",
+			"\t@ViewChild ('tree') ${5:treeRef}:any;",
+			"\t${6:localdata}:any;",
+			"\t${7:selectedData}:any",
+			"\tconstructor() {",
+			"\tthis.${6:localdata} = {",
+			"\t\t}",
+			"}",
+			"\tgetDropData(${6:data}: any) {",
+			"\t\t//Add operation here",
+			"}",
+			"\tdrag(${7:data}: any) {",
+			"\t\t${7:data}.event.dataTransfer.setData('${8:dragdata}', JSON.stringify(${7:data}.data));",
+			"}",
+			"\tdragOver(${9:event}: any) {",
+			"\t\t${9:event}.preventDefault();",
+			"}",
+			"\tdrop(${10:event}: any) {",
+			"\t\t${10:event}.preventDefault();",
+            "\t\tthis.${7:selectedData} = JSON.parse(${10:event}.dataTransfer.getData('${8:dragdata}'))",
+            "}",
+            "\tngOnInit() {}",
+            "}"
+        ]
     },
     //Amexio Data Listbox
     "Amexio Data listbox": {
@@ -2318,5 +2358,104 @@
             "}",
             "}"
         ]
+	},
+	 //Form Input Searchbox
+	 "Amexio-ts-Searchbox": {
+        "prefix": "Amexio-ts-Searchbox",
+        "body": [
+            "import { Component, OnInit } from '@angular/core';",
+            "import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+            "import {NgModule} from '@angular/core';",
+            "\t @Component({",
+            "\t selector: '${1:name}',",
+            "\t templateUrl: '${2:name}.component.html',",
+            "\t styleUrls: ['${3:name}.component.css']",
+            "\t })",
+            "\t@NgModule({",
+            "\timports: [AmexioWidgetModule ],",
+            "\texports: [],",
+            "\tdeclarations : [],",
+            "\tproviders : []",
+            "})",
+			"\t export class ${4:Name}Component implements OnInit {",
+			"\t\t\tsubject: string=''",
+			"\t\t\tfrom: string=''",
+			"\t\t\tto: string=''",
+			"\t\t\t${5:localdata}: any",
+			"\t\t\t${6:searchdata}: any",
+			"\t\t\t${7:binddata}: any",
+            "\t constructor(){",
+			"\tthis.${5:localdata} = {",
+			"\t\t}",
+			"\t}",
+            "\t ngOnInit() { ",
+            "\t\t\tthis.${7:binddata} = JSON.parse(JSON.stringify(this.${5:localdata}));",
+			"\t}",
+			"}"
+        ],
+        "description": "Search Box options"
+	},
+		 //Form Input Drop Down Menu
+		 "Amexio-ts-Dropdownmenu": {
+        "prefix": "Amexio-ts-Dropdown-menu",
+        "body": [
+            "import { Component, OnInit } from '@angular/core';",
+            "import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+            "import {NgModule} from '@angular/core';",
+            "\t @Component({",
+            "\t selector: '${1:name}',",
+            "\t templateUrl: '${2:name}.component.html',",
+            "\t styleUrls: ['${3:name}.component.css']",
+            "\t })",
+            "\t@NgModule({",
+            "\timports: [AmexioWidgetModule ],",
+            "\texports: [],",
+            "\tdeclarations : [],",
+            "\tproviders : []",
+            "})",
+			"\t export class ${4:Name}Component implements OnInit {",
+			"\t\t\t${5:localdata}: any",
+            "\t constructor(){",
+			"\tthis.${5:localdata} = {",
+			"\t\t}",
+			"\t}",
+			"\t ${6:functionName}(${7:data}:any){",
+            "\t //add Some Operation",
+            "\t\t\t}",
+            "\t ngOnInit() { ",
+			"\t}",
+			"}"
+        ],
+        "description": "Dropdown Menu options"
+	},
+	    //Amexio Toolbar
+		"Amexio Toolbar": {
+        "prefix": "Amexio-ts-Toolbar",
+        "description": "Amexio Toolbar",
+        "body": [
+            "import { Component, OnInit } from '@angular/core';",
+            "import {AmexioWidgetModule} from 'amexio-ng-extensions';",
+            "",
+            "@Component({",
+            "\tselector: '${1:selectorname}',",
+            "\ttemplateUrl: '${2:name}.component.html',",
+            "\tstyleUrls: ['${3:name}.component.css'],",
+            "})",
+            "\t@NgModule({",
+            "\timports: [AmexioWidgetModule ],",
+            "\texports: [],",
+            "\tdeclarations : [],",
+            "\tproviders : []",
+            "})",
+            "",
+			"\t export class ${4:Name}Component implements OnInit {",
+			"\t${5:localdata}: any",
+			"\tconstructor() {",
+		    "\tthis.${5:localdata} = {",
+			"\t\t}",
+            "\t}",
+            "}"
+        ]
     }
+
 }
