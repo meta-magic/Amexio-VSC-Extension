@@ -1,6 +1,6 @@
 # Amexio Angular Extensions for Visual Studio Code 
 
-This extension will help the developers of Visual Studio Code with quick code snippet for the Amexio and Angular Markup as well as Angular TypeScript. 
+This Amexio Plugin will help the Angular developers using Visual Studio Code with a quick code snippet for the Angular and Amexio Directives as well as Angular TypeScript. Plugin support is available for Angular 4+ onwards. 
 
 ## Usage
 
