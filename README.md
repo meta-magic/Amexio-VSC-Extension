@@ -71,7 +71,7 @@ ext install amexio
 
 ## Release Notes
 
-Amexio VSC Extension supports Amexio Thanjavur Release v4.1
+Amexio VSC Extension supports Amexio Moscow Release v5.0
 
 ## License
 
