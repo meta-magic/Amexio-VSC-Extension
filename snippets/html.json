@@ -1564,8 +1564,9 @@
       "<amexio-button",
       "\t [label]=\"'${1:label}'\"",
       "\t [type]=\"'theme-color'\"",
-      "\t [badge]=\"${3:badge}\"",
-      "\t [tooltip]=\"'${2:toolTip}'\" >",
+      "\t [badge]=\"${2:badge}\"",
+      "\t (onClick)=\"${3:buttonAction}(\\$event)\"",
+      "\t [tooltip]=\"'${4:toolTip}'\" >",
       "</amexio-button>"
     ],
     "description": "Button Types Type :: theme-color : theme-backgroundcolor : transparent : yellow : red : green"
