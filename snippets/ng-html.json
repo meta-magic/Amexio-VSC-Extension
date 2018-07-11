@@ -1,0 +1,112 @@
+{
+  "class": {
+    "prefix": "ng-class",
+    "body": [
+      "[class]=\"${1:expression}\""
+    ],
+    "description": "Angular [class] binding"
+  },
+  "ngClass": {
+    "prefix": "ng-ngClass",
+    "body": [
+      "[ngClass]=\"{${1:cssClass}: ${2:expression}}\""
+    ],
+    "description": "Angular ngClass"
+  },
+  "ngFor": {
+    "prefix": "ng-ngFor",
+    "body": [
+      "*ngFor=\"let ${1:item} of ${2:list}\""
+    ],
+    "description": "Angular *ngFor"
+  },
+  "ngForAsync": {
+    "prefix": "ng-ngForAsync",
+    "body": [
+      "*ngFor=\"let ${1:item} of ${2:stream} | async as ${3:list}\""
+    ],
+    "description": "Angular *ngForAsync"
+  },
+  "ngIf": {
+    "prefix": "ng-ngIf",
+    "body": [
+      "*ngIf=\"${1:expression}\""
+    ],
+    "description": "Angular *ngIf"
+  },
+  "ngIfElse": {
+    "prefix": "ng-ngIfElse",
+    "body": [
+      "*ngIf=\"${1:expression};else ${2:templateName}\""
+    ],
+    "description": "Angular *ngIfElse"
+  },
+  "ngModel": {
+    "prefix": "ng-ngModel",
+    "body": [
+      "[(ngModel)]=\"${1:binding}\""
+    ],
+    "description": "Angular ngModel"
+  },
+  "pre w/ json": {
+    "prefix": "ng-prej",
+    "body": [
+      "<pre>{{${model:1} | json}}</pre>$0"
+    ],
+    "description": "Angular pre debug | json"
+  },
+  "pre w/ async json": {
+    "prefix": "ng-preja",
+    "body": [
+      "<pre>{{${1:model} | async | json}}</pre>$0"
+    ],
+    "description": "Angular pre debug | async | json"
+  },
+  "ngRouterLink": {
+    "prefix": "ng-routerLink",
+    "body": [
+      "[routerLink]=\"['/${1:routePath}']\"$0"
+    ],
+    "description": "Angular routerLink"
+  },
+  "ngRouterLinkWithParameter": {
+    "prefix": "ng-routerLink-param",
+    "body": [
+      "[routerLink]=\"['${1:routePath}', ${2:routeParameterValue}$0]\""
+    ],
+    "description": "Angular routerLink with a route parameter"
+  },
+  "ngSelect": {
+    "prefix": "ng-select",
+    "body": [
+      "<select [(ngModel)]=\"${1:model}\">",
+      "\t<option *ngFor=\"let ${2:item} of ${3:list}\" [value]=\"${2:item}\">{{${2:item}}}</option>",
+      "</select>"
+    ],
+    "description": "Angular <select> control with ngModel"
+  },
+  "style": {
+    "prefix": "ng-style",
+    "body": [
+      "[style.${1:property}]=\"${2:expression}\""
+    ],
+    "description": "Angular [style] binding"
+  },
+  "ngStyle": {
+    "prefix": "ng-ngStyle",
+    "body": [
+      "[ngStyle]=\"{${1:style}: ${2:expression}}\""
+    ],
+    "description": "Angular ngStyle"
+  },
+  "ngSwitch": {
+    "prefix": "ng-ngSwitch",
+    "body": [
+      "<div [ngSwitch]=\"${1:conditionExpression}\">",
+      "\t<div *ngSwitchCase=\"${2:expression}\">${3:output}</div>",
+      "\t<div *ngSwitchDefault>${4:output2}</div>",
+      "</div>"
+    ],
+    "description": "Angular ngSwitch"
+  }
+}
