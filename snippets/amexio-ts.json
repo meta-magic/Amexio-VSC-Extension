@@ -1,178 +1,5 @@
 //layout
-{
-    "AmexioWidgetModule": {
-        "prefix": "AmexioWidgetModule",
-        "description": "Amexio Widget Module",
-        "body": [
-            "import { AmexioWidgetModule} from 'amexio-ng-extensions';",
-            "import { CommonDataService} from 'amexio-ng-extensions';",
-            "import { IconLoaderService} from 'amexio-ng-extensions';",
-            "",
-            "///update your NgModule accordingly ",
-            "",
-            "@NgModule({",
-            "imports: [AmexioWidgetModule],",
-            "providers : [CommonDataService,IconLoaderService]",
-            "})"
-        ]
-    },
-    "AmexioPaneModule": {
-        "prefix": "AmexioPaneModule",
-        "description": "Amexio Pane Module",
-        "body": [
-            "import { AmexioPaneModule } from 'amexio-ng-extensions';",
-            "import { CommonDataService} from 'amexio-ng-extensions';",
-            "import { IconLoaderService} from 'amexio-ng-extensions';",
-            "import {NgModule} from '@angular/core';",
-            "",
-            "///update your NgModule accordingly ",
-            "",
-            "@NgModule({",
-            "imports: [AmexioPaneModule],",
-            "providers : [CommonDataService,IconLoaderService]",
-            "})"
-        ]
-    },
-    "AmexioNavModule": {
-        "prefix": "AmexioNavModule",
-        "description": "Amexio Nav Module",
-        "body": [
-            "import { AmexioNavModule} from 'amexio-ng-extensions';",
-            "import { CommonDataService} from 'amexio-ng-extensions';",
-            "import { IconLoaderService} from 'amexio-ng-extensions';",
-            "import { NgModule} from '@angular/core';",
-            "",
-            "///update your NgModule accordingly ",
-            "",
-            "@NgModule({",
-            "imports: [AmexioNavModule],",
-            "providers : [CommonDataService,IconLoaderService]",            
-            "})"
-        ]
-    },
-    "AmexioMediaModule": {
-        "prefix": "AmexioMediaModule",
-        "description": "Amexio Media Module",
-        "body": [
-            "import { AmexioMediaModule} from 'amexio-ng-extensions';",
-            "import { CommonDataService} from 'amexio-ng-extensions';",
-            "import { NgModule} from '@angular/core';",
-            "",
-            "///update your NgModule accordingly ",
-            "",
-            "@NgModule({",
-            "imports: [AmexioMediaModule],",
-            "providers : [CommonDataService]",
-            "})"
-        ]
-    },
-    "AmexioMapModule": {
-        "prefix": "AmexioMapModule",
-        "description": "Amexio Map Module",
-        "body": [
-            "import { AmexioMapModule} from 'amexio-ng-extensions';",
-            "import { CommonDataService} from 'amexio-ng-extensions';",
-            "import { MapLoaderService} from 'amexio-ng-extensions';",
-            "import { NgModule} from '@angular/core';",
-            "",
-            "///update your NgModule accordingly ",
-            "",
-            "@NgModule({",
-            "imports: [AmexioMapModule],",
-            "providers : [CommonDataService,MapLoaderService]",
-            "})"
-        ]
-    },
-    "AmexioLayoutModule": {
-        "prefix": "AmexioLayoutModule",
-        "description": "Amexio Layout Module",
-        "body": [
-            "import { AmexioLayoutModule} from 'amexio-ng-extensions';",
-            "import { NgModule} from '@angular/core';",
-            "",
-            "///update your NgModule accordingly ",
-            "",
-            "@NgModule({",
-            "imports: [AmexioLayoutModule]",
-            "})"
-        ]
-    },
-    "AmexioFormsModule": {
-        "prefix": "AmexioFormsModule",
-        "description": "Amexio Forms Module",
-        "body": [
-            "import { AmexioFormsModule} from 'amexio-ng-extensions';",
-            "import { NgModule} from '@angular/core';",
-            "",
-            "///update your NgModule accordingly ",
-            "",
-            "@NgModule({",
-            "imports: [AmexioFormsModule]",
-            "})"
-        ]
-    },
-    "AmexioEnterpriseModule": {
-        "prefix": "AmexioEnterpriseModule",
-        "description": "Amexio Enterprise Module",
-        "body": [
-            "import { AmexioEnterpriseModule,CommonDataService} from 'amexio-ng-extensions';",
-            "import { NgModule} from '@angular/core';",
-            "",
-            "///update your NgModule accordingly ",
-            "",
-            "@NgModule({",
-            "imports: [AmexioEnterpriseModule],",
-            "providers : [CommonDataService]",
-            "})"
-        ]
-    },
-    "AmexioChartsModule": {
-        "prefix": "AmexioChartsModule",
-        "description": "Amexio Charts Module",
-        "body": [
-            "import { AmexioChartsModule,CommonDataService,ChartLoaderService} from 'amexio-ng-extensions';",
-            "import { NgModule} from '@angular/core';",
-            "",
-            "///update your NgModule accordingly ",
-            "",
-            "@NgModule({",
-            "imports: [AmexioChartsModule],",
-            "providers : [CommonDataService,ChartLoaderService]",
-            "})"
-        ]
-    },
-    "AmexioDataModule": {
-        "prefix": "AmexioDataModule",
-        "description": "Amexio Data Module",
-        "body": [            
-            "import { AmexioDataModule,CommonDataService} from 'amexio-ng-extensions';",
-            "import { NgModule} from '@angular/core';",
-            "",
-            "///update your NgModule accordingly ",
-            "",
-            "@NgModule({",
-            "imports: [AmexioDataModule],",
-            "exports: [],",
-            "providers : [CommonDataService],",
-            "declarations : []",
-            "})"
-        ]
-    },
-    "AmexioDashBoardModule": {
-        "prefix": "AmexioDashBoardModule",
-        "description": "Amexio Data Module",
-        "body": [
-            "import { AmexioDashBoardModule,DashboardLoaderService,ChartLoaderService} from 'amexio-ng-extensions';",
-            "import { NgModule} from '@angular/core';",
-            "",
-            "///update your NgModule accordingly ",
-            "",
-            "@NgModule({",
-            "imports: [AmexioDashBoardModule],",
-            "providers : [DashboardLoaderService,ChartLoaderService]",            
-            "})"
-        ]
-    },
+{ 
     "Amexio Accordion": {
         "prefix": "Amexio-ts-Accordion",
         "description": "Amexio Accordion",
@@ -223,7 +50,6 @@
             "}"
         ]
     },
-
     "Amexio Box": {
         "prefix": "Amexio-ts-Box",
         "description": "Amexio Box",
@@ -293,7 +119,7 @@
             "declarations : []",
             "})",
             "export class ${3:Name}Component implements OnInit {",
-            "flag : boolean;" ,   
+            "flag : boolean;",
             "\tconstructor() { ",
             " this.flag=true;",
             "}",
@@ -1665,10 +1491,9 @@
             "\tngOnInit() {}",
             "}"
         ]
-	},
-	
-	    //Tree
-		"Amexio Tree with Drag Drop": {
+    },
+    //Tree
+    "Amexio Tree with Drag Drop": {
         "prefix": "Amexio-ts-Tree-drag-drop",
         "description": "Amexio Tree With Drag Drop",
         "body": [
@@ -1681,25 +1506,25 @@
             "\tstyleUrls: ['${3:name}.component.css'],",
             "})",
             "",
-			"\texport class ${4:name}Component implements OnInit {",
-			"\t@ViewChild ('tree') ${5:treeRef}:any;",
-			"\t${6:localdata}:any;",
-			"\t${7:selectedData}:any",
-			"\tconstructor() {",
-			"\tthis.${6:localdata} = {",
-			"\t\t}",
-			"}",
-			"\tgetDropData(${6:data}: any) {",
-			"\t\t//Add operation here",
-			"}",
-			"\tdrag(${7:data}: any) {",
-			"\t\t${7:data}.event.dataTransfer.setData('${8:dragdata}', JSON.stringify(${7:data}.data));",
-			"}",
-			"\tdragOver(${9:event}: any) {",
-			"\t\t${9:event}.preventDefault();",
-			"}",
-			"\tdrop(${10:event}: any) {",
-			"\t\t${10:event}.preventDefault();",
+            "\texport class ${4:name}Component implements OnInit {",
+            "\t@ViewChild ('tree') ${5:treeRef}:any;",
+            "\t${6:localdata}:any;",
+            "\t${7:selectedData}:any",
+            "\tconstructor() {",
+            "\tthis.${6:localdata} = {",
+            "\t\t}",
+            "}",
+            "\tgetDropData(${6:data}: any) {",
+            "\t\t//Add operation here",
+            "}",
+            "\tdrag(${7:data}: any) {",
+            "\t\t${7:data}.event.dataTransfer.setData('${8:dragdata}', JSON.stringify(${7:data}.data));",
+            "}",
+            "\tdragOver(${9:event}: any) {",
+            "\t\t${9:event}.preventDefault();",
+            "}",
+            "\tdrop(${10:event}: any) {",
+            "\t\t${10:event}.preventDefault();",
             "\t\tthis.${7:selectedData} = JSON.parse(${10:event}.dataTransfer.getData('${8:dragdata}'))",
             "}",
             "\tngOnInit() {}",
@@ -2354,13 +2179,13 @@
             "})",
             "\texport class${4:name}Component{",
             "\tconstructor(private http :Http) {",
-            "\t //make some operation here ",   
+            "\t //make some operation here ",
             "}",
             "}"
         ]
-	},
-	 //Form Input Searchbox
-	 "Amexio-ts-Searchbox": {
+    },
+    //Form Input Searchbox
+    "Amexio-ts-Searchbox": {
         "prefix": "Amexio-ts-Searchbox",
         "body": [
             "import { Component, OnInit } from '@angular/core';",
@@ -2377,26 +2202,26 @@
             "\tdeclarations : [],",
             "\tproviders : []",
             "})",
-			"\t export class ${4:Name}Component implements OnInit {",
-			"\t\t\tsubject: string=''",
-			"\t\t\tfrom: string=''",
-			"\t\t\tto: string=''",
-			"\t\t\t${5:localdata}: any",
-			"\t\t\t${6:searchdata}: any",
-			"\t\t\t${7:binddata}: any",
+            "\t export class ${4:Name}Component implements OnInit {",
+            "\t\t\tsubject: string=''",
+            "\t\t\tfrom: string=''",
+            "\t\t\tto: string=''",
+            "\t\t\t${5:localdata}: any",
+            "\t\t\t${6:searchdata}: any",
+            "\t\t\t${7:binddata}: any",
             "\t constructor(){",
-			"\tthis.${5:localdata} = {",
-			"\t\t}",
-			"\t}",
+            "\tthis.${5:localdata} = {",
+            "\t\t}",
+            "\t}",
             "\t ngOnInit() { ",
             "\t\t\tthis.${7:binddata} = JSON.parse(JSON.stringify(this.${5:localdata}));",
-			"\t}",
-			"}"
+            "\t}",
+            "}"
         ],
         "description": "Search Box options"
-	},
-		 //Form Input Drop Down Menu
-		 "Amexio-ts-Dropdownmenu": {
+    },
+    //Form Input Drop Down Menu
+    "Amexio-ts-Dropdownmenu": {
         "prefix": "Amexio-ts-Dropdown-menu",
         "body": [
             "import { Component, OnInit } from '@angular/core';",
@@ -2413,23 +2238,23 @@
             "\tdeclarations : [],",
             "\tproviders : []",
             "})",
-			"\t export class ${4:Name}Component implements OnInit {",
-			"\t\t\t${5:localdata}: any",
+            "\t export class ${4:Name}Component implements OnInit {",
+            "\t\t\t${5:localdata}: any",
             "\t constructor(){",
-			"\tthis.${5:localdata} = {",
-			"\t\t}",
-			"\t}",
-			"\t ${6:functionName}(${7:data}:any){",
+            "\tthis.${5:localdata} = {",
+            "\t\t}",
+            "\t}",
+            "\t ${6:functionName}(${7:data}:any){",
             "\t //add Some Operation",
             "\t\t\t}",
             "\t ngOnInit() { ",
-			"\t}",
-			"}"
+            "\t}",
+            "}"
         ],
         "description": "Dropdown Menu options"
-	},
-	    //Amexio Toolbar
-		"Amexio Toolbar": {
+    },
+    //Amexio Toolbar
+    "Amexio Toolbar": {
         "prefix": "Amexio-ts-Toolbar",
         "description": "Amexio Toolbar",
         "body": [
@@ -2448,14 +2273,13 @@
             "\tproviders : []",
             "})",
             "",
-			"\t export class ${4:Name}Component implements OnInit {",
-			"\t${5:localdata}: any",
-			"\tconstructor() {",
-		    "\tthis.${5:localdata} = {",
-			"\t\t}",
+            "\t export class ${4:Name}Component implements OnInit {",
+            "\t${5:localdata}: any",
+            "\tconstructor() {",
+            "\tthis.${5:localdata} = {",
+            "\t\t}",
             "\t}",
             "}"
         ]
     }
-
 }
