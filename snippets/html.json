@@ -1035,7 +1035,7 @@
 			"\t[display-key]=\"${4:display-key}\"",
 			"\t[child-array-key]=\"${5:child-array-key}\"",
 			"\t(nodeClick)=\"${6:functionName}(\\$event)\">",
-			"<amexio-sidenav-node",
+			"\t<amexio-sidenav-node",
 			"\t[display-key]=\"'${1:text}'\"",
 			"\t[data]=\"'data'\"",
 			"\t[label]=\"'${2:label}'\"",
@@ -1043,7 +1043,7 @@
 			"\t[badge]=\"'${4:badge}'\"",
 			"\t[enable-border]=\"false\"",
 			"\t[collapsable]=\"false\">",
-			"</amexio-sidenav-node>",
+			"\t</amexio-sidenav-node>",
 			"</amexio-side-nav>"
 		],
 		"description": "Amexio Sidenav Bar"
@@ -1160,7 +1160,7 @@
 			"\t[data]=\"'${1:data}'\"",
 			"\t(onChipsLabelClick)=\"${2:functionName}\"",
 			"\t(onCloseClick)=\"${3:functionName}\">",
-			"\t <amexio-chip",
+			"\t<amexio-chip",
 			"\t[icon]=\"'${1:icon}'\"",
 			"\t[label]=\"'${2:label}'\"",
 			"\t[badge]=\"'${3:badge}'\"",
@@ -3104,6 +3104,33 @@
 			"\t[http-method]=\"'get'\"",
 			"\t[data-reader]=\"'${6:data}'\">",
 			"</amexio-item-selector>"
+		],
+		"description": "Amexio Item Data Selector"
+	},
+	"amexio-timeline": {
+		"prefix": "amexio-timeline",
+		"body": [
+			"<amexio-timeline",
+			"\t[content-alignment]=\"'${1:content-alignment}'\">",
+			"<amexio-timeline-event",
+			"\t[content-alignment]=\"'${1:content-alignment}'\">",
+			"\t[content-border]=\"false\"",
+			"\t[label]=\"'${3:label}'\"",
+			"\t[icon]=\"'${4:icon}'\">",
+			"</amexio-timeline-event>",
+			"</amexio-timeline>"
+		],
+		"description": "Amexio Item Data Selector"
+	},
+	"amexio-timeline-event": {
+		"prefix": "amexio-timeline-event",
+		"body": [
+			"<amexio-timeline-event",
+			"\t[content-alignment]=\"'${1:content-alignment}'\">",
+			"\t[content-border]=\"false\"",
+			"\t[label]=\"'${3:label}'\"",
+			"\t[icon]=\"'${4:icon}'\">",
+			"</amexio-timeline-event>"
 		],
 		"description": "Amexio Item Data Selector"
 	},
