@@ -1390,7 +1390,7 @@
 		"body": [
 			"<amexio-label",
 			"\t[badge]=\"${1:badge}\"",
-			"\tsize=\"${2:size}\"",
+			"\t[size]=\"${2:size}\"",
 			"\tenable-click=\"false\"",
 			"\t(onClick)=\"${3:functionName}(\\$event)\">",
 			"\t\t${4:Content}",
