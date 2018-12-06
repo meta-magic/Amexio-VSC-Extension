@@ -1063,6 +1063,18 @@
 		],
 		"description": "Amexio Sidenav Node"
 	},
+	"amexio-breadcrumb": {
+		"prefix": "amexio-breadcrumb",
+		"body": [
+			"<amexio-breadcrumb",  
+                "\t[data]=\"data\"",
+                "\t[data-reader]=\"'${1:data}'\"",
+                "\t(onListItemClick)=\"getSelectedData(\\$event)\"", 
+                "\t(onClick)=\"getSelectedData(\\$event)\">",
+			"</amexio-breadcrumb>"
+		],
+		"description": "Amexio BreadCrumb"
+	},
 	//Appnavigation-menubar
 	"amexio-menubar": {
 		"prefix": "amexio-menubar",
@@ -3064,6 +3076,21 @@
 		"description": "Amexio Enterprise multi item carousel vertical"
 	},
 	//Data
+	//Data Indicator
+	"amexio-spinner": {
+		"prefix": "amexio-spinner",
+		"body": [
+			"<amexio-spinner", 
+			"\t[show]=\"clickShow\"", 
+			"\t[type]=\"'${1:type}'\"", 
+			"\t[color]=\"'red'\"", 
+			"\t[size]=\"'16px'\">",
+			"\t</amexio-spinner>"
+
+		],
+		"description": "Amexio Spinner"
+	},
+	//Data
 	//Data Item Selector
 	"amexio-data-item-selector": {
 		"prefix": "amexio-data-item-selector",
@@ -3723,6 +3750,92 @@
 
 		],
 		"description": "Amexio D3 barstack Chart"
+	},
+	"amexio-d3-drillable-chart-multiple-target": {
+		"prefix": "amexio-d3-drillable-chart-multiple-target",
+		"body": [
+			"<amexio-drillable>",
+			"\t<amexio-d3-chart-bar", 
+			"\t\t[title]=\"'${1:title}'\"", 
+			"\t\t[http-url] =\"'${2:http-url}'\"", 
+			"\t\t[http-method]=\"'get'\"", 
+			"\t\t[level] = 1",
+			"\t\t[target] = 2",
+			"\t\t[drillable-data] = \"${3:data}\"",
+			"\t\t[color] = \"${4:color}\">",
+			"\t</amexio-d3-chart-bar>", 
+            
+			"\t<amexio-d3-chart-bar",
+			"\t\t[title] =\"'${1:title}'\"", 
+			"\t\t[http-url] =\"'${2:http-url}'\"", 
+			"\t\t[http-method] =\"'post'\"", 
+			"\t\t[color] = \"${3:color}\"",
+			"\t\t[drillable-data]= \"${4:drillabledata}\"",
+			"\t\t[level] = 2",
+			"\t\t[target] = 3>",
+			"\t</amexio-d3-chart-bar>",   
+     
+			"\t<amexio-d3-chart-bar",
+			"\t\t[title]=\"'${1:title}'\"",     
+			"\t\t[http-url] = \"'${2:http-url}'\"", 
+			"\t\t[http-method] = \"'post'\"", 
+			"\t\t[color] = \"${3:color}\"",
+			"\t\t[level] = 2",
+			"\t\t[target] = 3",
+			"\t\t[drillable-data] = \"${4:data}\">",
+			"\t</amexio-d3-chart-bar>", 
+			"</amexio-drillable>"  
+
+		],
+		"description": "Amexio D3 drillable chart"
+	},
+	"amexio-d3-drillable-chart-single-target": {
+		"prefix": "amexio-d3-drillable-chart-single-target",
+		"body": [
+			"<amexio-drillable>",
+			"\t<amexio-d3-chart-bar", 
+			"\t\t[title]=\"'${1:title}'\"", 
+			"\t\t[http-url] =\"'${2:http-url}'\"", 
+			"\t\t[http-method]=\"'get'\"", 
+			"\t\t[level] = 1",
+			"\t\t[target] = 2",
+			"\t\t[drillable-data] = \"${3:data}\"",
+			"\t\t[color] = \"${4:color}\">",
+			"\t</amexio-d3-chart-bar>", 
+            
+			"\t<amexio-d3-chart-bar",
+			"\t\t[title] =\"'${1:title}'\"", 
+			"\t\t[http-url] =\"'${2:http-url}'\"", 
+			"\t\t[http-method] =\"'post'\"", 
+			"\t\t[color] = \"${3:color}\"",
+			"\t\t[drillable-data]= \"${4:drillabledata}\"",
+			"\t\t[level] = 2",
+			"\t\t[target] = 3>",
+			"\t</amexio-d3-chart-bar>",   
+     
+			"\t<amexio-d3-chart-donut",
+			"\t\t[title] =\"'${1:title}'\"",     
+			"\t\t[http-url] =\"'${2:http-url}'\"", 
+			"\t\t[http-method] =\"'post'\"", 
+			"\t\t[color] =\"${3:color}\"",
+			"\t\t[level] = 3",
+			"\t\t[target] = 4",
+			"\t\t[drillable-data] =\"${4:data}\">",
+			"\t</amexio-d3-chart-donut>",
+			
+			"\t<amexio-d3-chart-donut",
+			"\t\t[title] =\"'${1:title}'\"", 
+			"\t\t[http-url] =\"'${2:http-url}'\"", 
+			"\t\t[http-method] =\"'post'\"", 
+			"\t\t[color] =\"${3:color}\"",
+			"\t\t[drillable-data] = \"${4:data}\"",
+			"\t\t[level] = 4",
+			"\t\t[target] = 5>",
+			"\t</amexio-d3-chart-donut>",
+			"</amexio-drillable>"
+
+		],
+		"description": "Amexio D3 drillable chart"
 	},
 	// -----------------------------------------------------------------------
 	// Angular 6 Directives and Attributes
