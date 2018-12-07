@@ -12,7 +12,7 @@
 			"\tangle-icon=\"${1:false}\">",
 			"\t<amexio-accordion-tab ",
 			"\t\theader=\"${2:header}\"",
-			"\t\tactive=\"${3:true}\" ",
+			"\t\t[active]=\"${3:true}\" ",
 			"\t\tleft-icon=\"${4:icon}\"",
 			"\t\tangle-icon=\"${5:false}\"",
 			"\t\tdisabled=\"${6:false}\"",
@@ -28,7 +28,7 @@
 		"body": [
 			"\t<amexio-accordion-tab ",
 			"\t\theader=\"${1:header}\"",
-			"\t\tactive=\"${2:true}\" ",
+			"\t\t[active]=\"${2:true}\" ",
 			"\t\tleft-icon=\"${3:icon}\"",
 			"\t\tangle-icon=\"${4:false}\"",
 			"\t\tdisabled=\"${5:false}\"",
@@ -44,7 +44,7 @@
 			"<amexio-accordion  expand-all=\"true\" angle-icon=\"${1:true}\">",
 			"\t<amexio-accordion-tab ",
 			"\t\theader=\"${2:header}\"",
-			"\t\tactive=\"${3:true}\" ",
+			"\t\t[active]=\"${3:true}\" ",
 			"\t\tleft-icon=\"${4:icon}\"",
 			"\t\tangle-icon=\"${5:false}\"",
 			"\t\tdisabled=\"${6:false}\"",
@@ -61,7 +61,7 @@
 			"<amexio-accordion transparent=\"true\" angle-icon=\"${1:true}\">",
 			"\t<amexio-accordion-tab ",
 			"\t\theader=\"${2:header}\"",
-			"\t\tactive=\"${3:true}\" ",
+			"\t\t[active]=\"${3:true}\" ",
 			"\t\tleft-icon=\"${4:icon}\"",
 			"\t\tangle-icon=\"${5:false}\"",
 			"\t\tdisabled=\"${6:false}\"",
@@ -106,7 +106,7 @@
 	"amexio-column": {
 		"prefix": "amexio-column",
 		"body": [
-			"<amexio-column [size] =\"${1:size}\"",
+			"<amexio-column size =\"${1:size}\"",
 			"\t\t\t\tfit=\"${2:false}\">",
 			"\t",
 			"</amexio-column>"
