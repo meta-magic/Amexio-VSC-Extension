@@ -9,13 +9,13 @@
 		"prefix": "amexio-accordion",
 		"body": [
 			"<amexio-accordion",
-			"\tangle-icon=\"${1:false}\">",
+			"\t[angle-icon]=\"${1:false}\">",
 			"\t<amexio-accordion-tab ",
 			"\t\theader=\"${2:header}\"",
 			"\t\t[active]=\"${3:true}\" ",
 			"\t\tleft-icon=\"${4:icon}\"",
-			"\t\tangle-icon=\"${5:false}\"",
-			"\t\tdisabled=\"${6:false}\"",
+			"\t\t[angle-icon]=\"${5:false}\"",
+			"\t\t[disabled]=\"${6:false}\"",
 			"\t\t(emittedEvent)=\"${7:functionName}(\\$event)\">",
 			"\t\t\t${8:Content}",
 			"\t</amexio-accordion-tab>",
@@ -30,8 +30,8 @@
 			"\t\theader=\"${1:header}\"",
 			"\t\t[active]=\"${2:true}\" ",
 			"\t\tleft-icon=\"${3:icon}\"",
-			"\t\tangle-icon=\"${4:false}\"",
-			"\t\tdisabled=\"${5:false}\"",
+			"\t\t[angle-icon]=\"${4:false}\"",
+			"\t\t[disabled]=\"${5:false}\"",
 			"\t\t(emittedEvent)=\"${6:functionName}(\\$event)\">",
 			"\t\t\t${7:Content}",
 			"\t</amexio-accordion-tab>"
@@ -46,8 +46,8 @@
 			"\t\theader=\"${2:header}\"",
 			"\t\t[active]=\"${3:true}\" ",
 			"\t\tleft-icon=\"${4:icon}\"",
-			"\t\tangle-icon=\"${5:false}\"",
-			"\t\tdisabled=\"${6:false}\"",
+			"\t\t[angle-icon]=\"${5:false}\"",
+			"\t\t[disabled]=\"${6:false}\"",
 			"\t\t(emittedEvent)=\"${7:functionName}(\\$event)\">",
 			"\t\t\t${8:Content}",
 			"\t</amexio-accordion-tab>",
@@ -63,8 +63,8 @@
 			"\t\theader=\"${2:header}\"",
 			"\t\t[active]=\"${3:true}\" ",
 			"\t\tleft-icon=\"${4:icon}\"",
-			"\t\tangle-icon=\"${5:false}\"",
-			"\t\tdisabled=\"${6:false}\"",
+			"\t\t[angle-icon]=\"${5:false}\"",
+			"\t\t[disabled]=\"${6:false}\"",
 			"\t\t(emittedEvent)=\"${7:functionName}(\\$event)\">",
 			"\t\t\t${8:Content}",
 			"\t</amexio-accordion-tab>",
@@ -107,7 +107,7 @@
 		"prefix": "amexio-column",
 		"body": [
 			"<amexio-column size =\"${1:size}\"",
-			"\t\t\t\tfit=\"${2:false}\">",
+			"\t\t\t\t[fit]=\"${2:false}\">",
 			"\t",
 			"</amexio-column>"
 		],
@@ -120,9 +120,9 @@
 			"<amexio-box",
 			"\tborder-color =\"${1:border-color}\"",
 			"\tborder=\"${2:borderPosition}\"",
-			"\tborder-dotted=\"${3:false}\"",
-			"\tpadding=\"true\"",
-			"\tclosable=\"${4:false}\"",
+			"\t[border-dotted]=\"${3:false}\"",
+			"\t[padding]=\"true\"",
+			"\t[closable]=\"${4:false}\"",
 			"\talign=\"${5:left}\">",
 			"\t\t${6:Content}",
 			"</amexio-box>"
@@ -135,11 +135,11 @@
 			"<amexio-box",
 			"\tborder-color =\"${1:border-color}\"",
 			"\tborder=\"${2:borderPosition}\"",
-			"\tborder-dotted=\"${3:false}\"",
+			"\t[border-dotted]=\"${3:false}\"",
 			"\tbackground-color=\"${4:background-color}\"",
 			"\talign=\"${5:left}\"",
-			"\tclosable=\"${6:false}\"",
-			"\tpadding=\"true\">",
+			"\t[closable]=\"${6:false}\"",
+			"\t[padding]=\"true\">",
 			"\t\t${7:Content}",
 			"</amexio-box>"
 		],
@@ -271,10 +271,10 @@
 	},
 	"amexio-layout-grid":{
 		"prefix": "amexio-layout-grid",
-		"body": ["<amexio-layout-grid>",
+		"body": ["<amexio-layout-grid",
 					"\t[layout]=\"'${1:layout}'\">",
 					"\t<amexio-grid-item",
-					"\t\t[name]=\"'${1:name}'\">",
+					"\t\t[name]=\"'${2:name}'\">",
 				"\t</amexio-grid-item>",
 				"</amexio-layout-grid>"	
 				],
@@ -366,8 +366,8 @@
 			"\t[title]=\"'${2:title}'\"",
 			"\t[height]=\"${3:height}\"",
 			"\t[expanded]=\"${4:true}\"",
-			"\t[border]=\"${5:border}\"",
-			"\t[content-align]=\"${6:left}\"",
+			"\t[border]=\"${5:true}\"",
+			"\tcontent-align=\"'${6:left}'\"",
 			"\t[collapsible]=\"${7:true}\"",
 			"\t[context-menu]=\"${8:context-menu}\"",
 			"\t(onClick)=\"${5:functionName}(\\$event)\">",
@@ -418,8 +418,8 @@
 	"amexio-steps": {
 		"prefix": "amexio-steps",
 		"body": [
-			"<amexio-steps [block]=\"false\" [index]=\"false\" [data]=\"'${1:data}'\">",
-			"\t<amexio-step-block [label]=\"'${2:label}'\" [active]=\"true\"  (onClick)=\"${3:functionName}(\\$event)\">",
+			"<amexio-steps [block]=\"false\" [icon]=\"false\" [index]=\"false\" [data]=\"'${1:data}'\">",
+			"\t<amexio-step-block [label]=\"'${2:label}'\" [icon]=\"${3:icon}\" [active]=\"true\"  (onClick)=\"${4:functionName}(\\$event)\">",
 			"\t</amexio-step-block>",
 			"</amexio-steps>"
 		],
@@ -428,7 +428,7 @@
 	"amexio-steps-block": {
 		"prefix": "amexio-steps-block",
 		"body": [
-			"\t<amexio-step-block [label]=\"'${1:label}'\" [active]=\"true\" (onClick)=\"${2:functionName}(\\$event)\" (getStepBlockData)=\"${4:functionName}(\\$event)\">",
+			"\t<amexio-step-block [label]=\"'${1:label}'\" [icon]=\"${2:icon}\" [active]=\"true\" (onClick)=\"${3:functionName}(\\$event)\" (getStepBlockData)=\"${4:functionName}(\\$event)\">",
 			"\t</amexio-step-block>"
 		],
 		"description": "Amexio Steps Block"
@@ -436,7 +436,7 @@
 	"amexio-steps-block-with-icon": {
 		"prefix": "amexio-step-block-with-icon",
 		"body": [
-			"<amexio-steps [block]=\"false\" [icon]=\"false\" (onClick)=\"${1:functionName}(\\$event)\">",
+			"<amexio-steps [block]=\"false\" [icon]=\"true\" (onClick)=\"${1:functionName}(\\$event)\">",
 			"\t<amexio-step-block [label]=\"'${2:label}'\" [active]=\"false\" [icon]=\"${3:icon}\">",
 			"\t</amexio-step-block>",
 			"</amexio-steps>"
@@ -468,9 +468,19 @@
 	"amexio-tab-view": {
 		"prefix": "amexio-tab-view",
 		"body": [
-			"<amexio-tab-view  [closable]=\"false\">",
-			"\t<amexio-tab title=\"${1:title}\" [active]=\"true\" (onClick)=\"${2:functionName}(\\$event)\">",
-			"\t\t${3:content}",
+			"<amexio-tab-view  [closable]=\"true\"",
+			"\t[header-align]=\"'${1:left}'\"",
+			"\t[action]=\"false\" [divide-header-equally]=\"false\"",
+			"\t[tab-position]=\"${2:top}\" [header]=\"'${3:header}'\"",
+			"\t[body-height]=\"${4:body-height}\"",
+			"\t[context-menu]=\"'${5:context-menu}'\"", 
+			"\t[default-context-menu]=\"false\">",
+			"\t<amexio-tab title=\"${6:title}\"",
+			"\t[active]=\"true\" [closable]=\"false\"",
+			"\t[disabled]=\"false\" [icon]=\"${7:icon}\"",
+			"\t[amexio-color]=\"'${8:color}'\"",
+			"\t(onClick)=\"${9:functionName}(\\$event)\">",
+			"\t\t${10:content}",
 			"\t</amexio-tab>",
 			"</amexio-tab-view>"
 		],
@@ -479,7 +489,12 @@
 	"amexio-tab": {
 		"prefix": "amexio-tab",
 		"body": [
-			"\t<amexio-tab title=\"${1:title}\" [active]=\"false\" (onClick)=\"${2:functionName}(\\$event)\">",
+			"\t<amexio-tab title=\"${1:title}\"",
+			"\t[active]=\"false\" [closable]=\"false\"", 
+			"\t[disabled]=\"false\"", 
+			"\t[icon]=\"${2:icon}\"",
+			"\t[amexio-color]=\"'${8:color}'\"",
+			"(onClick)=\"${4:functionName}(\\$event)\">",
 			"\t\t${3:content}",
 			"\t</amexio-tab>"
 		],
@@ -488,10 +503,19 @@
 	"amexio-tab-view-closable": {
 		"prefix": "amexio-tab-view-closable",
 		"body": [
-			"<amexio-tab-view  [closable]=\"true\" [header-align]=\"${1:left}\" [action]=\"false\" [divide-header-equally]=\"false\" [tab-position]=\"${2:top}\" [header]=\"${3:header}\"",
-			"[body-height]=\"${4:body-height}\" [context-menu]=\"'${5:context-menu}'\" [default-context-menu]=\"false\">",
-			"\t<amexio-tab title=\"${1:title}\" [active]=\"true\" (onClick)=\"${2:functionName}(\\$event)\">",
-			"\t\t${3:content}",
+			"<amexio-tab-view  [closable]=\"true\"",
+			"\t[header-align]=\"'${1:left}'\"",
+			"\t[action]=\"false\" [divide-header-equally]=\"false\"",
+			"\t[tab-position]=\"${2:top}\" [header]=\"'${3:header}'\"",
+			"\t[body-height]=\"${4:body-height}\"",
+			"\t[context-menu]=\"'${5:context-menu}'\"", 
+			"\t[default-context-menu]=\"false\">",
+			"\t<amexio-tab title=\"${6:title}\"",
+			"\t[active]=\"true\" [closable]=\"true\"",
+			"\t[disabled]=\"false\" [icon]=\"${7:icon}\"",
+			"\t[amexio-color]=\"'${8:color}'\"",
+			"\t(onClick)=\"${9:functionName}(\\$event)\">",
+			"\t\t${10:content}",
 			"\t</amexio-tab>",
 			"</amexio-tab-view>"
 		],
@@ -541,6 +565,7 @@
 			"\t\t\ttitle=\"${6:title}\"",
 			"\t\t\t[active]=\"true\"",
 			"\t\t\t[icon]=\"'${7:icon}'\"",
+			"\t\t\t[amexio-color]=\"'${8:color}'\"",
 			"\t\t\t[disabled]=\"${8:false}\"",
 			"\t\t\t(onClick)=\"${9:functionName}(\\$event)\">",
 			"\t\t\t\t${10:content}",
@@ -705,7 +730,8 @@
 			"\t[button-size]=\"'${5:button-size}'\"",
 			"\t[button-type]=\"'${6:theme-color}'\"",
 			"\t[show-dialogue]=\"'false'\"",
-			"\t[closable]=\"'true'\"",
+			"\t[closable]=\"true\"",
+			"\t[custom]=\"false\"",
 			"\t[content-align]=\"'${7:center}'\"",
 			"\t[close-on-escape]=\"${8:true}\"",
 			"\t[material-design]=\"${9:false}\"",
