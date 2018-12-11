@@ -48,8 +48,6 @@
                 "path": "./snippets/html.json"
             }
         ]
-    },
-    "dependencies": {
-        "amexio-ng-extensions": "file:../../ioCommit/io5.4/amexio.github.io/dist/amexio-ng-extensions-5.4.0.tgz"
+   
     }
 }
