@@ -1,6 +1,6 @@
 # Amexio Angular Extensions for Visual Studio Code 
 
-This Amexio Plugin will help the Angular developers using Visual Studio Code with a quick code snippet for the Angular and Amexio Directives as well as Angular TypeScript. Plugin support is available for Angular 4+ onwards. 
+This Amexio Plugin will help the Angular developers using Visual Studio Code with a quick code snippet for the Angular and Amexio Directives as well as Angular TypeScript. Plugin support is available for Angular 6+ onwards. 
 
 ## Usage
 
@@ -18,7 +18,7 @@ This Amexio Plugin will help the Angular developers using Visual Studio Code wit
 Install Amexio to enhance your Angular Project. 
 
 ## Amexio Angular Extension - Installation
-For installing on previous Amexio version ref http://amexio.org/api/v4.1/index.html#/getting-started
+For installing on previous Amexio version ref https://api.amexio.org/api/v5.4/index.html#/getting-started
 To install this Amexio 4.x follow the steps given below:
 
 ```bash
@@ -75,6 +75,6 @@ Amexio VSC Extension supports Amexio Moscow Release v5.0
 
 ## License
 
-[Apache 2.0](http://www.amexio.org/metamagic-showcase/license.html) © [MetaMagic Global Inc](http://www.metamagicglobal.com/), 2017. [Amexio Angular Extensions](http://www.amexio.tech)
+[Apache 2.0](https://api.amexio.org/api/license.html) © [MetaMagic Global Inc](http://www.metamagicglobal.com/), 2017. [Amexio Angular Extensions](http://www.amexio.tech)
 
 **Enjoy!**
