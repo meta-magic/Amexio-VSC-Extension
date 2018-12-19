@@ -630,13 +630,13 @@
 	"amexio-tab-view-vertical": {
 		"prefix": "amexio-tab-view-vertical",
 		"body": [
-			"<amexio-vertical-tab-view [closable]=\"false\">",
+			"<amexio-vertical-tab-view [closable]=\"false\" [tabPosition]=\"'bottom'\">",
 			"\t<amexio-tab",
 			"\t\ttitle=\"${1:title}\"",
 			"\t\t[disabled]=\"${2:false}\"",
 			"\t\t[active]=\"true\"",
 			"\t\t[icon]=\"'${3:icon}'\"",
-			"\t\t[amexio-color]=\"'${4:black}'\"",
+			"\t\t[amexio-color]=\"'${4:color}'\"",
 			"\t\t(onClick)=\"${4:functionName}(\\$event)\">",
 			"\t\t${5:content}",
 			"\t</amexio-tab>",
@@ -647,13 +647,13 @@
 	"amexio-tab-view-vertical-right": {
 		"prefix": "amexio-tab-view-vertical-right",
 		"body": [
-			"<amexio-right-vertical-tab-view  [closable]=\"false\">",
+			"<amexio-right-vertical-tab-view  [closable]=\"false\" [tabPosition]=\"'bottom'\">",
 			"\t<amexio-tab",
 			"\t\ttitle=\"${1:title}\"",
 			"\t\t[disabled]=\"${2:false}\"",
 			"\t\t[active]=\"true\"",
 			"\t\t[icon]=\"'${3:icon}'\"",
-			"\t\t[amexio-color]=\"'${4:black}'\"",
+			"\t\t[amexio-color]=\"'${4:color}'\"",
 			"\t\t(onClick)=\"${4:functionName}(\\$event)\">",
 			"\t\t\t${5:content}",
 			"\t</amexio-tab>",
