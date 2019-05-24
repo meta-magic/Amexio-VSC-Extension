@@ -1,7 +1,7 @@
 {
     "name": "amexio",
-    "displayName": "Angular 6 & Amexio Snippets for Visual Studio Code",
-    "description": "Angular 4/5/6 (HTML, TypeScripts, Amexio) Code Snippets.",
+    "displayName": "Angular 7 & Amexio Snippets for Visual Studio Code",
+    "description": "Angular 4/5/6/7 (HTML, TypeScripts, Amexio) Code Snippets.",
     "version": "3.2.1",
     "publisher": "MetaMagic",
     "icon": "images/Amexio-VSC-Icon-3.png",
