@@ -395,8 +395,7 @@
 			"\t[responsive-mode]=\"'${5:false}'\">",
 			"\t<amexio-layout-item",
 			"\t\t[fit]=\"${6:true}\"",
-			"\t[padding]=\"'${7:padding}'\"",
-			"\t\t*ngFor=\"let alignment of ['start','space-between','center']\">",
+			"\t\t[padding]=\"'${7:padding}'\">",
 			"\t</amexio-layout-item>",
 			"</amexio-layout-columns>"
 		],
